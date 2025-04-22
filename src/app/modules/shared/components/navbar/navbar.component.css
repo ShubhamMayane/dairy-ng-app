@@ -1,0 +1,134 @@
+
+
+
+
+nav{
+
+    position: relative;
+    height: 10vh;
+    border: 1px solid black;
+
+}
+
+.navbar-btn{
+
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    background-color: #3c86cb;
+    border-radius: 0px 30px 0px 30px;
+    padding: 20px 40px 20px 40px;
+    color: white;
+    border: none;
+}
+.right-arrow{
+
+    font-size: 15px;
+    
+}
+
+.nav-item>a
+{
+    font-family: "Commissioner", Sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    color: #1c59b5;
+}
+
+
+/* cutstom dropdown div code  */
+
+
+
+/* Fade-in animation keyframes */
+@keyframes fadeInDropdown {
+    from {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+/* Fade-in animation keyframes */
+
+.custom-dropdown {
+    background-color: #1c3270;
+    border: none;
+    overflow: hidden;
+    color: white;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+
+  }
+  
+  /* Show dropdown on hover */
+  .nav-item.dropdown .dropdown-menu {
+    display: none;
+    position: absolute;
+
+  }
+  
+  .nav-item.dropdown.show .dropdown-menu {
+    display: block;
+    border-radius: 30px 0px 30px 0px;
+
+    opacity: 1;
+    pointer-events: auto;
+    animation: fadeInDropdown 0.5s ease forwards;
+
+  }
+
+  .dropdown-item{
+
+    color: white;
+    font-family: "Commissioner", Sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 15px 15px 15px 35px;
+
+
+  }
+  
+  /* Hover effect on dropdown items */
+  .dropdown-item:hover {
+    background-color: #4d84cc;
+    color: white;
+  }
+  
+  /* Ensure responsiveness */
+  .navbar-nav .nav-link {
+    padding-right: 1rem;
+    padding-left: 1rem;
+  }
+  
+    
+
+  /* //for desktop and laptop and all other big screen */
+  @media screen and (min-width: 1024px)  {}  
+    
+
+  /* //for Tablet */
+  @media screen and (max-width: 1024px) {}
+
+
+  /* //for mobile screen  */
+  @media screen and (max-width: 600px) {
+
+
+    .navbar-btn{
+
+     
+        right: 0px;
+        top: 0px;
+
+    }
+
+
+
+  } 

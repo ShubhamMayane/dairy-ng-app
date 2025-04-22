@@ -1,0 +1,56 @@
+<nav class="navbar navbar-expand-lg navbar-light  container ">
+    <div class="container-fluid">
+        
+     
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#">About us</a>
+          </li>
+             <!-- Pages Dropdown -->
+            <li class="nav-item dropdown" [ngClass]="{show: pagesHovered}" (mouseenter)="pagesHovered = true"
+                (mouseleave)="pagesHovered = false">
+            <a class="nav-link" href="#" id="pagesDropdown">
+                Pages <i class="fa fa-angle-down" style="font-size: 15px;"></i>
+            </a>
+            <ul class="dropdown-menu custom-dropdown" [class.show]="pagesHovered">
+                <li><a class="dropdown-item" href="#">FAQ</a></li>
+                <li><a class="dropdown-item" href="#">Product</a></li>
+                <li><a class="dropdown-item" href="#">Team</a></li>
+                <li><a class="dropdown-item" href="#">Pricing</a></li>
+            </ul>
+            </li>
+
+            <!-- Blog Dropdown -->
+            <li class="nav-item dropdown" [ngClass]="{show: blogHovered}" (mouseenter)="blogHovered = true"
+                (mouseleave)="blogHovered = false">
+            <a class="nav-link " href="#" id="blogDropdown">
+                Blog <i class="fa fa-angle-down"  style="font-size: 15px;"></i>
+            </a>
+            <ul class="dropdown-menu custom-dropdown" [class.show]="blogHovered">
+                <li><a class="dropdown-item" href="#">Single Post</a></li>
+            </ul>
+            </li>
+
+
+            <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#">Contact</a>
+            </li>
+
+        </ul>
+     
+      </div>
+
+      
+    </div>
+    <button class="navbar-btn" type="submit">Get a Free Quote <i class="fa fa-arrow-right right-arrow"></i></button>
+
+  </nav>
+
