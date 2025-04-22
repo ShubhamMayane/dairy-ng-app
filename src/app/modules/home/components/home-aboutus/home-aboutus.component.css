@@ -1,0 +1,295 @@
+
+.aboutus-main-container{
+
+    /* border: 1px solid black; */
+    height: auto;
+    position: relative;
+    background-color: #f1fcff;
+    
+    padding: 100px 20px 180px 20px;
+
+}
+.aboutus-container{
+    
+    height: auto;
+}
+/* ------------------------------------------------------------ */
+.top-shape{
+
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    line-height: 0;
+    direction: ltr;
+    top: -1px;
+    z-index: 1;
+    
+}
+.top-shape>svg{
+
+    height: 50px;
+    width: 100%;
+}
+
+
+.bottom-shape{
+
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    line-height: 0;
+    direction: ltr;
+    bottom: -1px;
+    transform: rotate(180deg);
+    z-index: 1;
+    
+}
+.bottom-shape>svg{
+
+    height: 50px;
+    width: 100%;
+}
+
+/* ------------------------------------------------------------ */
+
+/**code for column-1 */
+
+
+
+.column-1{
+
+
+position: relative;
+z-index: 2;
+margin: -100px 0px 0px 0px;
+
+/* border: 1px solid black; */
+
+padding: 0px;
+}
+
+
+.column-1>img{
+
+    border-radius: 80px 0px 0px 0px;
+    width: 100%;
+
+}
+
+.column-1-content{
+
+    margin: -20px -100px 0px 0px;
+    padding: 20px 20px 20px 50px;
+    background-color: #103371;
+    border-radius: 0px 50px 0px 50px;
+    position: relative;
+    z-index: 5;
+}
+
+.column-1-content>h1{
+
+    color: white;
+    margin: 0px 0px 0px 0px;
+    font-family: "Commissioner", Sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 1.3em;
+
+}
+
+
+.column-1-content>h1>span{
+
+color: #f8ab13;
+}
+
+
+/**code for column-2 */
+
+.column-2{
+    position: relative;
+    z-index: 1;
+    /* border: 1px solid black; */
+
+
+}
+
+.column-2>img{
+
+    border-radius: 0px 80px 0px 0px;
+    width: 100%;
+
+}
+
+
+
+
+/**code for column-3 */
+.column-3{
+
+    z-index: 2;
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: column;
+    padding: 0px 0px 0px 30px;
+
+}
+
+.column-3>h3{
+    color: #f8ab13;
+    font-family: "Courgette", cursive;
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 0.5em;
+
+}
+
+.column-3>h1{
+    color: #103371;
+    font-family: "Commissioner", Sans-serif;
+    font-size: 45px;
+    font-weight: 700;
+}
+
+
+
+.column-3>p{
+
+    color: #7a7a7a;
+    font-family: "Commissioner";
+    font-weight: 400;
+}
+
+
+.list-main-container{
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.list-item{
+
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+
+}
+
+.list-header{
+
+    font-family: "Commissioner";
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.6em;
+    color: #103371;
+
+}
+
+
+.column-3>button{
+
+    font-family: "Commissioner", Sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    fill: white;
+    color: white;
+    background-color: #3c86cb;
+    border-radius: 0px 30px 0px 30px;
+    padding: 20px 40px 20px 40px;
+    border: none;
+    align-self: flex-start;
+}
+
+.column-3>button:hover{
+    
+    animation: updown 2.5s linear infinite;
+}
+
+
+
+
+
+    
+    /*for desktop and laptop and all other big screen*/
+
+    @media screen and (min-width: 1024px)  {}      
+
+
+   /*for Tablet*/
+
+    @media screen and (max-width: 1024px) {
+
+        .column-1{
+
+            width: 50%;
+        }
+        .column-2{
+            width: 50%;
+
+        }
+        .column-3{
+            width: 100%;
+            margin-top: 30px;
+
+        }
+
+
+    } 
+
+	
+    /*for mobile screen */
+    @media screen and (max-width: 600px) {
+
+        .aboutus-row
+        {
+
+            gap: 50px;
+
+
+        }
+        .column-1{
+            
+          
+            width: 100%;
+
+        }
+        .column-1-content{
+
+            width: 100%;
+            margin: -20px 0px 0px 0px;
+            border-radius: 0px 0px 0px 50px;
+            /* margin: -20px -100px 0px 0px;
+            padding: 20px 20px 20px 50px;
+            background-color: #103371;
+            border-radius: 0px 50px 0px 50px;
+            position: relative;
+            z-index: 5; */
+        }
+
+
+        .column-2{
+            
+          
+            width: 100%;
+            padding: 0px;
+
+        }
+
+
+        .column-3{
+
+
+            padding: 0px;
+            margin-top: 0px;
+        }
+
+
+        .list-main-container
+        {
+            flex-direction: column;
+            align-items: flex-start;
+        } 
+}

@@ -1,0 +1,335 @@
+
+
+.home-header-main-container{
+
+    /* border: 1px solid green; */
+   
+    /* border: 1px solid black; */
+    width: 100%;
+    height: auto;
+    background-image: url("../../../../../../public/images/background-images/home-header-background-imag.jpg");
+    background-size: cover;
+    background-position:bottom center;
+    background-repeat: no-repeat;
+    position: relative;
+    padding: 200px 0px 400px 0px;
+
+ 
+
+
+  
+}
+
+
+.overlay-div{
+height: 100%;
+width: 100%;
+position: absolute;
+top: 0;
+left: 0;
+/* border: 1px solid red; */
+z-index: 1;
+background-color: transparent;
+background-image: linear-gradient(180deg, #001741 10%, #00000000 80%);
+opacity: 0.8;
+
+
+
+
+}
+
+.img-top-shape{
+
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    line-height: 0;
+    direction: ltr;
+    top: -1px;
+    z-index: 2;
+
+}
+
+.img-top-shape>svg{
+
+    display: block;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    width: calc(100% + 1.3px);
+    height: 50px;
+}
+
+.bottom-shape{
+
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    line-height: 0;
+    direction: ltr;
+    bottom: -1px;
+    transform: rotate(180deg);
+    
+}
+.bottom-shape>svg{
+
+    height: 50px;
+    width: 100%;
+}
+
+
+
+
+.header-content-container
+{
+
+    /* border: 1px solid white; */
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    z-index: 999;
+    max-width: 1000px;
+    align-items: center;
+   
+
+}
+
+.header-content-container>h3{
+
+    color: #f8ab13;
+     font-family: "Courgette", cursive;
+    
+     font-size: 22px;
+    font-weight: 500;
+    line-height: 0.5em; 
+    text-align: center;
+    z-index: 3;
+
+}
+.header-content-container>h1{
+    text-align: center;
+    z-index: 3;
+    color: white;
+    margin: 0px 0px 0px 0px;
+    font-family: "Commissioner", Sans-serif;
+    font-size: 66px;
+    font-weight: 800;
+    line-height: 1.2 em;
+
+}
+.header-content-container>p{
+
+    text-align: center;
+    z-index: 3;
+    color: white;
+   
+    font-family: "Commissioner", Sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.2 em;
+
+}
+.header-content-container>button{
+
+    text-align: center;
+    z-index: 3;
+
+
+    font-family: "Commissioner", Sans-serif;
+    font-size: 14px;
+    font-weight:600;
+
+    fill: white;
+    color: white;
+    background-color: #3c86cb;
+    border-radius: 0px 30px 0px 30px;
+    padding: 20px 40px 20px 40px;
+    border: none;
+   
+
+}
+
+
+.header-content-container>button:hover {
+    animation: updown 2.5s linear infinite;
+  }
+
+
+
+  /*------------------------------------------------------------------------------------*/
+    /* code for header card  */
+
+
+    .header-card-main-container{
+
+          
+            height: auto;
+            background-color:white;
+            box-shadow: 0px 15px 20px 0px rgba(0, 0, 0, 0.1);
+            border-radius: 80px 20px 80px 20px;
+            overflow: hidden;
+            margin-top: -200px;
+            position: relative;
+            margin-bottom: 150px;
+
+
+    }
+
+
+    .card-left-section{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        padding: 60px 60px 60px 70px;
+       
+    }
+
+    .card-left-section>h3{
+
+        color: #f8ab13;
+        font-family: "Courgette", cursive;
+       
+        font-size: 22px;
+       font-weight: 500;
+       line-height: 0.5em; 
+       
+
+    }
+    .card-left-section>h1{
+
+        color: #103371;
+        font-family:"Commissioner", Sans-serif;
+        font-size: 45px;
+        font-weight:700;
+
+    }
+    .card-left-section>p{
+        color: #7a7a7a;
+        font-family: "Commissioner";
+        font-weight: 400;
+
+    }
+    .card-left-section>a{
+
+        font-family: "Commissioner", Sans-serif;
+        font-size: 14px;
+        font-weight: 600;
+        color: #3c86cb;
+    }
+
+    .card-left-section>a:hover {
+        animation: updown 2.5s linear infinite;
+      }
+    
+
+
+    .card-right-section{
+        
+        background-image: url("../../../../../../public/images/card-images/cows-on-a-diary-farm.jpg");
+        background-position: center;
+        background-size: cover;
+      
+     }
+
+    .play-button-container{
+
+           
+          
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            width: 100%;
+            
+            
+    }
+
+
+    
+    .play-button {
+
+        height: 100px;
+        width: 100px;
+        border: 1px solid white;
+        background-color: white;
+
+    }
+
+
+    
+
+
+
+
+
+
+
+
+
+
+/*for desktop and laptop and all other big screen*/
+
+@media screen and (min-width: 1024px)  {}      
+
+
+/*for Tablet*/
+
+ @media screen and (max-width: 1024px) {
+
+    .img-top-shape>svg{
+        
+        height: 20px;
+    }
+
+    .header-card-main-container{
+        margin-bottom: 50px;
+
+    }
+ } 
+
+ 
+ /*for mobile screen */
+ @media screen and (max-width: 600px) {
+
+    .img-top-shape>svg{
+        
+        height: 20px;
+    }
+
+
+    .header-content-container>h1{
+
+        font-size: 55px;
+    }
+
+    .home-header-main-container{
+    padding: 150px 15px 300px 15px;
+    }
+
+
+
+    .header-card-main-container{
+        margin-bottom: 100px;
+
+    }
+
+    .card-left-section{
+
+        padding: 60px 20px 50px 40px;
+
+    }
+
+    .card-right-section{
+    
+        height: 300px;
+    }
+
+   
+
+       
+    
+} 
+ 

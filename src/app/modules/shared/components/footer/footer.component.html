@@ -130,16 +130,23 @@
                             <span>Get the latest updates via email. Don’t miss it. Any time you may unsubscribe.</span>
                         </div>
 
-                        <div class="footer-item">
+                        <div class="footer-item footer-subscribe-form">
+                            <form [formGroup]="subscribeForm" >
+                            <input class="form-control footer-input-box"   formControlName="email" type="text" placeholder="Your Email" aria-label="default input example">
+                            
+                            <div class="error-msg-container">
+                                <div class="error-message" *ngIf="email.invalid && (email.dirty || email.touched)">
+                                    <span *ngIf="email.errors?.['required']">Email is required.</span>
+                                    <span *ngIf="email.errors?.['email']">Please enter a valid email address.</span>
+                                </div>
+                            </div>
                           
-                            <input class="form-control footer-input-box" type="text" placeholder="Your Email" aria-label="default input example">
-
-                            <!-- <div> error message</div> -->
+                            </form>
                         </div>
 
                         <div class="footer-item">
                           
-                            <button type="button" class="footer-button">Susbscribe Now</button>
+                            <button (click)="onSubmit()" class="footer-button">Susbscribe Now</button>
                         </div>
 
 

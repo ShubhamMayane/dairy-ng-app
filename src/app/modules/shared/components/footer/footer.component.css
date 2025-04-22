@@ -4,7 +4,7 @@
     height:auto;
     background-image: url("../../../../../../public/images/background-images/footer-background.jpg");
     background-size: cover;
-    background-position:center;
+    background-position:0px -25px;
     background-repeat: no-repeat;
     padding: 100px 0px 20px 0px;
 }
@@ -12,7 +12,7 @@
 .footer-container{
 
 
-    border: 1px solid green;
+    border: 1px solid white;
     height: auto;
 
 }
@@ -139,7 +139,26 @@ gap: 20px;
         
       }
 
-    .footer-button{
+
+      .footer-subscribe-form{
+
+        flex-direction: column;
+        gap: 0px;
+    }
+    .error-msg-container{
+    height: 12px;
+
+    }
+    .error-message>span
+    {
+        color: #ffb7b7;
+        font-family: "Commissioner", sans-serif;
+        font-size: 15px;
+        
+    }
+
+
+      .footer-button{
 
         padding: 15px 60px 15px 60px;
         font-family: "Commissioner", Sans-serif;
@@ -155,3 +174,93 @@ gap: 20px;
     }
 
 
+    /*for desktop and laptop and all other big screen*/
+
+    @media screen and (min-width: 1024px)  {}      
+
+
+   /*for Tablet*/
+
+    @media screen and (max-width: 1024px) {
+
+        .footer-main-div{
+        
+            background-position: center center;
+        }
+
+        .footer-column-1{
+
+            width: 50%;
+        }
+
+        .footer-column-2
+        {
+
+            width: 50%;
+
+        }
+
+        .footer-column-3
+        {
+            width: 50%;
+            margin-top: 30px;
+        }
+
+        .footer-column-4{
+
+            width: 50%;
+            margin-top: 30px;
+        }
+
+        .footer-main-div{
+
+            padding: 100px 0px 40px 0px;
+        }
+
+
+
+    } 
+
+	
+    /*for mobile screen */
+    @media screen and (max-width: 600px) {
+
+
+
+        .footer-main-div{
+
+            /* //to set the background image  */
+            background-position: center center;
+        }
+
+        .footer-column-1{
+
+            margin-bottom: 30px;
+            width: 100%;
+
+        }
+
+        .footer-column-2
+        {
+
+            width: 50%;
+
+        }
+
+        .footer-column-3
+        {
+            width: 50%;
+            margin-top: 0px;
+        }
+
+        .footer-column-4{
+
+            margin-top: 30px;
+            width: 100%;
+            
+
+        }
+
+     
+
+    } 

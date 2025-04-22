@@ -1,1 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
+
+/* updadown animation  */
+@keyframes updown {
+    0%   { transform: translateY(0); }
+    25%  { transform: translateY(-10px); }
+    50%  { transform: translateY(0); }
+    75%  { transform: translateY(-10px); }
+    100% { transform: translateY(0); }
+  }
