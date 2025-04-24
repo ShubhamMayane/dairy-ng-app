@@ -207,9 +207,64 @@ color: #f8ab13;
     
     animation: updown 2.5s linear infinite;
 }
+/* -------------------------------------------------------------------------------------------------------------------------------- */
+/* css for good will container */
+.our-goodwill-main-container{
+
+    position: relative;
+    z-index: 5;
+    background-color: white;
+   
+    box-shadow: 0px 15px 20px 0px rgba(0, 0, 0, 0.1);
+    border-radius: 30px 30px 30px 30px;
+    padding: 30px 0px 30px 0px;
+    margin-top: -90px;
+    margin-bottom: 120px;
+}
+
+.our-goodwill-container
+{
+
+    display: flex;
+    justify-content: space-around;
 
 
+}
+.our-goodwill-item
+{
 
+    display: flex;
+
+    align-items: center;
+    gap: 10px;
+}
+
+.our-goodwill-item-content{
+
+    display: flex;
+    flex-direction: column;
+}
+
+.our-goodwill-item>svg{
+    height: 70px;
+    width: 70px;
+}
+.our-goodwill-item-content>h3{
+font-family: "Commissioner";
+font-size: 20px;
+font-weight: 600;
+color: #103371;
+margin-bottom: 0px;
+}
+
+.our-goodwill-item-content>p{
+    color: #7a7a7a;
+    font-family: "Commissioner";
+    font-weight: 400;
+    margin-bottom: 0px;
+    font-size: 15px;
+    }
+    
 
 
     
@@ -261,12 +316,7 @@ color: #f8ab13;
             width: 100%;
             margin: -20px 0px 0px 0px;
             border-radius: 0px 0px 0px 50px;
-            /* margin: -20px -100px 0px 0px;
-            padding: 20px 20px 20px 50px;
-            background-color: #103371;
-            border-radius: 0px 50px 0px 50px;
-            position: relative;
-            z-index: 5; */
+     
         }
 
 
@@ -284,6 +334,7 @@ color: #f8ab13;
 
             padding: 0px;
             margin-top: 0px;
+            margin: 40px 10px 0px 10px;
         }
 
 
@@ -292,4 +343,37 @@ color: #f8ab13;
             flex-direction: column;
             align-items: flex-start;
         } 
+
+
+            /* our goodwill responsive  code */
+
+            .our-goodwill-section
+            {
+                padding-left: 20px;
+                padding-right: 20px;
+            }
+
+            .our-goodwill-main-container{
+
+                margin-top: -90px;
+
+            }
+
+            .our-goodwill-container
+            {
+            
+                display: flex;
+                flex-direction: column;
+               align-items: center;
+                gap: 30px;
+
+            }
+
+            .our-goodwill-item
+                {
+
+                    padding: 10px;
+                }
+
+
 }
