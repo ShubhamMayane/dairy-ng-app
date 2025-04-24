@@ -1,0 +1,41 @@
+.testimonials{
+
+    border: 1px solid black;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+
+.column-left{
+    border: 1px solid black;
+}
+
+.left-column-content{
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+}
+
+.left-column-content>button{
+
+    align-self: flex-start;
+
+}
+
+
+.column-right{
+    border: 1px solid black;
+}
+
+
+
+
+
+
+.swiper {
+    width: 100%;
+    height: 300px;
+  }
