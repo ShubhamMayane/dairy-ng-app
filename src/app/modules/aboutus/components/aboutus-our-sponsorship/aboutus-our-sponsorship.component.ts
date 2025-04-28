@@ -6,18 +6,13 @@ import { RatingModule } from 'ngx-bootstrap/rating';
 import { FormsModule } from '@angular/forms';
 
 @Component({
-  selector: 'app-home-testimonials',
+  selector: 'app-aboutus-our-sponsorship',
   imports: [RatingModule,CommonModule,FormsModule],
-  templateUrl: './home-testimonials.component.html',
-  styleUrl: './home-testimonials.component.css',
+  templateUrl: './aboutus-our-sponsorship.component.html',
+  styleUrl: './aboutus-our-sponsorship.component.css',
   schemas:[CUSTOM_ELEMENTS_SCHEMA ]
 })
-export class HomeTestimonialsComponent  implements OnInit, OnDestroy {
-  max = 5;
-  rate = 5;
-  isReadonly = true;
-
-
+export class AboutusOurSponsorshipComponent implements OnInit, OnDestroy{
 
   constructor(private renderer: Renderer2, private el: ElementRef, @Inject(PLATFORM_ID) private platformId: any) { }
   ngOnInit(): void {
@@ -55,5 +50,4 @@ export class HomeTestimonialsComponent  implements OnInit, OnDestroy {
 
 
 
- 
 }

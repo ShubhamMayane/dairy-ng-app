@@ -8,11 +8,11 @@ import { HomeOurProgramsComponent } from "./components/home-our-programs/home-ou
 import { HomeOurGallaryComponent } from "./components/home-our-gallery/home-our-gallery.component";
 import { HomeTestimonialsComponent } from "./components/home-testimonials/home-testimonials.component";
 import { HomeBlogAndNewsComponent } from "./components/home-blog-and-news/home-blog-and-news.component";
-import { BannerComponent } from "../shared/components/banner/banner.component";
+
 
 @Component({
   selector: 'app-home',
-  imports: [HomeHeaderComponent, HomeAboutusComponent, HomeServicesComponent, HomeAllProductsComponent, HomeOurAdvantagesComponent, HomeOurProgramsComponent, HomeOurGallaryComponent, HomeTestimonialsComponent, HomeBlogAndNewsComponent, BannerComponent],
+  imports: [HomeHeaderComponent, HomeAboutusComponent, HomeServicesComponent, HomeAllProductsComponent, HomeOurAdvantagesComponent, HomeOurProgramsComponent, HomeOurGallaryComponent, HomeTestimonialsComponent, HomeBlogAndNewsComponent],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
 })

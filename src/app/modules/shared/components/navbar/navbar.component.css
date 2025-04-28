@@ -101,12 +101,7 @@ nav{
     color: white;
   }
   
-  /* Ensure responsiveness */
-  .navbar-nav .nav-link {
-    padding-right: 1rem;
-    padding-left: 1rem;
-  }
-  
+
     
 
   /* //for desktop and laptop and all other big screen */
@@ -121,13 +116,6 @@ nav{
   @media screen and (max-width: 600px) {
 
 
-    .navbar-btn{
-
-     
-        right: 0px;
-        top: 0px;
-
-    }
 
 
 

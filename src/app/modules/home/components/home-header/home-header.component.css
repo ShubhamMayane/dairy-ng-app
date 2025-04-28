@@ -255,9 +255,18 @@ opacity: 0.8;
         width: 100px;
         border: 1px solid white;
         background-color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
 
     }
 
+    .play-button>i{
+
+        color: #3c86cb;
+        font-size: 50px;
+
+    }
 
     
 

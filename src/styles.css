@@ -11,7 +11,7 @@
 
 
 
-  /* css for font styles  */
+  /* css for font styles  start */
 
 .yellow-text{
 
@@ -59,3 +59,63 @@
 .header-content-container>button:hover {
   animation: updown 2.5s linear infinite;
 } */
+
+
+.big-white-text{
+
+  color: white;
+  font-family: "Commissioner", Sans-serif;
+  font-size: 45px;
+  font-weight: 700;
+
+}
+
+  /* css for font styles  end */
+
+
+/*css for shapes*/
+
+.top-shape-image-container{
+  overflow: hidden;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  line-height: 0;
+  direction: ltr;
+  top: -1px;
+  z-index: 2;
+
+}
+.top-shape-image-container>svg{
+
+  display: block;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  width: calc(100% + 1.3px);
+  height: 50px;
+}
+
+.bottom-shape-image-container{
+  overflow: hidden;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  line-height: 0;
+  direction: ltr;
+  bottom: -1px;
+  transform: rotate(180deg);
+  z-index: 1;
+
+}
+
+.bottom-shape-image-container>svg{
+
+height: 50px;
+width: 100%;
+
+
+}
+
+
+

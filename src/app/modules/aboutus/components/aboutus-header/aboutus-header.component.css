@@ -1,0 +1,196 @@
+
+.header{
+
+     background-image: url("../../../../../../public/images/background-images/header-background-img.jpg");
+    background-position: 0px -145px;
+    background-size: cover;
+    margin-top: -10px;
+    margin-bottom: 0px;
+    padding: 100px 0px 80px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    position: relative;
+
+}
+
+
+
+/* ----------------------------------------------- */
+
+/* code for about us header description section  */
+.about-us-description{
+
+    margin-top: 120px;
+
+
+
+}
+
+.left-column>img{
+
+    border-radius:80px 0px 50px 0px;
+    height: auto;
+    max-width: 100%;
+    border: none;
+    box-shadow: none;
+
+
+}
+
+
+
+.image-text-container{
+
+    margin: -100px 150px 0px 30px;
+    padding: 30px 30px 30px 30px;
+    background-color: #103371;
+    border-radius: 0px 50px 0px 50px;
+    position: relative;
+    z-index: 1;
+}
+
+
+.image-text-container>h3{
+    color: white;
+    margin: 0px 0px 0px 0px;
+    font-family:"Commissioner" , Sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 1.3em;
+}
+
+h3>span{
+    color: #f8ab13;
+
+}
+  
+.about-us-description-container{
+
+    
+}
+
+.right-column{
+
+    padding-left: 40px;
+}
+/* code for right column  */
+
+.right-column-sub-text{
+
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    
+
+
+}
+.right-column-sub-text>img{
+
+    height: auto;
+    max-width: 20%;
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+}
+
+.double-quote-icon{
+
+    position: absolute;
+    font-size: 75px;
+    color: #0E71FE17;
+    z-index: -1;
+    left: -40px;
+    top: -25px;
+    
+
+}
+
+.right-column-sub-text>h4{
+
+    color: #103371;
+    margin-bottom: 0px;
+    font-family: "Commissioner", Sans-serif;
+    font-size:20px;
+    font-weight: 600;
+}
+
+
+.right-column-sub-text>h5{
+
+    color: #f8ab13;
+    
+    font-family: "Commissioner", Sans-serif;
+    font-size:15px;
+    font-weight: 400;
+
+    
+}
+
+.right-column-sub-text{
+
+    margin-left: 40px;
+
+
+}
+
+    /*for desktop and laptop and all other big screen*/
+
+    @media screen and (min-width: 1024px)  {}      
+
+
+   /*for Tablet*/
+
+    @media screen and (max-width: 1024px) {
+
+        .header{
+            background-position: center center;
+        }
+
+        .left-column{
+            margin-bottom: 20px;
+            width: 100%;
+            
+        }
+        .right-column{
+            width: 100%;
+        }
+
+
+        .left-column>img
+        {
+                border-radius: 80px 0px 0px 0px;
+                width: 100%;
+        }
+        
+        
+        .image-text-container{
+            margin: -20px 0px 0px 0px;
+            border-radius: 0px 0px 0px 50px;
+        }
+
+        .right-column{
+
+            
+            padding-left: 40px;
+
+       }
+
+    } 
+
+	
+    /*for mobile screen */
+    @media screen and (max-width: 600px) {
+
+        .image-text-container{
+                 border-radius: 0px 0px 80px 0px;
+        }
+        
+        .left-column{
+            margin-bottom: 20px;
+        }
+
+        
+    } 

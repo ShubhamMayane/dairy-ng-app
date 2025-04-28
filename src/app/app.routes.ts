@@ -10,5 +10,9 @@ export const routes: Routes = [
         path: '',
         redirectTo: 'home',
         pathMatch: 'full'
+      },
+      {
+        path: 'about-us',
+        loadChildren: () => import('./modules/aboutus/aboutus.module').then(m => m.AboutusModule)
       }
 ];

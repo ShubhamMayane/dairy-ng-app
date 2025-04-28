@@ -73,7 +73,7 @@
     width: 100%;
     line-height: 0;
     direction: ltr;
-    bottom: 0px;
+    bottom: -1px;
     transform: rotate(180deg);
     z-index: 1;
 
@@ -109,20 +109,23 @@
    /*for Tablet*/
 
     @media screen and (max-width: 1024px) {
-        .banner-container{
-
+        .banner-container
+        {
             height: auto;
             background-position:bottom center ;
-               }
-        .left-column{
-            
-        padding: 50px 0px 50px 35px;
         }
 
+        .left-column
+        {
+            padding: 50px 0px 50px 35px;
+        }
+
+       
         .banner-kid-img{
 
-            top: auto;
-            bottom: 0px !important;
+         position: relative;
+         bottom: 0px;
+            
         }
 
 
@@ -134,8 +137,8 @@
 
         .banner-container{
 
-            height: auto;
-            background-position:bottom center ;
+                    height: auto;
+                    background-position:bottom center ;
                }
 
                .left-column{
