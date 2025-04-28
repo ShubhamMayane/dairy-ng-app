@@ -1,0 +1,168 @@
+.banner-container{
+
+
+
+
+   
+       
+        width: 100%;
+        height: auto;
+        background-image: url("/images/background-images/banner.jpg");
+      position: relative;
+        background-repeat: no-repeat;
+        background-color: #F0FCFF;
+        background-position: 0px -410px;
+        background-size: cover;
+        border-radius: 80px 80px 30px 30px;
+        margin-bottom: 120px;
+    
+}
+
+
+.left-column{
+
+
+  
+    padding: 50px 20px 65px 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+   
+}
+
+
+.left-column>h1{
+
+    color: white;
+
+    font-family: "Commissioner", Sans-serif;
+    font-size:45px ;
+    font-weight: 700;
+  
+
+
+}
+
+.left-column>p{
+
+    color: white;
+
+    font-family: "Commissioner", Sans-serif;
+    font-size:15px ;
+    font-weight: 400;
+}
+
+.left-column>button{
+
+    align-self: flex-start;
+}
+
+.right-column{
+
+   
+    display: flex;
+    justify-content: center;
+   
+}
+
+.bottom-shape{
+
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    line-height: 0;
+    direction: ltr;
+    bottom: 0px;
+    transform: rotate(180deg);
+    z-index: 1;
+
+}
+
+.bottom-shape>svg{
+
+    height: 60px;
+    width: 100%;
+}
+
+.banner-kid-img{
+
+    height: auto;
+    width: 420px;
+    max-width: 100%;
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+    position:absolute;
+    top: -40px;
+
+}
+
+
+
+
+    /*for desktop and laptop and all other big screen*/
+
+    @media screen and (min-width: 1024px)  {}      
+
+
+   /*for Tablet*/
+
+    @media screen and (max-width: 1024px) {
+        .banner-container{
+
+            height: auto;
+            background-position:bottom center ;
+               }
+        .left-column{
+            
+        padding: 50px 0px 50px 35px;
+        }
+
+        .banner-kid-img{
+
+            top: auto;
+            bottom: 0px !important;
+        }
+
+
+    } 
+
+	
+    /*for mobile screen */
+    @media screen and (max-width: 600px) {
+
+        .banner-container{
+
+            height: auto;
+            background-position:bottom center ;
+               }
+
+               .left-column{
+
+                padding: 50px 30px 30px 30px;
+
+               }
+
+               .left-column>h1
+               {
+
+                 text-align: center;
+              
+                }
+                
+                .left-column>p
+                {
+                    text-align: center;
+                }
+              
+                .left-column>button
+                {
+                    align-self: center;
+                }
+         
+
+                .banner-kid-img{
+                    position: static;
+                }
+    } 
