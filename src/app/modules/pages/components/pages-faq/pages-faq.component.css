@@ -1,0 +1,27 @@
+
+.left-column{
+
+
+}
+
+.right-column{
+
+
+}
+
+
+
+    /*for desktop and laptop and all other big screen*/
+
+    @media screen and (min-width: 1024px)  {}      
+
+
+   /*for Tablet*/
+
+    @media screen and (max-width: 1024px) {} 
+
+	
+    /*for mobile screen */
+    @media screen and (max-width: 600px) {} 
+
+      

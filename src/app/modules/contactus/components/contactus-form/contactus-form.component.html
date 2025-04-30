@@ -1,0 +1,153 @@
+<div class="container-fluid contact-us-from">
+
+
+    <div class="container contact-us-from-container">
+
+
+
+        <div class="row">
+
+            <div class="col-md-5 left-column">
+
+
+                <h3 class="yellow-text">For more Information</h3>
+                <h1 class="blue-big-font">Hey, let's talk!</h1>
+                <p class="gray-description-font">If you have any questions or problems simply use the
+                     following contact details.</p>
+
+                
+                    <div class="contact-details-item mb-3">
+                        <div class="contact-details-item-header">
+                            <i class="fa-solid fa-location-dot"></i>    
+                            <span >Our Location</span>
+                        </div>
+                        <p class="gray-description-font">99 Broklyn New Street, New York 1120 United States</p>
+                    </div>
+
+                    <div class="contact-details-item mb-3">
+                        <div class="contact-details-item-header">
+                            <i class="fa-solid fa-envelope"></i>
+                            <span >Email Support</span>
+                        </div>
+                        <p class="gray-description-font">Support: {{"support@moolydairyfarm.com"}}</p>
+                    </div>
+
+
+                    <div class="contact-details-item ">
+                        <div class="contact-details-item-header">
+                            <i class="fa-solid fa-phone"></i>   
+                            <span >Our Location</span>
+                        </div>
+                        <p class="gray-description-font">+123 456 7890 / +123 654 9870</p>
+                    </div>
+
+
+
+                    <hr >
+
+
+                    <!--  for mail icon  -->
+
+                <!-- <i class="fa-solid fa-phone"></i> -->
+
+                    <h2 class="contact-us-description">We will get back to you within 24 hours, or call us everyday 09:00AM - 10:00PM</h2>
+
+            </div>
+
+            <div class="col-md-7 right-column">
+
+
+                <h1 class="blue-big-font form-header">Send Us A Message</h1>
+                <p class="gray-description-font form-sub-header" >Please fill out the form below and our expert team will get back to you shortly.</p>
+
+                <form class="needs-validation" [formGroup]="form" (ngSubmit)="onSubmit()" novalidate>
+                    <div class="row">
+                      <div class="col-md-6 mb-3">
+                        <label for="firstName">First name <span>*</span></label>
+                        <input type="text" formControlName="firstName"  class="form-control" id="firstName" placeholder="First name here" value="" required="">
+                        <div>
+                          <div class="error-message-container">
+                            <div class="error" *ngIf="f['firstName'].touched && f['firstName'].invalid">
+                                <span *ngIf="f['firstName'].errors?.['required']">First name is required.</span>
+                                <span *ngIf="f['firstName'].errors?.['minlength']">Minimum 2 characters.</span>
+                              </div>
+                          </div>
+                        </div>
+
+
+                      </div>
+                      <div class="col-md-6 mb-3">
+                        <label for="lastName">Last name <span>*</span></label>
+                        <input type="text" formControlName="lastName" class="form-control" id="lastName" placeholder="Last name here" value="" required="">
+                        <div class="error-message-container">
+                        <div class="error" *ngIf="f['lastName'].touched && f['lastName'].invalid">
+                            <span>Last name is required.</span>
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+
+
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                          <label for="firstName">Email Address <span>*</span></label>
+                          <input type="email" formControlName="email"  class="form-control" id="firstName" placeholder="Add email" value="" required="">
+
+                          <div class="error-message-container">
+                            <div class="error" *ngIf="f['email'].touched && f['email'].invalid">
+                                <span *ngIf="f['email'].errors?.['required']">Email is required.</span>
+                                <span *ngIf="f['email'].errors?.['email']">Enter a valid email.</span>
+                              </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 mb-3">
+                          <label for="lastName">Subject<span>*</span></label>
+                          <input type="text" class="form-control" formControlName="subject"  id="subject" placeholder="How can we help you?" value="" required="">
+                          <div class="error-message-container">
+                            <div class="error" *ngIf="f['subject'].touched && f['subject'].invalid">
+                                <span>Subject is required.</span>
+                              </div>
+                            </div>
+                        </div>
+
+                      </div>
+        
+                      <div class="mb-3">
+                        <label for="exampleFormControlTextarea1" class="form-label">Comments / Questions <span>*</span></label>
+                        <textarea class="form-control"formControlName="comments"  id="exampleFormControlTextarea1" cols="30" rows="10" placeholder="Comments" ></textarea>
+                      
+                    
+                        <div class="error-message-container">
+
+                            <div class="error" *ngIf="f['comments'].touched && f['comments'].invalid">
+                                <span>Comments are required.</span>
+                              </div>
+                        </div>
+                        </div>
+        
+                
+                    <button class="btn btn-primary btn-lg form-submit-button" type="submit">Send Message</button>
+                  </form>
+
+
+
+
+
+            </div>
+
+
+
+
+
+
+    </div>
+
+
+
+    </div>
+
+    
+
+
+</div>

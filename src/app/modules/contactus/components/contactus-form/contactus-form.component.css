@@ -1,0 +1,178 @@
+.contact-us-from{
+
+  
+    margin-top: 120px;
+    height: auto;
+}
+
+.left-column{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-right: 50px;
+
+
+}
+
+.contact-details-item-header{
+
+    display: flex;
+    gap: 10px;
+    align-items: center;
+
+}
+
+.contact-details-item-header>span{
+
+    
+  color: #103371;
+  font-family: "Commissioner", Sans-serif;
+  font-size: 25px;
+  font-weight: 700;
+
+}
+
+.contact-details-item-header>i{
+
+    color: #f8ab13;
+    font-size: 25px;
+}
+
+
+
+.contact-us-description{
+    color: #103371;
+    font-family: "Commissioner", Sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+
+}
+
+
+
+/* right column related css*/
+
+.right-column{
+
+
+
+}
+
+
+/* form related css*/
+
+label{
+
+    color: #103371;
+    font-family: "Commissioner", Sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+input,textarea{
+
+
+    background-color: #eaecf1;
+    padding: 15px 24px 17px 24px;
+}
+
+/* css for placeholder in inout tag  */
+
+input::placeholder {
+    color: gray;
+    font-family: "Commissioner", Sans-serif;
+    font-size: 15px;
+    opacity: 1; /* Default is usually less than 1 */
+  }
+
+
+  textarea::placeholder {
+    color: gray;
+    font-family: "Commissioner", Sans-serif;
+    font-size: 15px;
+    opacity: 1; /* Default is usually less than 1 */
+  }
+
+
+  .error-message-container{
+
+    height: 15px;
+    margin: 0px;
+    padding: 0px;
+
+  }
+
+  .error>span{
+
+    font-size: 15px;
+    color: red;
+    font-family: "Commissioner", Sans-serif;
+
+
+
+  }
+
+label>span{
+
+    color: red;
+}
+
+.form-submit-button{
+    color: #FFFFFF;
+    padding: 15px 20px 15px 20px;
+    font-family: "Commissioner", Sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: var(--e-global-typography-accent-line-height);
+    background-color: #3c86cb;
+    border-style: none;
+    border-radius: 8px 8px 8px 8px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0);
+    width: 100%;
+
+}
+
+
+
+
+
+/*for desktop and laptop and all other big screen*/
+
+@media screen and (min-width: 1024px)  {}      
+
+
+/*for Tablet*/
+
+ @media screen and (max-width: 1024px) {} 
+
+ 
+ /*for mobile screen */
+ @media screen and (max-width: 600px) {
+
+  .left-column{
+
+    padding-right: 0px;
+
+
+}
+
+
+  .form-header{
+    text-align: center;
+  }
+
+  .form-sub-header{
+    text-align: center;
+  }
+
+  .right-column{
+
+   margin: 50px 0px 0px 0px;
+  }
+
+  form{
+
+    padding: 35px 15px 35px 15px;
+  }
+ } 
