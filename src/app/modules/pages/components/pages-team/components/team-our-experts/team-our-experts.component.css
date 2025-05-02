@@ -86,3 +86,30 @@
     transform: translateY(-8px); /* Moves the icon upward */
   
   }
+
+
+      /*for desktop and laptop and all other big screen*/
+
+      @media screen and (min-width: 1024px)  {}      
+
+
+      /*for Tablet*/
+   
+       @media screen and (max-width: 1024px) {
+
+        .card{
+          width: 50%;
+        }
+
+       } 
+   
+     
+       /*for mobile screen */
+       @media screen and (max-width: 600px) {
+
+        .card{
+          width: 100%;
+        }
+       } 
+   
+         

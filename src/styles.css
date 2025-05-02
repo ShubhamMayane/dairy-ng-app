@@ -55,10 +55,37 @@
 
 }
 
+
+
 .blue-button:hover{
     
   animation: updown 2.5s linear infinite;
 }
+
+
+
+.orange-button{
+
+  font-family: "Commissioner", Sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  fill: white;
+  color: white;
+  background-color: #f7a800;
+  border-radius: 0px 30px 0px 30px;
+  padding: 20px 40px 20px 40px;
+  border: none;
+  width: 100%;
+
+}
+
+
+.orange-button:hover{
+    
+  animation: updown 2.5s linear infinite;
+}
+
+
 
 
 

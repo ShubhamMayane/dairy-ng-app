@@ -164,7 +164,7 @@ gap: 10px;
 
 .column-3-button{
 
-    align-self: center;
+    align-self: flex-start;
 }
 
 
