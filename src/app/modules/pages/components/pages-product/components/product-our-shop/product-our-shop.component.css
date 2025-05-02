@@ -1,0 +1,289 @@
+.all-products{
+
+
+    height: auto;
+    padding: 20px;
+    margin-bottom: 80px;
+    margin-top: 150px;
+}    
+
+.products-card-container{
+
+    margin-bottom: 80px;
+
+
+}
+
+
+.products-card-container>h3{
+
+    text-align: center;
+    margin-bottom: 20px;  
+
+}
+
+.products-card-container>h1{
+
+    text-align: center;
+    margin-bottom: 30px;   
+}
+
+.products-card-container>p{
+
+    text-align: center;
+    margin-bottom: 50px;   
+}
+
+
+.card{
+
+    box-shadow: 0px 15px 20px 0px rgba(0, 0, 0, 0.1);
+    padding: 30px 30px 30px 30px;
+    border-radius: 20px;
+    width: 23%;
+    margin-bottom: 30px;
+    border: none;
+}
+.products-card-row{
+
+    justify-content: space-between;
+
+}
+
+
+.card-blue{
+background-color: #103371;
+color: white;
+}
+
+.card-white{
+
+background-color: white;
+color: #103371;
+}
+.price{
+
+   
+    font-family: "Commissioner", Sans-serif;
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 1.6em ;
+    margin: 0px;
+}
+
+
+
+.card>.card-content{
+
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+
+}
+
+.card>.card-content>img
+{
+    height: auto;
+    max-width: 100%;
+    border: none;
+    box-shadow: none;
+
+}
+
+
+
+/* css for blue card  */
+
+.card-blue-price{
+
+    color: #f8ab13;
+}
+
+
+.card-blue>.card-content>h1{
+    color: white;
+    margin: 0px 0px 0px 0px;
+    font-family: "Commissioner", Sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+
+} 
+
+.card-blue>.card-content>p{
+
+    color: white;
+    font-family: "Commissioner", Sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    
+}
+
+/* css for white  card  */
+.card-white-price{
+
+    color: #1c3270;
+}
+
+
+.card-white>.card-content>h1{
+    color: #1c3270;
+    margin: 0px 0px 0px 0px;
+    font-family: "Commissioner", Sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+
+} 
+.card-white>.card-content>p{
+
+    color: #7a7a7a;
+
+    font-family: "Commissioner", Sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+
+
+
+
+.card>.card-content>p{
+    
+} 
+
+.price-and-cart-container{
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-icon{
+
+
+padding: 15px 15px 15px 15px;
+background-color: #1A4085;
+border-radius: 8px 8px 8px 8px;
+max-width: 25%;
+text-align: center;
+width: 25%;
+max-width: 25%;
+
+}
+
+.card-icon>i{
+
+    cursor: pointer !important;
+    color: white;
+    font-size: 25px;
+}
+
+.card-icon:hover{
+
+   background-color: #4d84c9;
+}
+
+
+.card-icon>i:hover{
+
+    cursor: pointer !important;
+    color: #1A4085;
+}
+
+
+/* --------------------------------------------------------------------------------------------------------------- */
+
+/* Applyting css for rating stars  */
+
+/* Target filled stars */
+
+/* css for the star jyala golder color applied aahe  */
+::ng-deep rating .bs-rating-star.active {
+    color: #f7a436; /* Or any custom color */
+    font-size: 20px;
+  }
+  
+  /* Target empty stars */
+  /* css for the star jyala golder color applied nahiye  */
+  ::ng-deep rating .bs-rating-star {
+    color: lightgray;
+    font-size: 20px;
+  }
+
+  .rating-section{
+
+    display: flex;
+    gap: 10px;
+    align-items: center;
+  }
+
+  .rating-count{
+
+    color: #f7a436;
+ 
+    font-family: "Commissioner", Sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+  
+
+  }
+/* --------------------------------------------------------------------------------------------------------------- */
+.button-section{
+    display: flex;
+    justify-content: center;
+}
+
+.button-section>button:hover{
+
+    animation: updown 2.5s linear infinite;
+
+}
+
+
+
+
+
+/*for desktop and laptop and all other big screen*/
+
+    @media screen and (min-width: 1024px)  {}      
+
+
+   /*for Tablet*/
+
+    @media screen and (max-width: 1024px) {
+
+        .card{
+
+            width: 48%;
+        }
+
+        
+        .products-card-row{
+
+            gap: 20px;
+        }
+
+    } 
+
+	
+    /*for mobile screen */
+    @media screen and (max-width: 600px) {
+
+
+        .all-products{
+            margin-bottom: 30px;
+
+        }
+        .card{
+
+            width: 100%;
+        }
+
+        .products-card-row{
+
+            gap: 30px;
+        }
+       
+    } 
+
+      
+    

@@ -1,0 +1,122 @@
+<div class="container-fluid pages-faq">
+
+
+    <div class="row pages-faq-row">
+
+        <div class="col-md-7 left-column">
+
+            <h2 class="yellow-text accordion-container-heading">Have a Question?</h2>
+            <h1 class="blue-big-font accordion-container-sub-heading">General Questions</h1>
+
+            <div class="custom-accordion">
+                
+                
+                <div class="accordion-item">
+                    <div class="accordion-header" 
+                    (click)="toggleSection(1)">
+                    <span>What types of services do you provide?</span>
+                    <span class="accordion-header-icon">{{ activeIndex === 1 ? '−' : '+' }}</span>
+               </div>
+                  <div class="accordion-body" [class.show]="activeIndex === 1">
+                    <p class="gray-description-font">
+                      
+                        Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast                        
+                    </p>
+                  </div>
+                </div>
+
+                <div class="accordion-item">
+                    <div class="accordion-header" 
+                    (click)="toggleSection(2)">
+                    <span>What are your terms and conditions?</span>
+                    <span class="accordion-header-icon">{{ activeIndex === 2 ? '−' : '+' }}</span>
+               </div>
+                  <div class="accordion-body" [class.show]="activeIndex === 2">
+                    <p class="gray-description-font">
+                      
+                        Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast                        
+                    </p>
+                  </div>
+                </div>
+
+                <div class="accordion-item">
+                    <div class="accordion-header" 
+                    (click)="toggleSection(3)">
+                    <span>If I call in for service on sunday will it cost me more? </span>
+                    <span class="accordion-header-icon">{{ activeIndex === 3 ? '−' : '+' }}</span>
+               </div>
+                  <div class="accordion-body" [class.show]="activeIndex === 3">
+                    <p class="gray-description-font">
+                      
+                        Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast                        
+                    </p>
+                  </div>
+                </div>
+
+                <div class="accordion-item">
+                    <div class="accordion-header" 
+                    (click)="toggleSection(4)">
+                    <span>How long will it take to complete the project?</span>
+                    <span class="accordion-header-icon">{{ activeIndex === 4 ? '−' : '+' }}</span>
+               </div>
+                  <div class="accordion-body" [class.show]="activeIndex === 4">
+                    <p class="gray-description-font">
+                      
+                        Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast                        
+                    </p>
+                  </div>
+                </div>
+
+                <div class="accordion-item">
+                    <div class="accordion-header" 
+                    (click)="toggleSection(5)">
+                    <span>How long will it take to complete the project?</span>
+                    <span class="accordion-header-icon">{{ activeIndex === 5 ? '−' : '+' }}</span>
+               </div>
+                  <div class="accordion-body" [class.show]="activeIndex === 5">
+                    <p class="gray-description-font">
+                      
+                        Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast                        
+                    </p>
+                  </div>
+                </div>
+
+                <div class="accordion-item">
+                    <div class="accordion-header" 
+                    (click)="toggleSection(6)">
+                    <span>Can we customize according to our needs?</span>
+                    <span class="accordion-header-icon">{{ activeIndex === 6 ? '−' : '+' }}</span>
+               </div>
+                  <div class="accordion-body" [class.show]="activeIndex === 6">
+                    <p class="gray-description-font">
+                      
+                        Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast                        
+                    </p>
+                  </div>
+                </div>
+
+
+            </div>
+            
+
+            <button class="blue-button">Additional Question</button>
+              
+
+
+
+        </div>
+
+        <div class="col-md-5 right-column">
+
+            
+
+
+            
+        </div>
+
+
+    </div>
+
+  
+
+</div>

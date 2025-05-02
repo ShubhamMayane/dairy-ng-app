@@ -1,0 +1,137 @@
+.pages-faq{
+
+    margin-top: 150px;
+
+
+}
+.left-column{
+
+   padding: 0px 50px 0px 150px;
+}
+
+.right-column{
+
+   
+   
+    background-image: url("../../../../../../../../public/images/background-images/looking-after-cows-resize.jpg");
+    background-size: cover;
+    background-position:center;
+    background-repeat: no-repeat; 
+     
+
+
+}
+.custom-accordion{
+
+    margin-bottom: 25px;
+
+}
+
+
+
+  .accordion-item {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 8px;
+    overflow: hidden;
+  }
+  
+  .accordion-header {
+    background-color: #f7f9fb;
+    color: #103371;
+    font-family: "Commissioner", Sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+      
+    padding: 15px 10px 15px 5px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px !important;
+    user-select: none;
+
+    
+  }
+  
+  .accordion-header-icon {
+    font-size: 35px;
+    font-weight: 150;
+    color: #103371;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+    display: inline-block;
+  }
+  
+  /* Rotate the icon on open (you could instead change character if preferred) */
+  .accordion-header.open .icon {
+    transform: rotate(180deg);
+  }
+  
+  /* Accordion body slide effect */
+  .accordion-body {
+    max-height: 0;
+    overflow: hidden;
+    background-color: white;
+    padding: 0 20px;
+    transition: max-height 0.4s ease, padding 0.3s ease;
+  }
+  
+  .accordion-body.show {
+    padding: 15px 20px;
+    max-height: 200px; /* adjust based on expected content height */
+  }
+  
+    /*for desktop and laptop and all other big screen*/
+
+    @media screen and (min-width: 1024px)  {}      
+
+
+   /*for Tablet*/
+
+    @media screen and (max-width: 1024px) {
+
+        .left-column{
+
+            width: 100%;
+            padding: 0px 20px 0px 20px;
+            margin-bottom: 50px;
+        }
+
+        
+
+        .right-column{
+
+            height: 400px;
+            width: 100%;
+           
+            background-position: center center;
+            background-size: cover;
+
+            
+        }
+
+    } 
+
+	
+    /*for mobile screen */
+    @media screen and (max-width: 600px) {
+
+      .pages-faq {
+        margin-top: 100px;
+    }
+    
+  
+      .accordion-container-heading{
+
+        text-align: center;
+
+      }
+      
+      .accordion-container-sub-heading{
+        
+        text-align: center;
+      
+      }
+    } 
+
+      
