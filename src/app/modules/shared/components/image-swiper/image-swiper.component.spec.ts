@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { BlogPostComponent } from './blog-post.component';
+import { ImageSwiperComponent } from './image-swiper.component';
 
-describe('BlogPostComponent', () => {
-  let component: BlogPostComponent;
-  let fixture: ComponentFixture<BlogPostComponent>;
+describe('ImageSwiperComponent', () => {
+  let component: ImageSwiperComponent;
+  let fixture: ComponentFixture<ImageSwiperComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [BlogPostComponent]
+      imports: [ImageSwiperComponent]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(BlogPostComponent);
+    fixture = TestBed.createComponent(ImageSwiperComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
