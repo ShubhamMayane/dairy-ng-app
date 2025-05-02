@@ -1,8 +1,10 @@
-<app-header-contact-details></app-header-contact-details> 
-<app-navbar></app-navbar>
+<!-- <app-header-contact-details></app-header-contact-details>   -->
+ <app-navbar *ngIf="!isMobile"></app-navbar>
+ <app-mobile-navbar *ngIf="isMobile"></app-mobile-navbar>
 
+<!-- 
  <router-outlet></router-outlet>
 
  <app-banner></app-banner>
 
-<app-footer></app-footer>
+<app-footer></app-footer> -->

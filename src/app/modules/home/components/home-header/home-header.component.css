@@ -93,7 +93,14 @@ opacity: 0.8;
     z-index: 999;
     max-width: 1000px;
     align-items: center;
-   
+
+
+}
+
+.youtube-channel-link-div{
+
+    text-decoration: none;
+    cursor: pointer;
 
 }
 
@@ -249,15 +256,15 @@ opacity: 0.8;
 
 
     
-    .play-button {
+    .play-button{
 
         height: 100px;
         width: 100px;
-        border: 1px solid white;
-        background-color: white;
+      
         display: flex;
         justify-content: center;
         align-items: center;
+        cursor: pointer;
 
     }
 

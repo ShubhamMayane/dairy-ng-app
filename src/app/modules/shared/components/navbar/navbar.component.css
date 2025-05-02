@@ -2,12 +2,17 @@
 
 
 
-nav{
+.big-screen-nav-bar{
 
     position: relative;
     height: 10vh;
     /* border: 1px solid black; */
 
+}
+
+.big-screen-navbar-nav{
+
+  gap: 25px;
 }
 
 .navbar-btn{
