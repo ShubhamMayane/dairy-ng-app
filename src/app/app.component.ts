@@ -1,4 +1,4 @@
-import { Component, Inject, PLATFORM_ID, HostListener, OnInit } from '@angular/core';
+import { Component, Inject, PLATFORM_ID, HostListener, OnInit,AfterViewInit} from '@angular/core';
 import { isPlatformBrowser, CommonModule } from '@angular/common';
 import { RouterOutlet } from '@angular/router';
 
@@ -7,6 +7,10 @@ import { NavbarComponent } from "./modules/shared/components/navbar/navbar.compo
 import { FooterComponent } from "./modules/shared/components/footer/footer.component";
 import { BannerComponent } from './modules/shared/components/banner/banner.component';
 import { MobileNavbarComponent } from "./modules/shared/components/mobile-navbar/mobile-navbar.component";
+
+import { Injectable } from '@angular/core';
+
+import AOS from 'aos';
 
 @Component({
   selector: 'app-root',
@@ -23,7 +27,7 @@ import { MobileNavbarComponent } from "./modules/shared/components/mobile-navbar
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
-export class AppComponent implements OnInit {
+export class AppComponent implements OnInit,AfterViewInit {
   title = 'dairy-ng-app';
   isMobile: boolean = false;
   isBrowser: boolean;
@@ -33,10 +37,16 @@ export class AppComponent implements OnInit {
   }
 
   ngOnInit() {
+
     if (this.isBrowser) {
       this.checkScreenSize();
     }
   }
+
+  ngAfterViewInit(): void {
+    this.initAOS();
+  }
+
 
   @HostListener('window:resize', [])
   onResize() {
@@ -51,4 +61,13 @@ export class AppComponent implements OnInit {
       console.log('isMobile:', this.isMobile);
     }
   }
+
+  initAOS() {
+    if (isPlatformBrowser(this.platformId)) {
+      import('aos').then((AOS) => AOS.init());
+    }
+
+  
+
+}
 }

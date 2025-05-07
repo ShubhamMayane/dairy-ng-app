@@ -7,3 +7,13 @@ h1{
 i{
     font-size: 100px;
 }
+
+/* src/app/app.component.scss */
+.animated-item {
+    margin: 10px;
+    padding: 20px;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    height: 50vh;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
