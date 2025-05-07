@@ -12,10 +12,10 @@
       <div class="collapse navbar-collapse" >
         <ul class="navbar-nav big-screen-navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" routerLink="/" href="#">Home</a>
+            <a class="nav-link active" aria-current="page" routerLink="/home"   routerLinkActive="active-link"href="#">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" aria-current="page" routerLink="/about-us" href="#">About us</a>
+            <a class="nav-link" aria-current="page" routerLink="/about-us"  routerLinkActive="active-link" href="#">About us</a>
           </li>
              <!-- Pages Dropdown -->
             <li class="nav-item dropdown" [ngClass]="{show: pagesHovered}" (mouseenter)="pagesHovered = true"
@@ -24,10 +24,10 @@
                 Pages <i class="fa fa-angle-down" style="font-size: 15px;"></i>
             </a>
             <ul class="dropdown-menu custom-dropdown" [class.show]="pagesHovered">
-                <li><a class="dropdown-item" href="#" routerLink="/pages/faq">FAQ</a></li>
-                <li><a class="dropdown-item" href="#" routerLink="/pages/product">Product</a></li>
-                <li><a class="dropdown-item" href="#" routerLink="/pages/team">Team</a></li>
-                <li><a class="dropdown-item" href="#" routerLink="/pages/pricing">Pricing</a></li>
+                <li><a class="dropdown-item" href="#" routerLink="/pages/faq"  routerLinkActive="dropdown-active-link">FAQ</a></li>
+                <li><a class="dropdown-item" href="#" routerLink="/pages/product"  routerLinkActive="dropdown-active-link">Product</a></li>
+                <li><a class="dropdown-item" href="#" routerLink="/pages/team"  routerLinkActive="dropdown-active-link">Team</a></li>
+                <li><a class="dropdown-item" href="#" routerLink="/pages/pricing"  routerLinkActive="dropdown-active-link">Pricing</a></li>
             </ul>
             </li>
 
@@ -38,13 +38,13 @@
                 Blog <i class="fa fa-angle-down"  style="font-size: 15px;"></i>
             </a>
             <ul class="dropdown-menu custom-dropdown" [class.show]="blogHovered">
-                <li><a class="dropdown-item" href="#"  routerLink="/blog">Single Post</a></li>
+                <li><a class="dropdown-item" href="#"  routerLink="/blog"  routerLinkActive="dropdown-active-link">Single Post</a></li>
             </ul>
             </li>
 
 
             <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="#" routerLink="/contact-us">Contact</a>
+                <a class="nav-link" aria-current="page" href="#" routerLink="/contact-us"  routerLinkActive="active-link">Contact</a>
             </li>
 
         </ul>
@@ -55,7 +55,7 @@
     </div>
  
     <!-- Desktop view Get Free Quote -->
-    <button href="#" class="navbar-btn d-none d-lg-inline-block ms-auto">Get Free Quote <i class="fa fa-arrow-right right-arrow"></i></button>
+    <button href="#" class="navbar-btn">Get Free Quote <i class="fa fa-arrow-right right-arrow"></i></button>
 
   </nav> 
 
