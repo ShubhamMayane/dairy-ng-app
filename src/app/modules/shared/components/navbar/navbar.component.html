@@ -20,7 +20,7 @@
              <!-- Pages Dropdown -->
             <li class="nav-item dropdown" [ngClass]="{show: pagesHovered}" (mouseenter)="pagesHovered = true"
                 (mouseleave)="pagesHovered = false">
-            <a class="nav-link" href="#" id="pagesDropdown">
+            <a class="nav-link" href="#" id="pagesDropdown"  routerLinkActive="dropdown-active-link">
                 Pages <i class="fa fa-angle-down" style="font-size: 15px;"></i>
             </a>
             <ul class="dropdown-menu custom-dropdown" [class.show]="pagesHovered">
