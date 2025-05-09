@@ -10,7 +10,7 @@ import { MobileNavbarComponent } from "./modules/shared/components/mobile-navbar
 
 import { Injectable } from '@angular/core';
 
-import AOS from 'aos';
+import * as AOS from 'aos';
 
 @Component({
   selector: 'app-root',
@@ -27,7 +27,7 @@ import AOS from 'aos';
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
-export class AppComponent implements OnInit,AfterViewInit {
+export class AppComponent implements OnInit {
   title = 'dairy-ng-app';
   isMobile: boolean = false;
   isBrowser: boolean;
@@ -41,11 +41,16 @@ export class AppComponent implements OnInit,AfterViewInit {
     if (this.isBrowser) {
       this.checkScreenSize();
     }
+
+    if (isPlatformBrowser(this.platformId)) {
+      AOS.init({
+        // duration: 1000,   // set aos-duration=1000 to all element jyanna aapan aos che animation lavala aahe
+        once: true           // yane kay hoil ki sarva elements he ekdach animate kele jatil
+      });
+
+  }
   }
 
-  ngAfterViewInit(): void {
-    this.initAOS();
-  }
 
 
   @HostListener('window:resize', [])
@@ -62,12 +67,5 @@ export class AppComponent implements OnInit,AfterViewInit {
     }
   }
 
-  initAOS() {
-    if (isPlatformBrowser(this.platformId)) {
-      import('aos').then((AOS) => AOS.init());
-    }
-
-  
-
-}
+ 
 }
