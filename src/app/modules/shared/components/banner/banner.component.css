@@ -114,6 +114,7 @@
         {
             height: auto;
             background-position:bottom center ;
+            margin-top: 0px;
         }
 
         .left-column
@@ -142,6 +143,7 @@
 
                     height: auto;
                     background-position:bottom center ;
+                    margin-top: 0px;
                }
 
                .left-column{

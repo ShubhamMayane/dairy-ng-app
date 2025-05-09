@@ -4,7 +4,7 @@
     display: flex;
     align-items: center;
   background-color: #F0FCFF;
-  padding: 250px 0px 200px 0px;
+  padding: 120px 0px 200px 0px;
   position: relative;
   
   top:-70px;
@@ -35,10 +35,11 @@
 
 .column-right{
 
-    padding: 40px 50px 10px 50px;
+   
     box-shadow: 10px 15px 20px 0px rgba(0, 0, 0, 0.1);
     background-color: white;
     
+    padding: 0px !important;
 }
 
 
@@ -58,7 +59,12 @@
         align-items: center;
         justify-content: center;
         gap: 15px;
+       
     }
+
+
+
+
     .circle-container {
         width: 70px;
         height: 70px;
@@ -69,6 +75,7 @@
         justify-content: center;
         align-items: center;
         box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        margin-top: 10px;
       }
   
       .circle-container img {
@@ -80,9 +87,44 @@
 
       .card-container>p{
         text-align: center;
-
+        padding: 15px;
 
       } 
+
+
+      .my-swiper-container{
+
+    
+        position: relative;
+        height: 100%;
+
+      }
+
+
+
+      .top-right-icon-container{
+
+        position: absolute;
+        height: 70px;
+        width: 70px;
+       
+        top: 0px;
+        right:0px;
+        border-bottom-left-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #1c3270;
+    
+    }
+    
+    .top-right-icon-container>i{
+    
+       
+    color: white;
+    font-size: 30px;
+    
+    }
 
       swiper-container {
         width: 100%;

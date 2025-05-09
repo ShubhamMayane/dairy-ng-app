@@ -42,6 +42,30 @@ border: 0.5px;
 
 }
 
+.top-right-icon-container{
+
+    position: absolute;
+    height: 70px;
+    width: 70px;
+   
+    top: 0px;
+    right: 0px;
+    border-bottom-left-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1c3270;
+
+}
+
+.top-right-icon-container>i{
+
+   
+color: white;
+font-size: 30px;
+
+}
+
 .card-content{
 
 
@@ -54,6 +78,7 @@ border: 0.5px;
 .card-content>p{
 
     text-align: center;
+   
 }
 
 .card-content>i{

@@ -5,14 +5,14 @@ import { HomeServicesComponent } from "./components/home-services/home-services.
 import { HomeAllProductsComponent } from './components/home-all-products/home-all-products.component';
 import { HomeOurAdvantagesComponent } from "./components/home-our-advantages/home-our-advantages.component";
 import { HomeOurProgramsComponent } from "./components/home-our-programs/home-our-programs.component";
-import { HomeOurGallaryComponent } from "./components/home-our-gallery/home-our-gallery.component";
+
 import { HomeTestimonialsComponent } from "./components/home-testimonials/home-testimonials.component";
 import { HomeBlogAndNewsComponent } from "./components/home-blog-and-news/home-blog-and-news.component";
-
+import { PhotoGallaryComponent } from '../shared/components/photo-gallery/photo-gallery.component';
 
 @Component({
   selector: 'app-home',
-  imports: [HomeHeaderComponent, HomeAboutusComponent, HomeServicesComponent, HomeAllProductsComponent, HomeOurAdvantagesComponent, HomeOurProgramsComponent, HomeOurGallaryComponent, HomeTestimonialsComponent, HomeBlogAndNewsComponent],
+  imports: [HomeHeaderComponent, HomeAboutusComponent, HomeServicesComponent, HomeAllProductsComponent, HomeOurAdvantagesComponent, HomeOurProgramsComponent, HomeTestimonialsComponent, HomeBlogAndNewsComponent, PhotoGallaryComponent],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
 })

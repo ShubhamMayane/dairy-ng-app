@@ -43,13 +43,19 @@ export class HomeTestimonialsComponent  implements OnInit, OnDestroy {
 
   // Method to apply or remove attributes based on window size
   private updateAttributes(width: number): void {
-    const element = this.el.nativeElement.querySelector('.myCompaniesSwiper');
+    const companySlider = this.el.nativeElement.querySelector('.myCompaniesSwiper');
+    const feedbackSlider=this.el.nativeElement.querySelector('.mySwiper');
+    
     if (width >= 1024) {
-      this.renderer.setAttribute(element, 'slides-per-view', '5');
-      this.renderer.setAttribute(element, 'slides-per-group', '5');
+      this.renderer.setAttribute(companySlider, 'slides-per-view', '5');
+      this.renderer.setAttribute(companySlider, 'slides-per-group', '5');
+      this.renderer.setAttribute(feedbackSlider, 'navigation','true');
+
     } else {
-      this.renderer.setAttribute(element, 'slides-per-view', '2');
-      this.renderer.setAttribute(element, 'slides-per-group', '2');
+      this.renderer.setAttribute(companySlider, 'slides-per-view', '2');
+      this.renderer.setAttribute(companySlider, 'slides-per-group', '2');
+      this.renderer.setAttribute(feedbackSlider, 'navigation','false');
+    
     }
   }
 

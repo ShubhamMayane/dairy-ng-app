@@ -136,6 +136,21 @@ margin-top: 30px;
 }
     
 
+
+@keyframes updown {
+  0%   { transform: translateY(0); }
+  25%  { transform: translateY(-10px); }
+  50%  { transform: translateY(0); }
+  75%  { transform: translateY(-10px); }
+  100% { transform: translateY(0); }
+}
+
+.quote-btn:hover{
+  animation: updown 2.5s linear infinite;
+
+}
+
+
   /* //for desktop and laptop and all other big screen */
   @media screen and (min-width: 1024px)  {}  
     
