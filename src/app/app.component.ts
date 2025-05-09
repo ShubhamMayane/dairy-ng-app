@@ -63,7 +63,7 @@ export class AppComponent implements OnInit {
 
   checkScreenSize() {
     if (this.isBrowser) {
-      this.isMobile = window.innerWidth < 1024;
+      this.isMobile = window.innerWidth <=1024;
       console.log('isMobile:', this.isMobile);
     }
     else{
