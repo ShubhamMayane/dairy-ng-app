@@ -225,6 +225,7 @@ opacity: 0.8;
         font-size: 14px;
         font-weight: 600;
         color: #3c86cb;
+        text-decoration: none;
     }
 
     .card-left-section>a:hover {

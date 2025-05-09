@@ -145,6 +145,10 @@ width: 100%;
 
 }
 
+.animated-link:hover{
+
+  animation: updown 2.5s linear infinite;
+}
 
 
 
