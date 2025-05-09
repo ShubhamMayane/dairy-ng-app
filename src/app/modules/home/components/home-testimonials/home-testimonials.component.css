@@ -213,6 +213,18 @@
       }
       
 
+        .left-column-content{
+
+          text-align: center;
+      
+      }
+      
+      .left-column-content>button{
+      
+          align-self: center;
+      
+      }
+
      } 
  
        

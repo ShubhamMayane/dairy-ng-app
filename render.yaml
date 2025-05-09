@@ -1,0 +1,6 @@
+services:
+  - type: static
+    name: angular-app
+    env: static
+    buildCommand: npm run build -- --configuration=production
+    staticPublishPath: dist/dairy-ng-app
