@@ -29,8 +29,10 @@ export class ContactusFormComponent {
     if (this.form.valid) {
       console.log('Form Submitted:', this.form.value);
       alert("We will get back to you soon....")
+      this.form.reset(); //this is a logic to clear all entered data in the form
     } else {
       this.form.markAllAsTouched();
+      
     }
   }
 }
