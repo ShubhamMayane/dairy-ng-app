@@ -53,6 +53,7 @@ export class AppComponent implements OnInit {
 
 
 
+//event handler function which gets called when you resize the browser size
   @HostListener('window:resize', [])
   onResize() {
     if (this.isBrowser) {
@@ -64,6 +65,10 @@ export class AppComponent implements OnInit {
     if (this.isBrowser) {
       this.isMobile = window.innerWidth < 1024;
       console.log('isMobile:', this.isMobile);
+    }
+    else{
+
+      this.isMobile=false;
     }
   }
 

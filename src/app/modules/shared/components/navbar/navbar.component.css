@@ -151,12 +151,21 @@ margin-top: 30px;
 }
 
 
+
+
+
   /* //for desktop and laptop and all other big screen */
   @media screen and (min-width: 1024px)  {}  
     
 
   /* //for Tablet */
-  @media screen and (max-width: 1024px) {}
+  @media screen and (max-width: 1024px) {
+
+  .quote-btn{
+    display: none;
+  }
+
+  }
 
 
   /* //for mobile screen  */
