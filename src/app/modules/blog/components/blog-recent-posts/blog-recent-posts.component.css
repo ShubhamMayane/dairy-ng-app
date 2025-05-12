@@ -1,3 +1,6 @@
+@import url('../../../../../../public/css/components/button.style.css');
+@import url('../../../../../../public/css/components/fonts.style.css');
+
 .blog-and-news-container{
 
 
@@ -25,16 +28,6 @@
     
 }
 
-.blog-and-news>h1{
-
-    text-align: left;
-    color: #103371;
-    font-family: "Commissioner", Sans-serif;
-    font-size: 45px;
-    font-weight: 700;
-    line-height: 1.4em;
-    
-}
 
 
 .card{
@@ -70,7 +63,7 @@
     text-align: left;
     color: #103371;
     font-family: "Commissioner", Sans-serif;
-    font-size: 25px;
+    font-size: 14px;
     font-weight: 600;
     line-height: 1.4em;
     background-color: white;
@@ -117,60 +110,19 @@
     font-weight:600;
     background-color: #02010100;
     text-decoration: none;
+     transition: color 0.3s ease;
+}
+
+
+.card-body>a:hover {
+  color: #f1ad2a; /* Color on hover */
 }
 
 
 
 
 
-/* code for column-3  */
 
-.column-3{
-
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
-
-}
-
-.column-3>h1{
-
-
-}
-
-.column-3>p{
-
-
-}
-
-.icon{
-
-    color: #7a7a7a;
-
-}
-
-
-.column-3-card-header{
-
-    font-family: "Commissioner", Sans-serif;
-    font-size:20px;
-    font-weight: 600;
-    color: #103371;
-   
-
-}
-
-.column-3-card-content{
-
-display: flex;
-align-items: center;
-gap: 10px;
-}
-
-.column-3-button{
-
-    align-self: flex-start;
-}
 
 
     /*for desktop and laptop and all other big screen*/

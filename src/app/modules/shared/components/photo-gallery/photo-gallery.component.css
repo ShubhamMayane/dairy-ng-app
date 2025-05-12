@@ -1,4 +1,7 @@
   
+@import url('../../../../../../public/css/components/fonts.style.css');
+@import url('../../../../../../public/css/components/button.style.css');
+  
   .our-gallery{
 
    
@@ -132,7 +135,14 @@
 
 	
     /*for mobile screen */
-    @media screen and (max-width: 600px) {} 
+    @media screen and (max-width: 600px) {
+
+      .big-img-text>h3
+      {
+          font-size: 25px;
+      }
+
+    } 
 
       
     

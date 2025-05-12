@@ -13,7 +13,7 @@
                 
                 
                 <div class="accordion-item">
-                    <div class="accordion-header" 
+                   <div class="accordion-header" [ngClass]="{ 'active-accordion-header': activeIndex === 1 }"
                     (click)="toggleSection(1)">
                     <span>What types of services do you provide?</span>
                     <span class="accordion-header-icon">{{ activeIndex === 1 ? '−' : '+' }}</span>
@@ -27,7 +27,7 @@
                 </div>
 
                 <div class="accordion-item">
-                    <div class="accordion-header" 
+                    <div class="accordion-header" [ngClass]="{ 'active-accordion-header': activeIndex === 2 }"
                     (click)="toggleSection(2)">
                     <span>What are your terms and conditions?</span>
                     <span class="accordion-header-icon">{{ activeIndex === 2 ? '−' : '+' }}</span>
@@ -41,7 +41,7 @@
                 </div>
 
                 <div class="accordion-item">
-                    <div class="accordion-header" 
+                    <div class="accordion-header"  [ngClass]="{ 'active-accordion-header': activeIndex === 3 }"
                     (click)="toggleSection(3)">
                     <span>If I call in for service on sunday will it cost me more? </span>
                     <span class="accordion-header-icon">{{ activeIndex === 3 ? '−' : '+' }}</span>
@@ -55,7 +55,7 @@
                 </div>
 
                 <div class="accordion-item">
-                    <div class="accordion-header" 
+                    <div class="accordion-header" [ngClass]="{ 'active-accordion-header': activeIndex === 4 }"
                     (click)="toggleSection(4)">
                     <span>How long will it take to complete the project?</span>
                     <span class="accordion-header-icon">{{ activeIndex === 4 ? '−' : '+' }}</span>
@@ -69,7 +69,7 @@
                 </div>
 
                 <div class="accordion-item">
-                    <div class="accordion-header" 
+                    <div class="accordion-header"  [ngClass]="{ 'active-accordion-header': activeIndex === 5 }"
                     (click)="toggleSection(5)">
                     <span>How long will it take to complete the project?</span>
                     <span class="accordion-header-icon">{{ activeIndex === 5 ? '−' : '+' }}</span>
@@ -83,11 +83,12 @@
                 </div>
 
                 <div class="accordion-item">
-                    <div class="accordion-header" 
-                    (click)="toggleSection(6)">
-                    <span>Can we customize according to our needs?</span>
-                    <span class="accordion-header-icon">{{ activeIndex === 6 ? '−' : '+' }}</span>
-               </div>
+                    <div class="accordion-header"  [ngClass]="{ 'active-accordion-header': activeIndex === 6 }"
+                      (click)="toggleSection(6)">
+             
+                      <span>Can we customize according to our needs?</span>
+                      <span class="accordion-header-icon">{{ activeIndex === 6 ? '−' : '+' }}</span>
+                    </div>
                   <div class="accordion-body" [class.show]="activeIndex === 6">
                     <p class="gray-description-font">
                       

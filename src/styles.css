@@ -1,18 +1,18 @@
 /* You can add global styles to this file, and also import other style files */
 
 /* updadown animation  */
-@keyframes updown {
+/* @keyframes updown {
     0%   { transform: translateY(0); }
     25%  { transform: translateY(-10px); }
     50%  { transform: translateY(0); }
     75%  { transform: translateY(-10px); }
     100% { transform: translateY(0); }
-  }
+  } */
 
 
 
   /* css for font styles  start */
-
+/* 
 .yellow-text{
 
   color: #f8ab13;
@@ -20,10 +20,10 @@
   font-size: 22px;
   font-weight: 500;
   line-height: 0.5em;
-}
+} */
 
 
-.blue-big-font{
+/* .blue-big-font{
 
   color: #103371;
   font-family: "Commissioner", Sans-serif;
@@ -38,8 +38,8 @@
   font-weight: 400;
   font-size: 15px;
   
-}
-
+} */
+/* 
 
 .blue-button{
 
@@ -54,6 +54,7 @@
   border: none;
 
 }
+  
 
 
 
@@ -61,32 +62,11 @@
     
   animation: updown 2.5s linear infinite;
 }
+ */
 
 
 
-.orange-button{
-
-  font-family: "Commissioner", Sans-serif;
-  font-size: 14px;
-  font-weight: 600;
-  fill: white;
-  color: white;
-  background-color: #f7a800;
-  border-radius: 0px 30px 0px 30px;
-  padding: 20px 40px 20px 40px;
-  border: none;
-  width: 100%;
-
-}
-
-
-.orange-button:hover{
-    
-  animation: updown 2.5s linear infinite;
-}
-
-
-
+/* 
 
 
 .big-white-text{
@@ -96,7 +76,7 @@
   font-size: 45px;
   font-weight: 700;
 
-}
+} */
 
   /* css for font styles  end */
 

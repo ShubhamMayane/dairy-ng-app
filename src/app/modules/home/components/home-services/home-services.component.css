@@ -1,4 +1,7 @@
-   .our-services{
+@import url('../../../../../../public/css/components/fonts.style.css');
+@import url('../../../../../../public/css/components/button.style.css');
+
+.our-services{
 
         height: auto;
        margin-bottom: 120px;
@@ -58,10 +61,6 @@
      align-self: flex-start;
    }
 
-   .column-2-content>button:hover{
-    
-     animation: updown 2.5s linear infinite;
- }
 
 
 

@@ -1,5 +1,5 @@
 
-
+@import url('../../../../../../public/css/components/button.style.css');
 
 
 .big-screen-nav-bar{
@@ -22,11 +22,7 @@ margin-top: 30px;
     position: absolute;
     right: 0px;
     top: 0px;
-    background-color: #3c86cb;
-    border-radius: 0px 30px 0px 30px;
-    padding: 20px 40px 20px 40px;
-    color: white;
-    border: none;
+
 }
 .right-arrow{
 

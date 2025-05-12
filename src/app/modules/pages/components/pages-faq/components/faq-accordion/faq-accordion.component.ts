@@ -11,6 +11,11 @@ export class FaqAccordionComponent {
  // Tracks the open state of each accordion section
  activeIndex: number | null = 0;
 
+ constructor(){
+
+  this.toggleSection(1);
+ }
+
  toggleSection(index: number): void {
    this.activeIndex = this.activeIndex === index ? null : index;
  }

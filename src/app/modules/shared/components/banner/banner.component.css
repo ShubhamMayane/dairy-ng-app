@@ -1,3 +1,8 @@
+
+
+@import url('../../../../../../public/css/components/fonts.style.css');
+@import url('../../../../../../public/css/components/button.style.css');
+
 .banner-container{
 
 
@@ -32,25 +37,11 @@
 }
 
 
-.left-column>h1{
 
-    color: white;
-
-    font-family: "Commissioner", Sans-serif;
-    font-size:45px ;
-    font-weight: 700;
-  
-
-
-}
 
 .left-column>p{
 
     color: white;
-
-    font-family: "Commissioner", Sans-serif;
-    font-size:15px ;
-    font-weight: 400;
 }
 
 .left-column>button{

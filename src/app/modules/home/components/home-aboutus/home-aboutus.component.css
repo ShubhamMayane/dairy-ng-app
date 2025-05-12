@@ -1,4 +1,9 @@
 
+
+@import url('../../../../../../public/css/components/fonts.style.css');
+@import url('../../../../../../public/css/components/button.style.css');
+
+
 .aboutus-main-container{
 
     /* border: 1px solid black; */
@@ -137,30 +142,10 @@ color: #f8ab13;
 
 }
 
-.column-3>h3{
-    color: #f8ab13;
-    font-family: "Courgette", cursive;
-    font-size: 22px;
-    font-weight: 500;
-    line-height: 0.5em;
-
-}
-
-.column-3>h1{
-    color: #103371;
-    font-family: "Commissioner", Sans-serif;
-    font-size: 45px;
-    font-weight: 700;
-}
 
 
 
-.column-3>p{
 
-    color: #7a7a7a;
-    font-family: "Commissioner";
-    font-weight: 400;
-}
 
 
 .list-main-container{
@@ -191,15 +176,7 @@ color: #f8ab13;
 
 .column-3>button{
 
-    font-family: "Commissioner", Sans-serif;
-    font-size: 14px;
-    font-weight: 600;
-    fill: white;
-    color: white;
-    background-color: #3c86cb;
-    border-radius: 0px 30px 0px 30px;
-    padding: 20px 40px 20px 40px;
-    border: none;
+ 
     align-self: flex-start;
 }
 

@@ -1,0 +1,75 @@
+@keyframes updown {
+    0%   { transform: translateY(0); }
+    25%  { transform: translateY(-10px); }
+    50%  { transform: translateY(0); }
+    75%  { transform: translateY(-10px); }
+    100% { transform: translateY(0); }
+  }
+
+
+.yellow-text{
+
+  color: #f8ab13;
+  font-family: "Courgette", cursive;
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 0.5em;
+}
+
+
+.blue-big-font{
+
+  color: #1c3270;
+  font-family: "Commissioner", Sans-serif;
+  font-size: 45px;
+  font-weight: 700;
+
+}
+
+.blue-medium-font{
+
+    color: #1c3270;
+        margin: 0px 0px 0px 0px;
+        font-family: "Commissioner", Sans-serif;
+        font-size: 32px;
+        font-weight: 700;
+    
+}
+
+
+.big-white-text{
+
+  color: white;
+  font-family: "Commissioner", Sans-serif;
+  font-size: 45px;
+  font-weight: 700;
+
+}
+
+
+.gray-description-font{
+  color: #7a7a7a;
+  font-family: "Commissioner";
+  font-weight: 400;
+  font-size: 15px;
+  
+}
+
+
+
+.blue-link-text{
+
+
+
+        font-family: "Commissioner", Sans-serif;
+        font-size: 14px;
+        font-weight: 600;
+        color: #3c86cb;
+        text-decoration: none;
+
+}
+
+.blue-link-text:hover {
+        animation: updown 2.5s linear infinite;
+    }
+    

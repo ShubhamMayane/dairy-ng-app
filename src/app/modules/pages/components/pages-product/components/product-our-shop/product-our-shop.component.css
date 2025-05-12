@@ -1,3 +1,9 @@
+
+
+@import url('../../../../../../../../public/css/components/button.style.css');
+@import url('../../../../../../../../public/css/components/fonts.style.css');
+
+
 .all-products{
 
 
@@ -51,15 +57,11 @@
 }
 
 
-.card-blue{
-background-color: #103371;
-color: white;
-}
 
 .card-white{
 
 background-color: white;
-color: #103371;
+
 }
 .price{
 
@@ -119,28 +121,9 @@ color: #103371;
 }
 
 /* css for white  card  */
-.card-white-price{
-
-    color: #1c3270;
-}
 
 
-.card-white>.card-content>h1{
-    color: #1c3270;
-    margin: 0px 0px 0px 0px;
-    font-family: "Commissioner", Sans-serif;
-    font-size: 32px;
-    font-weight: 700;
 
-} 
-.card-white>.card-content>p{
-
-    color: #7a7a7a;
-
-    font-family: "Commissioner", Sans-serif;
-    font-size: 15px;
-    font-weight: 400;
-}
 
 
 

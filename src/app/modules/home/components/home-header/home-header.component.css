@@ -1,4 +1,6 @@
 
+@import url('../../../../../../public/css/components/fonts.style.css');
+@import url('../../../../../../public/css/components/button.style.css');
 
 .home-header-main-container{
 
@@ -106,12 +108,7 @@ opacity: 0.8;
 
 .header-content-container>h3{
 
-    color: #f8ab13;
-     font-family: "Courgette", cursive;
-    
-     font-size: 22px;
-    font-weight: 500;
-    line-height: 0.5em; 
+   
     text-align: center;
     z-index: 3;
 
@@ -143,19 +140,6 @@ opacity: 0.8;
 
     text-align: center;
     z-index: 3;
-
-
-    font-family: "Commissioner", Sans-serif;
-    font-size: 14px;
-    font-weight:600;
-
-    fill: white;
-    color: white;
-    background-color: #3c86cb;
-    border-radius: 0px 30px 0px 30px;
-    padding: 20px 40px 20px 40px;
-    border: none;
-   
 
 }
 
@@ -194,44 +178,12 @@ opacity: 0.8;
        
     }
 
-    .card-left-section>h3{
-
-        color: #f8ab13;
-        font-family: "Courgette", cursive;
-       
-        font-size: 22px;
-       font-weight: 500;
-       line-height: 0.5em; 
-       
-
-    }
-    .card-left-section>h1{
-
-        color: #103371;
-        font-family:"Commissioner", Sans-serif;
-        font-size: 45px;
-        font-weight:700;
-
-    }
-    .card-left-section>p{
-        color: #7a7a7a;
-        font-family: "Commissioner";
-        font-weight: 400;
-
-    }
-    .card-left-section>a{
-
-        font-family: "Commissioner", Sans-serif;
-        font-size: 14px;
-        font-weight: 600;
-        color: #3c86cb;
-        text-decoration: none;
-    }
-
-    .card-left-section>a:hover {
-        animation: updown 2.5s linear infinite;
-      }
+   
+   
     
+ 
+
+   
 
 
     .card-right-section{
