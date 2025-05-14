@@ -4,7 +4,7 @@
 
 .pages-faq{
 
-    margin-top: 150px;
+    margin-top: 120px;
 
 
 }
@@ -134,6 +134,27 @@
             
         }
 
+
+        
+      .accordion-header{
+        padding: 0px 10px 0px 5px;
+      }
+
+        .accordion-body {
+    
+        padding-left:5px;
+        padding-right: 5px;
+   
+        
+      }
+      .accordion-body.show {
+          /* padding: 15px 20px; */
+          padding:15px 5px 15px 5px;
+        
+          text-align: justify;
+        
+        }
+
     } 
 
 	
@@ -160,6 +181,23 @@
       .accordion-header{
         padding: 0px 10px 0px 5px;
       }
+
+        .accordion-body {
+    
+        padding-left:5px;
+        padding-right: 5px;
+   
+        
+      }
+      .accordion-body.show {
+          /* padding: 15px 20px; */
+          padding:15px 5px 15px 5px;
+        
+          text-align: justify;
+        
+        }
+        
+     
     } 
 
       

@@ -1,84 +1,3 @@
-/* You can add global styles to this file, and also import other style files */
-
-/* updadown animation  */
-/* @keyframes updown {
-    0%   { transform: translateY(0); }
-    25%  { transform: translateY(-10px); }
-    50%  { transform: translateY(0); }
-    75%  { transform: translateY(-10px); }
-    100% { transform: translateY(0); }
-  } */
-
-
-
-  /* css for font styles  start */
-/* 
-.yellow-text{
-
-  color: #f8ab13;
-  font-family: "Courgette", cursive;
-  font-size: 22px;
-  font-weight: 500;
-  line-height: 0.5em;
-} */
-
-
-/* .blue-big-font{
-
-  color: #103371;
-  font-family: "Commissioner", Sans-serif;
-  font-size: 45px;
-  font-weight: 700;
-
-}
-
-.gray-description-font{
-  color: #7a7a7a;
-  font-family: "Commissioner";
-  font-weight: 400;
-  font-size: 15px;
-  
-} */
-/* 
-
-.blue-button{
-
-  font-family: "Commissioner", Sans-serif;
-  font-size: 14px;
-  font-weight: 600;
-  fill: white;
-  color: white;
-  background-color: #3c86cb;
-  border-radius: 0px 30px 0px 30px;
-  padding: 20px 40px 20px 40px;
-  border: none;
-
-}
-  
-
-
-
-.blue-button:hover{
-    
-  animation: updown 2.5s linear infinite;
-}
- */
-
-
-
-/* 
-
-
-.big-white-text{
-
-  color: white;
-  font-family: "Commissioner", Sans-serif;
-  font-size: 45px;
-  font-weight: 700;
-
-} */
-
-  /* css for font styles  end */
 
 
 /*css for shapes*/
@@ -132,6 +51,38 @@ width: 100%;
 
 
 
+
+/*css for animations*/
+
+/* //custom fade in animation  */
+.fade-in-on-load {
+  opacity: 0;
+  animation: fadeIn 1s ease forwards;
+  animation-delay: 0.3s;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+
+/* custom fade up animation  */
+.fade-up-on-load {
+  opacity: 0;
+  transform: translateY(40px); /* start slightly lower */
+  animation: fadeUp 1s ease forwards;
+   animation-delay: 0.5s;
+
+}
+
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 
 
 

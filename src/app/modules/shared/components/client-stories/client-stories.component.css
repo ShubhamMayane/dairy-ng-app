@@ -27,12 +27,13 @@
 swiper-slide{
 
     padding: 15px;
+     padding-bottom: 200px;
 }
 
 
 .client-feedback-slider{
 
-    height: 70vh;
+   height: auto;
 
 }
 .card{
