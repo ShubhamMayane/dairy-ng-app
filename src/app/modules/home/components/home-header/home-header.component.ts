@@ -21,13 +21,20 @@ export class HomeHeaderComponent implements OnInit,AfterViewInit{
     this.checkScreenSize(); // initial check
   }
  ngAfterViewInit(): void {
- this.checkScreenSize(); 
+ this.checkScreenSize(); // initial check
+
+
+ //logic to remove animation class once animation is done.
+ this.renderer.listen(this.headerButton.nativeElement, 'animationend', () => {
+  this.renderer.removeClass(this.headerButton.nativeElement, 'fade-up-on-load');
+});
 
  }
 
    @HostListener('window:resize', [])
   onResize() {
     this.checkScreenSize();
+ 
   }
 
 
@@ -36,7 +43,7 @@ private checkScreenSize() {
   if (isPlatformBrowser(this.platformId)) {
     const width = window.innerWidth;
 
-    if (width <= 1024) {
+    if (width <= 600) {
       // ✅ Add AOS attributes for small screens
       this.renderer.setAttribute(this.headerButton.nativeElement, 'data-aos', 'fade-up');
       this.renderer.setAttribute(this.headerButton.nativeElement, 'data-aos-duration', '1500');

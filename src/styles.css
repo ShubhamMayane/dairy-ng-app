@@ -58,7 +58,7 @@ width: 100%;
 .fade-in-on-load {
   opacity: 0;
   animation: fadeIn 1s ease forwards;
-  animation-delay: 0.3s;
+  animation-delay: 0.2s;
 }
 
 @keyframes fadeIn {
@@ -74,6 +74,8 @@ width: 100%;
   transform: translateY(40px); /* start slightly lower */
   animation: fadeUp 1s ease forwards;
    animation-delay: 0.5s;
+   pointer-events: auto; /* <-- makes sure element is interactable */
+
 
 }
 
