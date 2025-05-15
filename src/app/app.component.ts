@@ -45,7 +45,7 @@ export class AppComponent implements OnInit {
     if (isPlatformBrowser(this.platformId)) {
       AOS.init({
 
-          once:true
+          // once:true
 
         // duration: 1000,   // set aos-duration=1000 to all element jyanna aapan aos che animation lavala aahe
         // once: true           // yane kay hoil ki sarva elements he ekdach animate kele jatil

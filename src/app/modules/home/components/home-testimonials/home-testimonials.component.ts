@@ -22,15 +22,14 @@ export class HomeTestimonialsComponent  implements OnInit, OnDestroy {
 
 
   constructor(private renderer: Renderer2, private el: ElementRef, @Inject(PLATFORM_ID) private platformId: any) { }
+
+
   ngOnInit(): void {
     // Check if we are in the browser environment before accessing window
     if (isPlatformBrowser(this.platformId)) {
       this.updateAttributes(window.innerWidth);  // Set attributes initially based on the current width
     }
-
-
-
-  }
+}
 
 
 

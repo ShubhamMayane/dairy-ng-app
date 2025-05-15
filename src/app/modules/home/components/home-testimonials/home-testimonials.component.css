@@ -11,8 +11,6 @@
   background-color: #F0FCFF;
   padding: 120px 0px 200px 0px;
   position: relative;
-  
-  top:-70px;
   margin-bottom: 120px;
   }
 
@@ -20,7 +18,7 @@
 .column-left{
   
     padding: 40px;
-    background-color: #F0FCFF;;
+    background-color: #F0FCFF;
 }
 
 .left-column-content{
@@ -41,9 +39,6 @@
 .column-right{
 
    
-    box-shadow: 10px 15px 20px 0px rgba(0, 0, 0, 0.1);
-    background-color: white;
-    
     padding: 0px !important;
 }
 
@@ -54,6 +49,21 @@
 /* right side card carousal */
 
 
+     swiper-container {
+        width: 100%;
+        height: 100%;
+      }
+  
+      swiper-slide {
+        text-align: center;
+        font-size: 18px;
+      background-color: #f1fcff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+       
+      }
 
 
 
@@ -64,6 +74,12 @@
         align-items: center;
         justify-content: center;
         gap: 15px;
+        position: relative;
+        background-color: white;
+        height: 100%;
+        overflow: hidden;
+      
+        
        
     }
 
@@ -110,41 +126,35 @@
       .top-right-icon-container{
 
         position: absolute;
-        height: 70px;
-        width: 70px;
-       
-        top: 0px;
-        right:0px;
-        border-bottom-left-radius: 50%;
+        height: 160px;
+        width: 160px;
+        
+        
+        top: -75px;
+        right:-70px;
+        z-index: 2;
+        border-radius: 50%;
         display: flex;
         justify-content: center;
         align-items: center;
-        background-color: #1c3270;
-    
-    }
-    
-    .top-right-icon-container>i{
-    
-       
-    color: white;
-    font-size: 30px;
+        background-color: #1c3270;  
     
     }
 
-      swiper-container {
-        width: 100%;
-        height: 100%;
-      }
-  
-      swiper-slide {
-        text-align: center;
-        font-size: 18px;
-        background: #fff;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
+    #right-top-icon{
 
+      position: absolute;
+      right: 15px;
+      top: 15px;
+      
+      color: white;
+      font-size: 40px;
+      z-index: 3;
+    }
+
+    
+
+ 
 
 /*---------------------------------------------------------*/
       .company-names{
@@ -157,7 +167,7 @@
         left: 50%;
         transform: translateX(-50%) !important;
         z-index: 2;
-        padding:5px 10px 25px 0px rgba(0, 0, 0, 0.1);
+      
         box-shadow: 5px 10px 25px 0px rgba(0, 0, 0, 0.1);
         border-radius: 30px 30px 30px 30px;
         overflow: hidden;
@@ -167,13 +177,24 @@
 
       .company-img{
         height: auto;
-      width: 100%;
-     max-width: 100%;
-     border: none;
-     box-shadow: none;
+        width: 100%;
+        max-width: 100%;
+        border: none;
+        box-shadow: none;
 
       }
-/*---------------------------------------------------------*/
+
+      .companies-swiper-slide{
+
+        background-color: white;
+
+
+      }
+
+
+      /*
+      
+      -------------------------------------------------*/
 
 
 .top-shape{

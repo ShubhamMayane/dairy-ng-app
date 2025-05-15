@@ -73,3 +73,21 @@
         animation: updown 2.5s linear infinite;
     }
     
+
+
+.blue-link-text-to-yellow{
+
+        font-family: "Commissioner", Sans-serif;
+        font-size: 14px;
+        font-weight: 600;
+        color: #3c86cb;
+        text-decoration: none;
+        transition: color 0.3s ease;
+      
+}
+
+
+.blue-link-text-to-yellow:hover {
+  color: #f1ad2a; /* Color on hover */
+
+}
