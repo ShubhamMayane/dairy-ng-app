@@ -18,10 +18,10 @@ export class HomeTestimonialsComponent  implements OnInit, OnDestroy {
   isReadonly = true;
 
 
+ 
 
 
-
-  constructor(private renderer: Renderer2, private el: ElementRef, @Inject(PLATFORM_ID) private platformId: any) { }
+  constructor(private renderer: Renderer2, private el: ElementRef, @Inject(PLATFORM_ID) private platformId: any) {}
 
 
   ngOnInit(): void {

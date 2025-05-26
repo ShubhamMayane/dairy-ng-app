@@ -1,8 +1,9 @@
+import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-header-contact-details',
-  imports: [],
+  imports: [CommonModule],
   templateUrl: './header-contact-details.component.html',
   styleUrl: './header-contact-details.component.css'
 })
@@ -18,9 +19,12 @@ export class HeaderContactDetailsComponent {
     
   
   //varibale for section 2
-    emailId:string="supportmoolydairy.com";
-    phoneNumber:string="+ (100) 234-5678";
-    farmAddress:string="99 Broklyn New Street, USA";
+    emailId:string="sagardike92@gmail.com";
+    phoneNumber:string="+91 8793760700 ";
+    farmAddress:string="At Post Ambegaon Khed Manchar,Bhimashankar Karkhana Road, Manchar-01,Pune 411051";
+
+
+    // farmAddress:string="At Post Ambegaon Khed Manchar,Bhimashankar Karkhana Road, Manchar-01,Pune 411051";
 
 
 

@@ -105,6 +105,14 @@ i{
     line-height: 1.6em;
 
 }
+
+.card-content-container{
+
+
+    width: 70%;
+
+}
+
 .card-content{
 
     color: #1c3270;;
@@ -112,15 +120,23 @@ i{
     font-size: 15px;
     font-weight: 600;
     line-height: 1.6em;
-   
+}
 
+.contact-link{
+
+    text-decoration: none;
+    color: #1c3270;;
+    font-family: "Commissioner", sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 1.6em;
 }
 
 
 .contact-section-2-row{
 
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
 
 
 }
@@ -128,12 +144,13 @@ i{
 .header-card{
 
     gap: 20px;
-    justify-content: center;
+    justify-content: flex-start;/*horizontal alignment*/ 
+    align-items: flex-start; /*vertical alignment*/
 
 }
 .header-card>svg{
-    height: 50px;
-    width: 50px;
+    height: 40px;
+    width: 40px;
 
 }
 
@@ -142,6 +159,32 @@ i{
 display: flex;
 
 
+}
+
+.column-1{
+
+    width: 20%;
+   
+}
+
+
+.column-2{
+    width: 20%;
+ padding-top: 10px;
+}
+
+
+.column-3{
+
+        width: 20%;
+      padding-top: 10px;
+}
+
+
+.column-4{
+
+     width: 40%;
+      padding-top: 10px;
 }
 
 
@@ -165,6 +208,8 @@ display: flex;
         justify-content: start;
         padding: 10px;
     }
+
+   
    
 } 
 
@@ -229,14 +274,14 @@ display: flex;
     justify-content: start;
     width: 100%;
     padding-left: 20px;
-    align-items: center !important;
+    align-items: flex-start;
 
 
 }
 
 .header-card>svg{
-    height: 40px;
-    width: 40px;
+    height: 50px;
+    width: 50px;
 
 }
 }  

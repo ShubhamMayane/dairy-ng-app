@@ -10,16 +10,22 @@
     height: auto;
     margin-bottom: 120px;
 }
+
 .card-image{
     height: auto;
     width: 100%;
-   max-width: 100%;
-   border: none;
-   box-shadow: none;
-   border-radius: 20px 20px 0px 0px;
-  
-
+    max-width: 100%;
+    border: none;
+    box-shadow: none;
+    border-radius: 20px 20px 0px 0px;
+     transition: transform 0.3s ease-in-out,filter 0.3s ease-in-out;
 }
+
+.card-image:hover {
+  transform: rotate(1.6deg) scale(1.03);
+  filter: brightness(115%);
+}
+
 .blog-and-news>h3{
 
     text-align: center;

@@ -45,14 +45,25 @@ private checkScreenSize() {
 
     if (width <= 600) {
       // ✅ Add AOS attributes for small screens
-      this.renderer.setAttribute(this.headerButton?.nativeElement, 'data-aos', 'fade-up');
-      this.renderer.setAttribute(this.headerButton?.nativeElement, 'data-aos-duration', '1500');
-      this.renderer.removeClass(this.headerButton?.nativeElement, 'fade-up-on-load');
+
+        if (this.headerButton?.nativeElement) //to avoid property can not read error. 
+        {
+
+            this.renderer.setAttribute(this.headerButton?.nativeElement, 'data-aos', 'fade-up');
+            this.renderer.setAttribute(this.headerButton?.nativeElement, 'data-aos-duration', '1500');
+            this.renderer.removeClass(this.headerButton?.nativeElement, 'fade-up-on-load');
+        }
     } else {
-      // ✅ Remove AOS attributes and add class for on-load animation on large screens
-      this.renderer.removeAttribute(this.headerButton?.nativeElement, 'data-aos');
-      this.renderer.removeAttribute(this.headerButton?.nativeElement, 'data-aos-duration');
-      this.renderer.addClass(this.headerButton?.nativeElement, 'fade-up-on-load');
+      
+
+        if (this.headerButton?.nativeElement) //to avoid property can not read error. 
+          {
+
+            // ✅ Remove AOS attributes and add class for on-load animation on large screens
+            this.renderer.removeAttribute(this.headerButton?.nativeElement, 'data-aos');
+            this.renderer.removeAttribute(this.headerButton?.nativeElement, 'data-aos-duration');
+            this.renderer.addClass(this.headerButton?.nativeElement, 'fade-up-on-load');
+        }
     }
   }
 }
