@@ -157,9 +157,15 @@ color: #f8ab13;
 .list-item{
 
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     gap: 10px;
     align-items: center;
+
+}
+
+.list-item>i{
+
+    font-size: 25px;
 
 }
 

@@ -29,6 +29,14 @@
 
 }
 
+
+.left-column-content>p{
+
+  text-align: justify;
+
+
+}
+
 .left-column-content>button{
 
     align-self: flex-start;
@@ -78,6 +86,7 @@
         background-color: white;
         height: 100%;
         overflow: hidden;
+        min-width: 100%
       
         
        
@@ -257,6 +266,24 @@
           width: 100%;
         }
 
+
+            .left-column-content{
+
+              text-align: center;
+            
+            }
+
+              .left-column-content>p{
+
+                text-align: center;
+            
+            }
+
+              .left-column-content>button{
+              
+                  align-self: center;
+              
+              }
       
 
         .column-right{
@@ -283,11 +310,7 @@
       }
       
 
-        .left-column-content{
-
-          text-align: center;
-      
-      }
+    
       
       .left-column-content>button{
       

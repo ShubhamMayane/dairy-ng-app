@@ -179,6 +179,10 @@ opacity: 0.8;
     }
 
    
+    .farm-description-text{
+
+        text-align: justify;
+    }
    
     
  
@@ -211,14 +215,18 @@ opacity: 0.8;
     
     .play-button{
 
-        height: 100px;
-        width: 100px;
       
         display: flex;
         justify-content: center;
         align-items: center;
         cursor: pointer;
 
+    }
+
+    .play-button>a>svg{
+
+        height: 100px;
+        width: 100px;
     }
 
     .play-button>i{

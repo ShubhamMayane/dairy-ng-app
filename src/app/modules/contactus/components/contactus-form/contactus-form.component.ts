@@ -14,6 +14,13 @@ import { log } from 'console';
 export class ContactusFormComponent {
   form: FormGroup;
   result:any;
+  //varibale for section 2
+    emailId:string="sagardike92@gmail.com";
+    phoneNumber:string="+91 8793760700 ";
+    officeAddress:string="Opp gitanjalli bungalow biside PMC school In Lane prassndada jagtap office, Canal Rd, Hingane Khurd, Hingne Khurd, Pune, Maharashtra 411051";
+
+
+
 
   constructor(private fb: FormBuilder,private cObj:ContactusService) {
     this.form = this.fb.group({

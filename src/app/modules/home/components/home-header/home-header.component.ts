@@ -1,10 +1,11 @@
 import { Component, HostListener, OnInit,ElementRef, ViewChild, Renderer2, AfterViewInit} from '@angular/core';
 
-import { isPlatformBrowser } from '@angular/common';
+import { CommonModule, isPlatformBrowser } from '@angular/common';
 import { Inject, PLATFORM_ID } from '@angular/core';
+
 @Component({
   selector: 'app-home-header',
-  imports: [],
+  imports: [CommonModule],
   templateUrl: './home-header.component.html',
   styleUrl: './home-header.component.css'
 })
@@ -12,7 +13,8 @@ export class HomeHeaderComponent implements OnInit,AfterViewInit{
  @ViewChild('headerButton') headerButton!: ElementRef;
 
 
- isMobile = false;
+  isMobile = false;
+  youtubeVideoLink:any="https://www.youtube.com/watch?v=H1JV9EUDC24";
 
 
   constructor(private renderer: Renderer2,@Inject(PLATFORM_ID) private platformId: Object) {}
@@ -48,10 +50,10 @@ private checkScreenSize() {
 
         if (this.headerButton?.nativeElement) //to avoid property can not read error. 
         {
-
+             this.renderer.removeClass(this.headerButton?.nativeElement, 'fade-up-on-load');
             this.renderer.setAttribute(this.headerButton?.nativeElement, 'data-aos', 'fade-up');
             this.renderer.setAttribute(this.headerButton?.nativeElement, 'data-aos-duration', '1500');
-            this.renderer.removeClass(this.headerButton?.nativeElement, 'fade-up-on-load');
+           
         }
     } else {
       
@@ -60,19 +62,15 @@ private checkScreenSize() {
           {
 
             // ✅ Remove AOS attributes and add class for on-load animation on large screens
+            this.renderer.addClass(this.headerButton?.nativeElement, 'fade-up-on-load');
             this.renderer.removeAttribute(this.headerButton?.nativeElement, 'data-aos');
             this.renderer.removeAttribute(this.headerButton?.nativeElement, 'data-aos-duration');
-            this.renderer.addClass(this.headerButton?.nativeElement, 'fade-up-on-load');
+            
         }
     }
   }
 }
 
-  openLink() {
-   
-    window.open('https://www.youtube.com', '_blank'); // Opens in a new tab
-    // OR use: window.location.href = 'https://www.openai.com'; // Same tab
-  }
 
 
   

@@ -12,10 +12,10 @@ export class HeaderContactDetailsComponent {
   // variables for section 1
 
   workingTime:string="Mon - Thu 9:00 AM - 7:00 PM";
-  facebookLink:string="https://www.facebook.com/";
-  instagramLink:string="https://www.instagram.com/?hl=en";
-  twitterLink:string="https://en.wikipedia.org/wiki/Twitter,_Inc.";
-  linkedInLink:string="https://in.linkedin.com/";
+  facebookLink:string="https://www.facebook.com/DKDairyfarmpune/";
+  instagramLink:string="https://www.instagram.com/dkdairyfarmpune/";
+  twitterLink:string="https://x.com/DairyDk/";
+  linkedInLink:string="https://in.linkedin.com/in/dkdairyfarmpune";
     
   
   //varibale for section 2

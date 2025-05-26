@@ -4,10 +4,11 @@ import { isPlatformBrowser } from '@angular/common';
 import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { RatingModule } from 'ngx-bootstrap/rating';
 import { FormsModule } from '@angular/forms';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-home-testimonials',
-  imports: [RatingModule,CommonModule,FormsModule],
+  imports: [RatingModule,CommonModule,FormsModule,RouterModule],
   templateUrl: './home-testimonials.component.html',
   styleUrl: './home-testimonials.component.css',
   schemas:[CUSTOM_ELEMENTS_SCHEMA ]

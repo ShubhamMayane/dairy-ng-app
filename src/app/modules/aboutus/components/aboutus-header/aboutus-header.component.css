@@ -35,7 +35,7 @@
 .left-column>img{
 
     border-radius:80px 0px 50px 0px;
-    height: auto;
+    height: 90%;
     max-width: 100%;
     border: none;
     box-shadow: none;
@@ -81,14 +81,18 @@ h3>span{
 }
 /* code for right column  */
 
+.right-column-header-description
+{
+
+    text-align: justify;
+
+}
+
 .right-column-sub-text{
 
     display: flex;
     flex-direction: column;
     position: relative;
-    
-
-
 }
 .right-column-sub-text>img{
 
@@ -139,6 +143,12 @@ h3>span{
 
 }
 
+.right-column-sub-text>p{
+
+    text-align: justify;
+
+}
+
     /*for desktop and laptop and all other big screen*/
 
     @media screen and (min-width: 1024px)  {}      
@@ -157,6 +167,9 @@ h3>span{
             width: 100%;
             
         }
+
+
+
         .right-column{
             width: 100%;
         }
@@ -166,6 +179,7 @@ h3>span{
         {
                 border-radius: 80px 0px 0px 0px;
                 width: 100%;
+                height: auto;
         }
         
         
@@ -190,10 +204,14 @@ h3>span{
         .image-text-container{
                  border-radius: 0px 0px 80px 0px;
         }
-        
+       
+
+
         .left-column{
             margin-bottom: 20px;
         }
+
+
 
         
     } 

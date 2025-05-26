@@ -17,30 +17,32 @@
 
                 
                     <div class="contact-details-item mb-3">
-                        <div class="contact-details-item-header" data-aos="fade-up"  data-aos-delay="0" data-aos-duration="1000">
+                        <div class="contact-details-item-header mb-2" data-aos="fade-up"  data-aos-delay="0" data-aos-duration="1000">
                             <i class="fa-solid fa-location-dot"></i>    
-                            <span>Our Location</span>
+                            <span>Office Adress</span>
                         </div>
-                        <p class="gray-description-font" data-aos="fade-up"  data-aos-delay="0" data-aos-duration="1000" >99 Broklyn New Street, New York 1120 United States</p>
+                        <p class="gray-description-font office-address-text" data-aos="fade-up"  data-aos-delay="0" data-aos-duration="1000" >{{officeAddress}}</p>
                     </div>
 
                     <div class="contact-details-item mb-3">
-                        <div class="contact-details-item-header" data-aos="fade-up"  data-aos-delay="0" data-aos-duration="1000">
+                        <div class="contact-details-item-header mb-2" data-aos="fade-up"  data-aos-delay="0" data-aos-duration="1000">
                             <i class="fa-solid fa-envelope"></i>
                             <span  >Email Support</span>
                         </div>
-                        <p class="gray-description-font" data-aos="fade-up"  data-aos-delay="0" data-aos-duration="1000" >Support: {{"support@moolydairyfarm.com"}}</p>
+                        <p class="card-content"> <a [href]="'mailto:' + emailId" class="contact-link gray-description-font">{{emailId}}</a></p>
                     </div>
 
 
                     <div class="contact-details-item ">
-                        <div class="contact-details-item-header" data-aos="fade-up"  data-aos-delay="0" data-aos-duration="1000">
+                        <div class="contact-details-item-header mb-2" data-aos="fade-up"  data-aos-delay="0" data-aos-duration="1000">
                             <i class="fa-solid fa-phone"></i>   
-                            <span>Our Location</span>
+                            <span>Phone Number</span>
                         </div>
-                        <p class="gray-description-font" data-aos="fade-up"  data-aos-delay="0" data-aos-duration="1000" >+123 456 7890 / +123 654 9870</p>
+                        <p  data-aos="fade-up"  data-aos-delay="0" data-aos-duration="1000" ><a [href]="'tel:' + phoneNumber" class="contact-link gray-description-font">{{phoneNumber}}</a></p>
                     </div>
 
+
+                     
 
 
                     <hr>
