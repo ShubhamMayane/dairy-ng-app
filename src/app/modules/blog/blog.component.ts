@@ -11,7 +11,7 @@ import { BlogRecentPostsComponent } from "./components/blog-recent-posts/blog-re
 })
 export class BlogComponent {
   headerData:any = {
-    title: 'Single Post',
-    subTitle: 'Your Title Post'
+    title: 'Our Blog',
+    subTitle: 'Importance of A2 Milk'
   };
 }

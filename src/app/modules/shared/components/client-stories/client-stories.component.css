@@ -43,6 +43,7 @@ min-height: 350px;
 box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 padding: 30px 30px 50px 30px;
 border: 0.5px;
+justify-content: center;
 
 }
 

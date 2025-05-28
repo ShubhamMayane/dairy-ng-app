@@ -8,7 +8,9 @@ import { FooterComponent } from "./modules/shared/components/footer/footer.compo
 import { BannerComponent } from './modules/shared/components/banner/banner.component';
 import { MobileNavbarComponent } from "./modules/shared/components/mobile-navbar/mobile-navbar.component";
 
-import { Injectable } from '@angular/core';
+import { Router, NavigationEnd } from '@angular/router';
+
+
 
 import * as AOS from 'aos';
 
@@ -32,8 +34,18 @@ export class AppComponent implements OnInit {
   isMobile: boolean = false;
   isBrowser: boolean;
 
-  constructor(@Inject(PLATFORM_ID) private platformId: Object) {
+  constructor(@Inject(PLATFORM_ID) private platformId: Object,private router: Router) {
     this.isBrowser = isPlatformBrowser(this.platformId);
+
+
+    ///logic to scroll till top when we render another route in the applicaiton -start
+    //  this.router.events.subscribe(event => {
+    //   if (event instanceof NavigationEnd) {
+    //     window.scrollTo({ top: 0, behavior: 'auto' });
+    //   }
+    // });
+
+     ///logic to scroll till top when we render another route in the applicaiton -end
   }
 
   ngOnInit() {

@@ -18,7 +18,7 @@ export class ContactusFormComponent {
     emailId:string="sagardike92@gmail.com";
     phoneNumber:string="+91 8793760700 ";
     officeAddress:string="Opp gitanjalli bungalow biside PMC school In Lane prassndada jagtap office, Canal Rd, Hingane Khurd, Hingne Khurd, Pune, Maharashtra 411051";
-
+    farmAddress:string="At post Ambegaon Khed Manchar, Bhimashankar karkhana Road, Manchar-01, Pune, India, Maharashtra";
 
 
 

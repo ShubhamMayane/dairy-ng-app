@@ -29,6 +29,14 @@
 
 }
 
+
+.logo-img{
+
+    cursor: pointer;
+
+
+}
+
 .left-section{
     display: flex;
    

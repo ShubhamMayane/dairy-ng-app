@@ -19,7 +19,7 @@
                     <div class="contact-details-item mb-3">
                         <div class="contact-details-item-header mb-2" data-aos="fade-up"  data-aos-delay="0" data-aos-duration="1000">
                             <i class="fa-solid fa-location-dot"></i>    
-                            <span>Office Adress</span>
+                            <span>Office Address</span>
                         </div>
                         <p class="gray-description-font office-address-text" data-aos="fade-up"  data-aos-delay="0" data-aos-duration="1000" >{{officeAddress}}</p>
                     </div>
@@ -29,16 +29,25 @@
                             <i class="fa-solid fa-envelope"></i>
                             <span  >Email Support</span>
                         </div>
-                        <p class="card-content"> <a [href]="'mailto:' + emailId" class="contact-link gray-description-font">{{emailId}}</a></p>
+                        <p  class="card-content" data-aos="fade-up"  data-aos-delay="0" data-aos-duration="1000" > <a [href]="'mailto:' + emailId" class="contact-link gray-description-font">{{emailId}}</a></p>
                     </div>
 
 
-                    <div class="contact-details-item ">
+                    <div class="contact-details-item mb-3">
                         <div class="contact-details-item-header mb-2" data-aos="fade-up"  data-aos-delay="0" data-aos-duration="1000">
                             <i class="fa-solid fa-phone"></i>   
                             <span>Phone Number</span>
                         </div>
                         <p  data-aos="fade-up"  data-aos-delay="0" data-aos-duration="1000" ><a [href]="'tel:' + phoneNumber" class="contact-link gray-description-font">{{phoneNumber}}</a></p>
+                    </div>
+
+                    
+                    <div class="contact-details-item ">
+                        <div class="contact-details-item-header mb-2" data-aos="fade-up"  data-aos-delay="0" data-aos-duration="1000">
+                            <i class="fa-solid fa-cow"></i>  
+                            <span>Farm Address</span>
+                        </div>
+                        <p class="gray-description-font office-address-text" data-aos="fade-up"  data-aos-delay="0" data-aos-duration="1000" >{{farmAddress}}</p>
                     </div>
 
 

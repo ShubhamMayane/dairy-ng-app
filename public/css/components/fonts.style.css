@@ -92,3 +92,15 @@
   color: #f1ad2a; /* Color on hover */
 
 }
+
+
+
+.small-white-text{
+
+    color: white;
+    font-family: "Commissioner", sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.4em;
+  
+}

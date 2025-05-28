@@ -1,9 +1,9 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
-
+import { RouterModule } from '@angular/router';
 @Component({
   selector: 'app-faq-accordion',
-  imports: [CommonModule],
+  imports: [CommonModule,RouterModule],
   templateUrl: './faq-accordion.component.html',
   styleUrl: './faq-accordion.component.css'
 })
