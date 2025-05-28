@@ -4,228 +4,111 @@
 @import url('../../../../../../../../public/css/components/fonts.style.css');
 
 
-.all-products{
+
+.our-products{
+
+        height: auto;
+       margin-top: 120px;
+        overflow: hidden;
+
+   }
 
 
-    height: auto;
-    padding: 20px;
-    margin-bottom: 80px;
-    margin-top: 120px;
-}    
-
-.products-card-container{
-
-    margin-bottom: 80px;
-
-
-}
-
-
-.products-card-container>h3{
+.our-all-products-header-container{
 
     text-align: center;
-    margin-bottom: 20px;  
+    padding-top: 5px;
 
+
+   }
+   
+   .column-1{
+
+  
+     padding-left: 0px;
+     padding-right: 0px;
+
+   }
+
+
+
+   .left-img{
+
+     height: 100%;
+     max-width: 100%;
+     border: none;
+     box-shadow: none;
+     border-radius: 0px 80px 0px 80px;
+   }
+
+
+    .right-img{
+
+     height: 100%;
+     max-width: 100%;
+     border: none;
+     box-shadow: none;
+     border-radius: 80px 0px 80px 0px;
+   }
+
+
+   .column-2{
+
+    
+     
+     padding: 50px 30px 30px 50px;
+     display: flex;
 }
 
-.products-card-container>h1{
+   .column-2-content{
 
-    text-align: center;
-    margin-bottom: 30px;   
-}
-
-.products-card-container>p{
-
-    text-align: center;
-    margin-bottom: 50px;   
-}
+     display: flex;
+     flex-direction: column;
+     gap: 5px;
+    
 
 
-.card{
+   }
+       
+    .list-header{
 
-    box-shadow: 0px 15px 20px 0px rgba(0, 0, 0, 0.1);
-    padding: 30px 30px 30px 30px;
-    border-radius: 20px;
-    width: 23%;
-    margin-bottom: 30px;
-    border: none;
-}
-.products-card-row{
+            color: #103371;
+            margin-bottom: 0px;
+            font-family: "Commissioner", Sans-serif;
+            font-size: 20px;
+            font-weight: 600;
+            margin-bottom: 10px;
+     }
+   
+          
 
-    justify-content: space-between;
+   .list-item
+   { 
+     display: flex;
+     flex-direction: row;
+     gap: 10px;
+     
 
-}
+   }
 
+    .list-item>i{
 
-
-.card-white{
-
-background-color: white;
-
-}
-.price{
+        padding-top: 10px;
+        font-size: 15px;
+    }
 
    
-    font-family: "Commissioner", Sans-serif;
-    font-size: 25px;
-    font-weight: 600;
-    line-height: 1.6em ;
-    margin: 0px;
-}
+   .column-2-content>button{
 
-
-
-.card>.card-content{
-
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-
-}
-
-.card>.card-content>img
-{
-    height: auto;
-    max-width: 100%;
-    border: none;
-    box-shadow: none;
-
-}
-
-
-
-/* css for blue card  */
-
-.card-blue-price{
-
-    color: #f8ab13;
-}
-
-
-.card-blue>.card-content>h1{
-    color: white;
-    margin: 0px 0px 0px 0px;
-    font-family: "Commissioner", Sans-serif;
-    font-size: 32px;
-    font-weight: 700;
-
-} 
-
-.card-blue>.card-content>p{
-
-    color: white;
-    font-family: "Commissioner", Sans-serif;
-    font-size: 15px;
-    font-weight: 400;
-    
-}
-
-/* css for white  card  */
+     align-self: flex-start;
+   }
 
 
 
 
-
-
-
-
-.card>.card-content>p{
-    
-} 
-
-.price-and-cart-container{
-
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.card-icon{
-
-
-padding: 15px 15px 15px 15px;
-background-color: #1A4085;
-border-radius: 8px 8px 8px 8px;
-max-width: 25%;
-text-align: center;
-width: 25%;
-max-width: 25%;
-
-}
-
-.card-icon>i{
-
-    cursor: pointer !important;
-    color: white;
-    font-size: 25px;
-}
-
-.card-icon:hover{
-
-   background-color: #4d84c9;
-}
-
-
-.card-icon>i:hover{
-
-    cursor: pointer !important;
-    color: #1A4085;
-}
-
-
-/* --------------------------------------------------------------------------------------------------------------- */
-
-/* Applyting css for rating stars  */
-
-/* Target filled stars */
-
-/* css for the star jyala golder color applied aahe  */
-::ng-deep rating .bs-rating-star.active {
-    color: #f7a436; /* Or any custom color */
-    font-size: 20px;
-  }
-  
-  /* Target empty stars */
-  /* css for the star jyala golder color applied nahiye  */
-  ::ng-deep rating .bs-rating-star {
-    color: lightgray;
-    font-size: 20px;
-  }
-
-  .rating-section{
-
-    display: flex;
-    gap: 10px;
-    align-items: center;
-  }
-
-  .rating-count{
-
-    color: #f7a436;
- 
-    font-family: "Commissioner", Sans-serif;
-    font-size: 20px;
-    font-weight: 600;
-  
-
-  }
-/* --------------------------------------------------------------------------------------------------------------- */
-.button-section{
-    display: flex;
-    justify-content: center;
-}
-
-.button-section>button:hover{
-
-    animation: updown 2.5s linear infinite;
-
-}
-
-
-
-
-
-/*for desktop and laptop and all other big screen*/
+   
+   
+   /*for desktop and laptop and all other big screen*/
 
     @media screen and (min-width: 1024px)  {}      
 
@@ -234,38 +117,59 @@ max-width: 25%;
 
     @media screen and (max-width: 1024px) {
 
-        .card{
+     .column-1{
 
-            width: 48%;
-        }
+          width: 100%;
 
-        
-        .products-card-row{
+     }
 
-            gap: 20px;
-        }
+      .right-image-row{
 
+        flex-direction: column-reverse;
+     }
+
+
+     .column-2{
+
+         
+          padding: 30px 30px 30px 30px;
+        width: 100%;
+     }
+   
     } 
 
 	
     /*for mobile screen */
     @media screen and (max-width: 600px) {
 
+     .our-products-row{
 
-        .all-products{
-            margin-bottom: 30px;
+               padding-left:20px;
+               padding-right: 20px;
 
-        }
-        .card{
 
-            width: 100%;
-        }
+     }
 
-        .products-card-row{
+     .right-image-row{
 
-            gap: 30px;
-        }
-       
+        flex-direction: column-reverse;
+     }
+
+     .column-1{
+
+          padding-right: 0px;
+     }
+     .column-2{
+
+          width: 100%;
+          padding: 20px;
+          margin: 30px 0px 0px 0px;
+
+     }
+   
+
+
+
     } 
 
       
