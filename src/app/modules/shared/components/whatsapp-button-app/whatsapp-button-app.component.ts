@@ -13,16 +13,24 @@ export class WhatsappButtonAppComponent {
   showFadeIn = false;
   showFadeOut = false;
 
+    isVisible = false; // track current visibility
+
   @HostListener('window:scroll', [])
   onWindowScroll() {
     const scrollTop = window.scrollY || document.documentElement.scrollTop;
 
-    if (scrollTop > 400 && !this.showFadeIn) {
+  // Fade-in (entering view)
+    if (scrollTop > 400 && !this.isVisible) {
       this.showFadeIn = true;
       this.showFadeOut = false;
-    } else if (scrollTop <= 400 && !this.showFadeOut) {
+      this.isVisible = true;
+    }
+
+    // Fade-out (leaving view)
+    else if (scrollTop <= 400 && this.isVisible) {
       this.showFadeOut = true;
       this.showFadeIn = false;
+      this.isVisible = false;
     }
   }
     openWhatsApp() {
