@@ -13,6 +13,7 @@ import { Router, NavigationEnd } from '@angular/router';
 
 
 import * as AOS from 'aos';
+import { WhatsappButtonAppComponent } from "./modules/shared/components/whatsapp-button-app/whatsapp-button-app.component";
 
 @Component({
   selector: 'app-root',
@@ -24,8 +25,9 @@ import * as AOS from 'aos';
     NavbarComponent,
     FooterComponent,
     BannerComponent,
-    MobileNavbarComponent
-  ],
+    MobileNavbarComponent,
+    WhatsappButtonAppComponent
+],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
