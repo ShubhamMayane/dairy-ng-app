@@ -29,6 +29,12 @@
 }
 
 
+/*selector for off hover effect*/
+.blue-button.no-animation:hover {
+  animation: none;
+}
+
+
 .orange-button{
 
   font-family: "Commissioner", Sans-serif;

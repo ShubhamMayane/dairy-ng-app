@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { FormBuilder, FormGroup, Validators, ReactiveFormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
 import { ContactusService } from '../../../../services/contactus.service';
-import { log } from 'console';
+import emailjs from 'emailjs-com';
 
 
 @Component({
@@ -19,7 +19,7 @@ export class ContactusFormComponent {
     phoneNumber:string="+91 8793760700 ";
     officeAddress:string="Opp gitanjalli bungalow biside PMC school In Lane prassndada jagtap office, Canal Rd, Hingane Khurd, Hingne Khurd, Pune, Maharashtra 411051";
     farmAddress:string="At post Ambegaon Khed Manchar, Bhimashankar karkhana Road, Manchar-01, Pune, India, Maharashtra";
-
+    isButtonDisabled=false;
 
 
   constructor(private fb: FormBuilder,private cObj:ContactusService) {
@@ -38,56 +38,43 @@ export class ContactusFormComponent {
 
   onSubmit() {
     if (this.form.valid) {
+
+      //first lets disable the button till the response came from the emailjs to avoid multiple clicks
+
+      this.isButtonDisabled=true;
+
       console.log('Form Submitted:', this.form.value);
 
       console.log(this.form.value.firstName);
 
-      //because in the bakcend application in model there is we use Hungarian notation
-      //creating one js object send to api
-      let objToApi={
 
-        FirstName:this.form.value.firstName,
-        LastName:this.form.value.lastName,
-        Email:this.form.value.email,
-        Subject:this.form.value.subject,
-        Comment:this.form.value.comments,
-       };
+      //creating one js object send to email js api
+     const templateParams = {
+            from_name: `${this.form.value.firstName} ${this.form.value.lastName}`,
+            from_email: this.form.value.email,
+            subject: this.form.value.subject,
+            message: this.form.value.comments,
+            };
 
-
-      //calling a function is service to call the api of type post.
-       
-      
+            emailjs.send("service_aefi1of","template_bqocxpl", templateParams,"9t7czFOwyJdsrKnoa")
+            .then(() => { 
+              
+              
+                 alert("Thank you for your enquiry!We've received your message and will get back to you shortly.");
+                 this.isButtonDisabled=false;
+                 this.form.reset();
+            }, (err) => {
+                alert('Failed to send email. Please try again.');
+                 this.isButtonDisabled=false;
+                console.error(err);
+            });
+        } 
     
-      //method 1 to call the function defined in the service which internally call the api
+        else 
+        {
 
-        this.cObj.submitEnquiryData(objToApi).subscribe(res => {
-        this.result = res;
-        console.log(this.result);
-        alert("Thanks "+ this.result.firstName+" for contacting us we will get back to you soon");
-        
-
-      });
-
-      //method 2:if you want to implement a error handling then you can use following syntax
-
-    //   this.cObj.submitEnquiryData(objToApi).subscribe({
-    //   next: (res) => {
-    //     this.result = res;
-       
-    //   },
-    //   error: (err) => {
-    //     console.error(err);
-     
-    //   }
-    // });
-
-
-
-
-       this.form.reset(); //this is a logic to clear all entered data in the form 
-    } else {
-      this.form.markAllAsTouched();
+          this.form.markAllAsTouched();
       
-    }
+        }
   }
 }
