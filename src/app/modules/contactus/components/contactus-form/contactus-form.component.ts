@@ -1,9 +1,11 @@
-import { Component } from '@angular/core';
+import { Component , AfterViewInit} from '@angular/core';
+import {Inject, PLATFORM_ID} from '@angular/core';
+import { isPlatformBrowser } from '@angular/common';
 import { FormBuilder, FormGroup, Validators, ReactiveFormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
 import { ContactusService } from '../../../../services/contactus.service';
 import emailjs from 'emailjs-com';
-
+declare var bootstrap: any;
 
 @Component({
   selector: 'app-contactus-form',
@@ -11,9 +13,14 @@ import emailjs from 'emailjs-com';
   templateUrl: './contactus-form.component.html',
   styleUrl: './contactus-form.component.css'
 })
-export class ContactusFormComponent {
+export class ContactusFormComponent implements AfterViewInit {
   form: FormGroup;
   result:any;
+  toastMessage:string="";
+   toastEl: any;
+  toast: any;
+  toastType: 'success' | 'error' = 'success';
+
   //varibale for section 2
     emailId:string="sagardike92@gmail.com";
     phoneNumber:string="+91 8793760700 ";
@@ -22,7 +29,7 @@ export class ContactusFormComponent {
     isButtonDisabled=false;
 
 
-  constructor(private fb: FormBuilder,private cObj:ContactusService) {
+  constructor(private fb: FormBuilder,private cObj:ContactusService,@Inject(PLATFORM_ID) private platformId: Object) {
     this.form = this.fb.group({
       firstName: ['', [Validators.required, Validators.minLength(2)]],
       lastName: ['', Validators.required],
@@ -31,6 +38,30 @@ export class ContactusFormComponent {
       comments: ['', Validators.required]
     });
   }
+
+    ngAfterViewInit() {
+
+    if (isPlatformBrowser(this.platformId)) 
+    {
+        this.toastEl = document.getElementById('liveToast');
+        this.toast = new bootstrap.Toast(this.toastEl, { autohide: false });
+    }
+  }
+
+
+    showToast(type: 'success' | 'error',message:string) {
+
+       if (!isPlatformBrowser(this.platformId)) return;
+       
+        this.toastType = type;
+        this.toastMessage=message;
+
+        this.toast.show();
+
+        setTimeout(() => {
+          this.toast.hide();
+        }, 3000); // Auto-hide after 3 seconds
+      }
 
   get f() {
     return this.form.controls;
@@ -59,12 +90,15 @@ export class ContactusFormComponent {
             emailjs.send("service_aefi1of","template_bqocxpl", templateParams,"9t7czFOwyJdsrKnoa")
             .then(() => { 
               
-              
-                 alert("Thank you for your enquiry!We've received your message and will get back to you shortly.");
+                 
+                this.showToast("success","Thank you for your enquiry! We will get back to you shortly.");
+                 //alert("Thank you for your enquiry!We've received your message and will get back to you shortly.");
                  this.isButtonDisabled=false;
                  this.form.reset();
             }, (err) => {
-                alert('Failed to send email. Please try again.');
+                
+                this.showToast("error","Failed to send email. Please try again.");
+               //alert('Failed to send email. Please try again.');
                  this.isButtonDisabled=false;
                 console.error(err);
             });
