@@ -2,10 +2,10 @@ import { Component, HostListener, OnInit,ElementRef, ViewChild, Renderer2, After
 
 import { CommonModule, isPlatformBrowser } from '@angular/common';
 import { Inject, PLATFORM_ID } from '@angular/core';
-
+import { RouterModule } from '@angular/router';
 @Component({
   selector: 'app-home-header',
-  imports: [CommonModule],
+  imports: [CommonModule,RouterModule],
   templateUrl: './home-header.component.html',
   styleUrl: './home-header.component.css'
 })

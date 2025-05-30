@@ -32,15 +32,21 @@
     padding: 50px 20px 65px 100px;
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    gap: 15px;
    
+}
+
+
+.left-column>h1{
+    margin: 0px;
 }
 
 
 
 
-.left-column>p{
 
+.left-column>p{
+    margin: 0px;
     color: white;
 }
 
@@ -155,7 +161,7 @@
                     text-align: center;
                 }
               
-                .left-column>button
+                .left-column>a
                 {
                     align-self: center;
                 }
