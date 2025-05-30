@@ -1,0 +1,171 @@
+<div class="container-fluid" class="all-products">
+
+
+    <div class="container products-card-container">
+
+            <h3 class="yellow-text" data-aos="fade-in"  data-aos-delay="0" data-aos-duration="0">Video Gallery</h3>
+            <h1 class="blue-big-font"  data-aos="fade-up"  data-aos-delay="0" data-aos-duration="1000" >See the Trust You Drink, Inside the World of DK Dairy Farm</h1>
+
+
+        <div class="row products-card-row">
+        
+        <!-- card-1  -->
+            <div class="col-md-6 card card-blue" data-aos="slide-up"  data-aos-delay="0">
+        
+        
+                <div class="video-wrapper">
+
+
+
+
+               <video
+                src="/videos/video-1.mp4"
+                (click)="openViewer(0)"
+                class="thumb"
+                muted
+                loop
+                autoplay
+                
+                ></video>
+
+
+                 <div class="overlay-text"><i class="fa-solid fa-play" style="color: #3c86cb;"></i></div>
+
+                </div>
+
+                <div class="card-content">
+                    
+                    <!-- <div class="rating-section"><rating [(ngModel)]="rate" [max]="max" [readonly]="isReadonly"></rating><span class="rating-count">3.5</span></div> -->
+                    <h1>Fresh A2 Butter</h1>
+                    <p>Farm-fresh A2 butter with rich taste and natural goodness in every bite.</p>
+                </div>
+            </div>
+
+        <!-- card-2 -->
+            <div class="col-md-6 card card-white" data-aos="slide-up"  data-aos-delay="100">
+
+
+                   <div class="video-wrapper">
+                        <video
+                                src="/videos/video-2.mp4"
+                                (click)="openViewer(1)"
+                                class="thumb"
+                                muted
+                                loop
+                                autoplay>
+                        </video>
+
+
+                 <div class="overlay-text"><i class="fa-solid fa-play" style="color: #3c86cb;"></i></div>
+
+                </div>
+
+                <div class="card-content">
+                    
+                    <!-- <div class="rating-section"><rating [(ngModel)]="rate" [max]="max" [readonly]="isReadonly"></rating><span class="rating-count">3.5</span></div> -->
+                    <h1>A2 Bilona Ghee</h1>
+                    <p>Traditionally churned, nutrient-rich ghee that boosts immunity and digestion.
+
+                </p>
+             </div>
+            </div>
+
+
+         <!-- card-3  -->
+            <div class="col-md-6 card card-blue" data-aos="slide-up"  data-aos-delay="200">
+        
+        
+                <div class="video-wrapper">
+
+
+
+
+               <video
+                src="/videos/video-1.mp4"
+                (click)="openViewer(0)"
+                class="thumb"
+                muted
+                loop
+                autoplay
+                ></video>
+
+
+                 <div class="overlay-text"><i class="fa-solid fa-play" style="color: #3c86cb;"></i></div>
+
+                </div>
+
+                <div class="card-content">
+                    
+                    <!-- <div class="rating-section"><rating [(ngModel)]="rate" [max]="max" [readonly]="isReadonly"></rating><span class="rating-count">3.5</span></div> -->
+                    <h1>Fresh A2 Butter</h1>
+                    <p>Farm-fresh A2 butter with rich taste and natural goodness in every bite.</p>
+                </div>
+            </div>
+
+
+         <!-- card-4 -->
+            <div class="col-md-6 card card-white" data-aos="slide-up"  data-aos-delay="300">
+
+
+                   <div class="video-wrapper">
+                        <video
+                                src="/videos/video-2.mp4"
+                                (click)="openViewer(1)"
+                                class="thumb"
+                                muted
+                                loop
+                                autoplay>
+                        </video>
+
+
+                 <div class="overlay-text"><i class="fa-solid fa-play" style="color: #3c86cb;"></i></div>
+
+                </div>
+
+                <div class="card-content">
+                    
+                    <!-- <div class="rating-section"><rating [(ngModel)]="rate" [max]="max" [readonly]="isReadonly"></rating><span class="rating-count">3.5</span></div> -->
+                    <h1>A2 Bilona Ghee</h1>
+                    <p>Traditionally churned, nutrient-rich ghee that boosts immunity and digestion.
+
+                </p>
+             </div>
+            </div>
+       
+
+            
+    
+    
+        </div>
+
+
+    </div>
+
+    
+
+   
+
+</div>
+
+
+
+
+<!-- following container is for showing the video in big div  -->
+
+<div class="viewer" *ngIf="selectedIndex !== null">
+  <div class="overlay" (click)="closeViewer()"></div>
+  <div class="video-background-modal " *ngIf="selectedIndex !== null">
+    <button class="nav prev" (click)="prevVideo()"><i class="fa-solid fa-arrow-left" style="color: #3c86cb;"></i></button>
+    
+    <video [src]="videos[selectedIndex!]"
+           autoplay
+           controls
+           muted
+           class="player">
+    </video>
+    
+    <button class="nav next" (click)="nextVideo()"><i class="fa-solid fa-arrow-right" style="color: #3c86cb;"></i></button>
+    <button class="close" (click)="closeViewer()">×</button>
+  </div>
+</div>
+

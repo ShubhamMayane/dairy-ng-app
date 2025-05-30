@@ -1,0 +1,319 @@
+
+@import url('../../../../../../../../public/css/components/fonts.style.css');
+@import url('../../../../../../../../public/css/components/button.style.css');
+
+.all-products{
+
+
+    height: auto;
+    padding: 20px;
+    margin-top: 120px;
+}    
+
+.products-card-container{
+
+    margin-bottom: 80px;
+
+}
+
+
+.products-card-container>h3{
+
+    text-align: center;
+    margin-bottom: 20px;  
+
+}
+
+.products-card-container>h1{
+
+    text-align: center;
+    margin-bottom: 100px;   
+}
+
+
+.card{
+
+    /* box-shadow: 0px 15px 20px 0px rgba(0, 0, 0, 0.1); */
+    /* padding: 30px 30px 30px 30px; */
+    padding: 0px;
+    border-radius:20px;
+    width: 23%;
+    overflow: hidden;
+     transition: transform 0.1s;
+}
+.card:hover {
+  transform: scale(1.1);
+}
+
+
+.products-card-row{
+
+    justify-content: center;
+    gap: 25px;
+
+
+}
+
+
+.card-blue{
+background-color: #103371;
+color: white;
+}
+
+.card-white{
+
+background-color: white;
+color: #103371;
+}
+.price{
+
+   
+    font-family: "Commissioner", Sans-serif;
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 1.6em ;
+    margin: 0px;
+}
+
+
+
+.card>.card-content{
+
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 20px;
+}
+
+.card>.card-content>img
+{
+    height: auto;
+    max-width: 100%;
+    border: none;
+    box-shadow: none;
+
+}
+
+
+
+/* css for blue card  */
+
+.card-blue-price{
+
+    color: #f8ab13;
+}
+
+
+.card-blue>.card-content>h1{
+    color: white;
+    margin: 0px 0px 0px 0px;
+    font-family: "Commissioner", Sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+
+} 
+
+.card-blue>.card-content>p{
+
+    color: white;
+    font-family: "Commissioner", Sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    
+}
+
+/* css for white  card  */
+.card-white-price{
+
+    color: #1c3270;
+}
+
+
+.card-white>.card-content>h1{
+    color: #1c3270;
+    margin: 0px 0px 0px 0px;
+    font-family: "Commissioner", Sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+
+} 
+.card-white>.card-content>p{
+
+    color: #7a7a7a;
+
+    font-family: "Commissioner", Sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+/*Css for video gallery */
+
+
+.thumb {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: transform 0.2s;
+}
+
+
+
+.viewer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+}
+
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 10;
+}
+
+.video-background-modal {
+  position: relative;
+  z-index: 11;
+  background: #fff;
+  padding: 50px;
+  border-radius: 10px;
+  text-align: center;
+  border-radius:0px 80px 0px 80px !important;
+}
+
+.player {
+
+  max-width: 80vw;
+  max-height: 80vh;
+ 
+}
+
+.nav {
+  position: absolute;
+  top: 50%;
+  font-size: 2rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  transform: translateY(-50%);
+  color: #333;
+}
+
+.prev {
+  left: 10px;
+}
+
+.next {
+  right: 10px;
+}
+
+.close {
+  position: absolute;
+  top: 5px;
+  
+  font-size: 2rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: red;
+}
+
+
+
+.video-wrapper {
+  position: relative;
+  width: 100%;
+  height: 70%;
+  overflow: hidden;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+
+
+.overlay-text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  background-color: rgba(0, 0, 0, 0);
+  font-size: 50px;
+  font-weight: bold;
+  opacity: 0;
+  transition: background-color 0.3s ease, opacity 0.3s ease;
+  pointer-events: none;
+}
+
+.video-wrapper:hover .thumb {
+  opacity: 0.3;
+}
+
+.video-wrapper:hover .overlay-text {
+  opacity: 1;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+
+
+
+
+
+
+
+
+
+
+/*for desktop and laptop and all other big screen*/
+
+    @media screen and (min-width: 1024px)  {}      
+
+
+   /*for Tablet*/
+
+    @media screen and (max-width: 1024px) {
+
+        .card{
+
+            width: 48%;
+        }
+
+        
+        .products-card-row{
+
+            gap: 20px;
+        }
+
+    } 
+
+	
+    /*for mobile screen */
+    @media screen and (max-width: 600px) {
+
+        .card{
+
+            width: 100%;
+        }
+
+        .products-card-row{
+
+            gap: 30px;
+        }
+       
+    } 
+
+      
+    

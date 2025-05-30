@@ -5,6 +5,7 @@ import { PagesFaqComponent } from './components/pages-faq/pages-faq.component';
 import { PagesPricingComponent } from './components/pages-pricing/pages-pricing.component';
 import { PagesProductComponent } from './components/pages-product/pages-product.component';
 import { PagesTeamComponent } from './components/pages-team/pages-team.component';
+import { PagesVideoGalleryComponent } from './components/pages-video-gallery/pages-video-gallery.component';
 
 const routes: Routes = [
   {
@@ -26,6 +27,10 @@ const routes: Routes = [
     {
       path: 'team',
       component: PagesTeamComponent,
+    },
+    {
+      path: 'video-gallery',
+      component: PagesVideoGalleryComponent,
     }
   ]
   }
