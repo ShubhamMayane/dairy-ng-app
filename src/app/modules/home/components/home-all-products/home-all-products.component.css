@@ -265,6 +265,10 @@ max-width: 25%;
             gap: 20px;
         }
 
+
+        .card:hover {
+            transform: none;
+            }
     } 
 
 	
@@ -281,6 +285,9 @@ max-width: 25%;
             gap: 30px;
         }
        
+        .card:hover {
+            transform: none;
+            }
     } 
 
       

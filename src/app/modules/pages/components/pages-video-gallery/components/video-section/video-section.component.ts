@@ -14,6 +14,8 @@ import { Component } from '@angular/core';
 export class VideoSectionComponent {
   videos: string[] = [
             '/videos/video-1.mp4',
+            '/videos/video-2.mp4',
+            '/videos/video-1.mp4',
             '/videos/video-2.mp4'
             
         ];
