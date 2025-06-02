@@ -345,13 +345,7 @@ opacity: 0.8;
  @media screen and (max-width: 600px) {
 
 
- .container-fluid{
 
-        
-    padding: 0px;
-    
-    }
-    
     .home-header-main-container {
         padding: 150px 15px 300px 15px;
     }
