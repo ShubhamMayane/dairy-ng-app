@@ -12,9 +12,27 @@
           <li class="nav-item">
             <a class="nav-link active" aria-current="page" data-bs-toggle="collapse" (click)="closeNavbar()" routerLink="/home"  routerLinkActive="active-link"  href="#">Home</a>
           </li>
+
+
+
           <li class="nav-item">
             <a class="nav-link" aria-current="page" (click)="closeNavbar()" routerLink="/about-us" routerLinkActive="active-link" href="#">About us</a>
           </li>
+
+
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" (click)="closeNavbar()"  routerLink="/pages/product"  routerLinkActive="active-link" href="#">Products</a>
+          </li>
+
+
+           <li class="nav-item">
+            <a class="nav-link" aria-current="page" (click)="closeNavbar()"  routerLink="/pages/video-gallery"  routerLinkActive="active-link" href="#">Video-Gallery</a>
+          </li>
+
+
+
+
+<!-- 
           <li class="nav-item dropdown"
             routerLinkActive="active-down"
             [routerLinkActiveOptions]="{ exact: false }"
@@ -29,7 +47,7 @@
                 <li><a class="dropdown-item" href="#" (click)="closeNavbar()" routerLink="/pages/pricing" routerLinkActive="active-link">Pricing</a></li>
                 <li><a class="dropdown-item" href="#" (click)="closeNavbar()" routerLink="/pages/video-gallery"  routerLinkActive="active-link">Video-Gallery</a></li>
             </ul>
-          </li>
+          </li> -->
 
           <li class="nav-item dropdown"  routerLinkActive="active-down"
           [routerLinkActiveOptions]="{ exact: false }">
@@ -41,6 +59,12 @@
                
             </ul>
           </li>
+
+
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" (click)="closeNavbar()"  routerLink="/pages/faq" routerLinkActive="active-link" href="#">Faq</a>
+          </li> 
+
           <li class="nav-item">
             <a class="nav-link" aria-current="page" href="#" routerLink="/contact-us"  routerLinkActive="active-link" (click)="closeNavbar()">Contact</a>
         </li>

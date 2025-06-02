@@ -8,15 +8,14 @@
    
     /* border: 1px solid black; */
     width: 100%;
-    height: auto;
-    background-image: url("../../../../../../public/images/background-images/home-header-background-imag.jpg");
+    height: 100vh;
+    /* background-image: url("../../../../../../public/images/background-images/home-header-background-imag.jpg"); */
     background-size: cover;
     background-position:bottom center;
     background-repeat: no-repeat;
     position: relative;
-    padding: 200px 0px 400px 0px;
-
- 
+    padding: 0px;
+   
 
 
   
@@ -95,6 +94,11 @@ opacity: 0.8;
     z-index: 999;
     max-width: 1000px;
     align-items: center;
+    position: absolute;
+    /*make a horizontal ceter the div*/
+    top: 50%;
+  left: 50%;
+  transform: translate(-50%, -70%);
 
 
 }
@@ -147,6 +151,75 @@ opacity: 0.8;
 .header-content-container>button:hover {
     animation: updown 2.5s linear infinite;
   }
+
+
+  /* code for carousal  */
+
+  .carousel-inner,
+.carousel-item {
+  height: 100%;
+  border: 1px solid white;
+}
+
+.carousel-item {
+  background-size: cover;
+  background-position: center;
+}
+
+.carousel{
+
+ 
+    height: 100%;
+}
+
+
+.item-1
+{
+
+   background-image: url("/images/background-images/header-backgorund-img-1.jpg");
+
+
+            
+                height: 100%;
+                width: 100%;
+                border: 1px solid black;
+                background-size: cover;
+                background-position:bottom center;
+                background-repeat: no-repeat; 
+                width: 100%;
+                height: auto;
+    /* background-image: url("../../../../../../public/images/background-images/home-header-background-imag.jpg"); */
+ 
+
+}
+
+.item-2
+{
+
+         background-image: url("/images/background-images/header-backgorund-img-2.jpg");
+      
+        height: 100%;
+        width: 100%;
+        border: 1px solid black;
+        background-size: cover;
+        background-position:center;
+        background-repeat: no-repeat; 
+
+}
+
+.item-3
+{
+
+   background-image: url("/images/background-images/header-backgorund-img-3.jpg");
+  
+    height: 100%;
+    width: 100%;
+    border: 1px solid black;
+    background-size: cover;
+    background-position:center;
+    background-repeat: no-repeat; 
+}
+
 
 
 
@@ -271,6 +344,14 @@ opacity: 0.8;
  /*for mobile screen */
  @media screen and (max-width: 600px) {
 
+
+    .container-fluid{
+
+        
+    padding: 0px;
+    
+    }
+
     .img-top-shape>svg{
         
         height: 20px;
@@ -283,7 +364,7 @@ opacity: 0.8;
     }
 
     .home-header-main-container{
-    padding: 150px 15px 300px 15px;
+    padding: 0px;
     }
 
 

@@ -19,16 +19,28 @@
           <li class="nav-item">
             <a class="nav-link" aria-current="page" routerLink="/about-us"  routerLinkActive="active-link" href="#">About us</a>
           </li>
+
+    
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" routerLink="/pages/product"  routerLinkActive="active-link" href="#">Products</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" routerLink="/pages/video-gallery"  routerLinkActive="active-link" href="#">Video-Gallery</a>
+          </li>
+
+
+
+
              <!-- Pages Dropdown -->
-            <li class="nav-item dropdown" [ngClass]="{show: pagesHovered}" (mouseenter)="pagesHovered = true"
+            <!-- <li class="nav-item dropdown" [ngClass]="{show: pagesHovered}" (mouseenter)="pagesHovered = true"
                 (mouseleave)="pagesHovered = false"
                 
                 routerLinkActive="active-drop-down"
                 [routerLinkActiveOptions]="{ exact: false }"
-                
-                >
-            <a class="nav-link" href="#" id="pagesDropdown"
-            >
+              >
+
+            <a class="nav-link" href="#" id="pagesDropdown">
 
                 Pages <i class="fa fa-angle-down" style="font-size: 15px;"></i>
             </a>
@@ -39,7 +51,7 @@
                 <li><a class="dropdown-item" href="#" routerLink="/pages/pricing"  routerLinkActive="dropdown-active-link">Pricing</a></li>
                 <li><a class="dropdown-item" href="#" routerLink="/pages/video-gallery"  routerLinkActive="dropdown-active-link">Video-Gallery</a></li>
             </ul>
-            </li>
+            </li> -->
 
             <!-- Blog Dropdown -->
             <li class="nav-item dropdown" [ngClass]="{show: blogHovered}" (mouseenter)="blogHovered = true"
@@ -51,6 +63,11 @@
                 <li><a class="dropdown-item" href="#"  routerLink="/blog"  routerLinkActive="dropdown-active-link">Single Post</a></li>
             </ul>
             </li>
+
+
+          <li class="nav-item">
+             <a class="nav-link" aria-current="page" routerLink="/pages/faq"  routerLinkActive="active-link" href="#">Faq</a>
+          </li>
 
 
             <li class="nav-item">
