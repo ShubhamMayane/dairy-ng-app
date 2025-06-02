@@ -50,7 +50,7 @@ export class HomeHeaderComponent implements OnInit,AfterViewInit{
           console.log("sliding is going to start");
           
           const carousel = new bootstrap.Carousel(myCarouselEl, {
-            interval: 2000, // Optional: Set your interval here
+            interval: 3000, // Optional: Set your interval here
             ride: 'carousel', // Start auto-cycling
             pause: false     // Don't pause on hover
           });
