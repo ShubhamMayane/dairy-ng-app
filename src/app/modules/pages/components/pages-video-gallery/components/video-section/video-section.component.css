@@ -287,8 +287,8 @@ color: #103371;
 
     @media screen and (max-width: 1024px) {
 
-        .card{
-
+        .card
+        {
             width: 48%;
             height: 100%;
         }
