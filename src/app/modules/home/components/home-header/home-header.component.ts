@@ -3,6 +3,8 @@ import { Component, HostListener, OnInit,ElementRef, ViewChild, Renderer2, After
 import { CommonModule, isPlatformBrowser } from '@angular/common';
 import { Inject, PLATFORM_ID } from '@angular/core';
 import { RouterModule } from '@angular/router';
+
+declare const bootstrap: any;
 @Component({
   selector: 'app-home-header',
   imports: [CommonModule,RouterModule],
@@ -21,15 +23,42 @@ export class HomeHeaderComponent implements OnInit,AfterViewInit{
 
   ngOnInit(): void {
     this.checkScreenSize(); // initial check
+
+
   }
  ngAfterViewInit(): void {
- this.checkScreenSize(); // initial check
+ 
+ 
+  this.checkScreenSize(); // initial check the size or the width of a screen 
+
 
 
  //logic to remove animation class once animation is done.
  this.renderer.listen(this.headerButton?.nativeElement, 'animationend', () => {
   this.renderer.removeClass(this.headerButton?.nativeElement, 'fade-up-on-load');
 });
+
+
+
+  //logic to start the slide of caraousal when load the component
+
+   if (isPlatformBrowser(this.platformId)) {
+    
+          const myCarouselEl = document.querySelector('#carouselExample');
+        if (myCarouselEl) {
+
+          console.log("sliding is going to start");
+          
+          const carousel = new bootstrap.Carousel(myCarouselEl, {
+            interval: 2000, // Optional: Set your interval here
+            ride: 'carousel', // Start auto-cycling
+            pause: false     // Don't pause on hover
+          });
+          carousel.cycle(); // <-- Manually start sliding
+        }
+
+   }
+
 
  }
 

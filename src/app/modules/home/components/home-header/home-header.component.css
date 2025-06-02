@@ -8,14 +8,14 @@
    
     /* border: 1px solid black; */
     width: 100%;
-    height: 100vh;
+    height: auto;
     /* background-image: url("../../../../../../public/images/background-images/home-header-background-imag.jpg"); */
     background-size: cover;
     background-position:bottom center;
     background-repeat: no-repeat;
     position: relative;
     padding: 0px;
-   
+    padding: 200px 0px 400px 0px;
 
 
   
@@ -94,11 +94,7 @@ opacity: 0.8;
     z-index: 999;
     max-width: 1000px;
     align-items: center;
-    position: absolute;
-    /*make a horizontal ceter the div*/
-    top: 50%;
-  left: 50%;
-  transform: translate(-50%, -70%);
+
 
 
 }
@@ -158,7 +154,7 @@ opacity: 0.8;
   .carousel-inner,
 .carousel-item {
   height: 100%;
-  border: 1px solid white;
+  
 }
 
 .carousel-item {
@@ -170,6 +166,12 @@ opacity: 0.8;
 
  
     height: 100%;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    
+
+    
 }
 
 
@@ -179,15 +181,13 @@ opacity: 0.8;
    background-image: url("/images/background-images/header-backgorund-img-1.jpg");
 
 
-            
-                height: 100%;
-                width: 100%;
-                border: 1px solid black;
-                background-size: cover;
-                background-position:bottom center;
-                background-repeat: no-repeat; 
-                width: 100%;
-                height: auto;
+
+                    height: 100%;
+                    width: 100%;
+                    background-size: cover;
+                    background-position: bottom center;
+                    background-repeat: no-repeat;
+                   
     /* background-image: url("../../../../../../public/images/background-images/home-header-background-imag.jpg"); */
  
 
@@ -198,12 +198,11 @@ opacity: 0.8;
 
          background-image: url("/images/background-images/header-backgorund-img-2.jpg");
       
-        height: 100%;
-        width: 100%;
-        border: 1px solid black;
-        background-size: cover;
-        background-position:center;
-        background-repeat: no-repeat; 
+                    height: 100%;
+                    width: 100%;
+                    background-size: cover;
+                    background-position: bottom center;
+                    background-repeat: no-repeat;
 
 }
 
@@ -212,12 +211,13 @@ opacity: 0.8;
 
    background-image: url("/images/background-images/header-backgorund-img-3.jpg");
   
-    height: 100%;
-    width: 100%;
-    border: 1px solid black;
-    background-size: cover;
-    background-position:center;
-    background-repeat: no-repeat; 
+    
+  
+                    height: 100%;
+                    width: 100%;
+                    background-size: cover;
+                    background-position: bottom center;
+                    background-repeat: no-repeat;
 }
 
 
@@ -345,12 +345,24 @@ opacity: 0.8;
  @media screen and (max-width: 600px) {
 
 
-    .container-fluid{
+ .container-fluid{
 
         
     padding: 0px;
     
     }
+    
+    .home-header-main-container {
+        padding: 150px 15px 300px 15px;
+    }
+
+
+
+    .carousel
+    {
+           left: 0;
+    }
+   
 
     .img-top-shape>svg{
         
@@ -363,9 +375,7 @@ opacity: 0.8;
         font-size: 55px;
     }
 
-    .home-header-main-container{
-    padding: 0px;
-    }
+   
 
 
 
