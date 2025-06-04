@@ -26,7 +26,7 @@
           </li>
 
           <li class="nav-item">
-            <a class="nav-link" aria-current="page" routerLink="/pages/video-gallery"  routerLinkActive="active-link" href="#">Video-Gallery</a>
+            <a class="nav-link" aria-current="page" routerLink="/pages/video-gallery"  routerLinkActive="active-link" href="#">VideoGallery</a>
           </li>
 
 
@@ -54,25 +54,29 @@
             </li> -->
 
             <!-- Blog Dropdown -->
-            <li class="nav-item dropdown" [ngClass]="{show: blogHovered}" (mouseenter)="blogHovered = true"
+            <!-- <li class="nav-item dropdown" [ngClass]="{show: blogHovered}" (mouseenter)="blogHovered = true"
                 (mouseleave)="blogHovered = false">
-            <a class="nav-link " href="#" id="blogDropdown">
+            <a class="nav-link " id="blogDropdown" >
                 Blog <i class="fa fa-angle-down"  style="font-size: 15px;"></i>
             </a>
             <ul class="dropdown-menu custom-dropdown" [class.show]="blogHovered">
                 <li><a class="dropdown-item" href="#"  routerLink="/blog"  routerLinkActive="dropdown-active-link">Single Post</a></li>
             </ul>
-            </li>
+            </li> -->
 
-
-          <li class="nav-item">
-             <a class="nav-link" aria-current="page" routerLink="/pages/faq"  routerLinkActive="active-link" href="#">Faq</a>
+             <li class="nav-item">
+            <a class="nav-link" aria-current="page"  routerLink="/blog"  routerLinkActive="active-link" href="#">Blog</a>
           </li>
 
 
-            <li class="nav-item">
+          <li class="nav-item">
+             <a class="nav-link" aria-current="page" routerLink="/pages/faq"  routerLinkActive="active-link" href="#">FAQ</a>
+          </li>
+
+
+            <!-- <li class="nav-item">
                 <a class="nav-link" aria-current="page" href="#" routerLink="/contact-us"  routerLinkActive="active-link">Contact</a>
-            </li>
+            </li> -->
 
         </ul>
      

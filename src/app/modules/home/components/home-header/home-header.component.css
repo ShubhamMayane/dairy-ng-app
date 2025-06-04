@@ -178,10 +178,7 @@ opacity: 0.8;
 .item-1
 {
 
-   background-image: url("/images/background-images/header-backgorund-img-1.jpg");
-
-
-
+                    background-image: url("/images/background-images/header-backgorund-img-1.jpg");
                     height: 100%;
                     width: 100%;
                     background-size: cover;

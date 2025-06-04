@@ -115,11 +115,19 @@
         display: block;
       }
 
+      .card-container>h3{
+        
+        font-size: 30px;
+
+      }
+      
       .card-container>p{
         text-align: center;
-        padding: 15px;
+        padding: 25px;
+        font-size: 18px;
 
       } 
+
 
 
       .my-swiper-container{

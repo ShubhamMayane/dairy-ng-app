@@ -21,7 +21,7 @@
 
                     <div class="row">
 
-                        <div class="col-md-12 img-container" data-aos="fade-up"  data-aos-delay="0" data-aos-duration="1000" >
+                        <div class="col-md-12 img-container" data-aos="fade-up"  data-aos-delay="0" data-aos-duration="1000"  (click)="openViewer(0)">
 
                             <img src="images/gallery-images/gallery-img-left-1.jpg" alt="" >
                             <div class="overlay-text big-img-text"> 
@@ -32,7 +32,7 @@
                             </div>
 
                         </div>
-                        <div class="col-md-6 img-container" data-aos="fade-up"  data-aos-delay="0" data-aos-duration="1000">
+                        <div class="col-md-6 img-container" data-aos="fade-up"  data-aos-delay="0" data-aos-duration="1000" (click)="openViewer(1)">
 
                             <img src="images/gallery-images/gallery-img-left-2.jpg" alt="">
                             <div class="overlay-text small-img-text"> 
@@ -43,7 +43,7 @@
                             </div>
 
                         </div>
-                        <div class="col-md-6 img-container" data-aos="fade-up"  data-aos-delay="0" data-aos-duration="1000">
+                        <div class="col-md-6 img-container" data-aos="fade-up"  data-aos-delay="0" data-aos-duration="1000" (click)="openViewer(2)">
                             <img src="images/gallery-images/gallery-img-left-3.jpg" alt="">
                             <div class="overlay-text small-img-text"> 
 
@@ -73,7 +73,7 @@
 
                 <div class="row">
 
-                    <div class="col-md-6 img-container" data-aos="fade-up"  data-aos-delay="0" data-aos-duration="1000">
+                    <div class="col-md-6 img-container" data-aos="fade-up"  data-aos-delay="0" data-aos-duration="1000" (click)="openViewer(3)">
 
                         <img src="images/gallery-images/gallery-img-right-1.jpg" alt="">
                         <div class="overlay-text small-img-text"> 
@@ -83,7 +83,7 @@
 
                         </div>
                     </div>
-                    <div class="col-md-6 img-container" data-aos="fade-up"  data-aos-delay="0" data-aos-duration="1000"> 
+                    <div class="col-md-6 img-container" data-aos="fade-up"  data-aos-delay="0" data-aos-duration="1000" (click)="openViewer(4)"> 
                         <img src="images/gallery-images/gallery-img-right-2.jpg" alt="">
                         <div class="overlay-text small-img-text"> 
 
@@ -94,7 +94,7 @@
                     </div>
 
 
-                    <div class="col-md-12 img-container" data-aos="fade-up"  data-aos-delay="0" data-aos-duration="1000">
+                    <div class="col-md-12 img-container" data-aos="fade-up"  data-aos-delay="0" data-aos-duration="1000" (click)="openViewer(5)">
 
                         <img src="images/gallery-images/gallery-img-right-3.jpg" alt="">
                         <div class="overlay-text big-img-text"> 
@@ -132,3 +132,15 @@
 
 
 </div>
+
+
+
+  <div class="viewer" *ngIf="selectedIndex !== null">
+        <div class="overlay" (click)="closeViewer()"></div>
+        <div class="image-background-modal">
+            <button class="nav prev" (click)="prevImage()">&#10094;</button>
+            <img [src]="images[selectedIndex!]" alt="Large view">
+            <button class="nav next" (click)="nextImage()">&#10095;</button>
+            <button class="close" (click)="closeViewer()">×</button>
+        </div>
+        </div>

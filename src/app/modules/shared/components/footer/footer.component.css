@@ -1,265 +1,269 @@
-@import url('../../../../../../public/css/components/fonts.style.css');
+@import url("../../../../../../public/css/components/fonts.style.css");
 
-
-.footer-main-div{
-
-
-    height:auto;
-    background-image: url("../../../../../../public/images/background-images/footer-background.jpg");
-    background-size: cover;
-    background-position:0px -25px;
-    background-repeat: no-repeat;
-    padding: 100px 0px 20px 0px;
+.footer-main-div {
+  height: auto;
+  background-image: url("../../../../../../public/images/background-images/footer-background.jpg");
+  background-size: cover;
+  background-position: 0px -25px;
+  background-repeat: no-repeat;
+  padding: 100px 0px 20px 0px;
+  position: relative;
 }
 
-.footer-container{
+.footer-container {
+  height: auto;
+}
+
+.footer-row {
+  height: 100%;
+}
+
+.column-header {
+  color: white;
+
+  font-family: "Commissioner", sans-serif;
+  font-size: 25px;
+  font-weight: 600;
+  line-height: 1.4em;
+}
+
+.footer-item > a {
+  text-decoration: none;
+}
+
+.footer-item > span {
+  width: 100%;
+  text-align: justify;
+}
+
+.footer-item > span > a {
+  width: 100%;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.footer-column-1 {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.footer-item {
+  display: flex;
+  gap: 10px;
+}
+
+.footer-icon-container {
+ 
+  border-radius: 15px 0px 15px 0px;
+  height: 50px;
+  width: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #4d84c9;
+  border: none;
+}
+
+.footer-icon-container > a > i {
+  color: white;
+}
+
+.footer-column-2 {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.footer-column-3 {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.footer-column-4 {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.footer-input-box {
+  font-family: "Commissioner", Sans-serif;
+
+  padding: 12px;
+}
+
+.footer-input-box::placeholder {
+  color: gray;
+}
+
+.footer-subscribe-form {
+  flex-direction: column;
+  gap: 0px;
+}
+.error-msg-container {
+  height: 12px;
+}
+.error-message > span {
+  color: #ffb7b7;
+  font-family: "Commissioner", sans-serif;
+  font-size: 15px;
+}
+
+.footer-button {
+  padding: 15px 60px 15px 60px;
+  font-family: "Commissioner", Sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  color: white;
+  background-color: #3c86cb;
+  border-style: none;
+  border-radius: 8px 8px 8px 8px;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0);
+  width: 100%;
+}
 
 
-   
-    height: auto;
+.developement-company-link
+{
+  text-decoration: none;
+
+}
+.developement-company-name{
+  color: white;
+  font-family: "Commissioner", Sans-serif;
+  font-size: 15px;
+   font-weight: 600;
 
 }
 
-.footer-row{
+.developement-company-social-icon-list >.footer-item > .footer-icon-container
+{
 
-    height: 100%;
+  border-radius: 0px;
+  height: 50px;
+  width: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  border: none;
 
 
 }
 
-
-.column-header{
-
+.developement-company-social-icon-list >.footer-item > .footer-icon-container > a > i
+{
     color: white;
+    font-size: 18px;
+}
 
-    
-    font-family: "Commissioner", sans-serif;
-    font-size: 25px;
-    font-weight: 600;
-    line-height: 1.4em;
+.up-arrow-container{
 
+  height: 40px;
+  width: 40px;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  position: absolute;
+color: #445eb8;
+  right: 10px;
+  top: 20px;
+  border: 0px;
+  cursor: pointer;
+  transition: color 0.3s ease-in-out;
 
 }
 
+.up-arrow-container:hover{
 
-.footer-item>a{
-
-    text-decoration: none;
-}
-
-.footer-item>span{
-
-    width: 100%;
-    text-align: justify;
-
-}
-
-.footer-item>span>a{  
-
-    width: 100%;
-    text-decoration: none;
-    cursor: pointer;
-}
-
-.footer-column-1{
-
-display: flex;
-flex-direction: column;
-gap: 20px;
-
-
-}
-
-.footer-item{
-
-    display: flex;
-    gap: 10px;
-  
-
-}
-
-
-
-.footer-icon-container{
-
-    border: 1px solid black;
-    border-radius: 15px 0px 15px 0px;
-    height: 50px;
-    width: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #4d84c9;
-    border:none;
-}
-
-.footer-icon-container>a>i{
+    background-color: #445eb8;
     color: white;
 }
 
 
-.footer-column-2{
+@keyframes shakeY {
+  0%, 100% { transform: translateY(0); }
+  10%, 30%, 50%, 70%, 90% { transform: translateY(-10px); }
+  20%, 40%, 60%, 80% { transform: translateY(10px); }
+}
 
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    
-    
-    }
-
-    .footer-column-3{
-
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
-        
-        
-        }
-
-        .footer-column-4{
-
-            display: flex;
-            flex-direction: column;
-            gap: 20px;
-            
-            
-            }
-
-    .footer-input-box{
-
-        font-family: "Commissioner", Sans-serif;
-        
-        padding: 12px;
-    }
-
-
-    .footer-input-box::placeholder {
-        color: gray;
-        
-      }
-
-
-      .footer-subscribe-form{
-
-        flex-direction: column;
-        gap: 0px;
-    }
-    .error-msg-container{
-    height: 12px;
-
-    }
-    .error-message>span
-    {
-        color: #ffb7b7;
-        font-family: "Commissioner", sans-serif;
-        font-size: 15px;
-        
-    }
-
-
-      .footer-button{
-
-        padding: 15px 60px 15px 60px;
-        font-family: "Commissioner", Sans-serif;
-        font-size: 14px;
-        font-weight:600;
-        color: white;
-        background-color: #3c86cb;
-        border-style: none;
-        border-radius: 8px 8px 8px 8px;
-        box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0);
-        width: 100%;
-
-    }
-
-
-    /*for desktop and laptop and all other big screen*/
-
-    @media screen and (min-width: 1024px)  {}      
-
-
-   /*for Tablet*/
-
-    @media screen and (max-width: 1024px) {
-
-        .footer-main-div{
-        
-            background-position: center center;
-        }
-
-        .footer-column-1{
-
-            width: 50%;
-        }
-
-        .footer-column-2
-        {
-
-            width: 50%;
-
-        }
-
-        .footer-column-3
-        {
-            width: 50%;
-            margin-top: 30px;
-        }
-
-        .footer-column-4{
-
-            width: 50%;
-            margin-top: 30px;
-        }
-
-        .footer-main-div{
-
-            padding: 100px 0px 40px 0px;
-        }
+.shake-y {
+  animation: shakeY 1.5s ease-in-out;
+}
 
 
 
-    } 
+/*for desktop and laptop and all other big screen*/
 
-	
-    /*for mobile screen */
-    @media screen and (max-width: 600px) {
+@media screen and (min-width: 1024px) {
+}
+
+/*for Tablet*/
+
+@media screen and (max-width: 1024px) {
+  .footer-main-div {
+    background-position: center center;
+  }
+
+  .footer-column-1 {
+    width: 50%;
+    margin-top: 30px;
+  }
+
+  .footer-column-2 {
+    width: 50%;
+  }
+
+  .footer-column-3 {
+    width: 50%;
+    margin-top: 30px;
+  }
+
+  .footer-column-4 {
+    width: 50%;
+    margin-top: 30px;
+  }
+
+  .footer-main-div {
+    padding: 100px 0px 40px 0px;
+  }
+}
+
+/*for mobile screen */
+@media screen and (max-width: 600px) {
+  .footer-main-div {
+    /* //to set the background image  */
+    background-position: center center;
+  }
+
+  .footer-column-1 {
+    margin-bottom: 30px;
+    width: 100%;
+  }
+
+  .footer-column-2 {
+    width: 50%;
+     margin-top: 30px;
+  }
+
+  .footer-column-3 {
+    width: 50%;
+    margin-top: 30px;
+  }
+
+  .footer-column-4 {
+    margin-top: 30px;
+    width: 100%;
+  }
+
+  .developement-company-details-div
+  {
+      flex-direction: column;
+
+  }
 
 
-
-        .footer-main-div{
-
-            /* //to set the background image  */
-            background-position: center center;
-        }
-
-        .footer-column-1{
-
-            margin-bottom: 30px;
-            width: 100%;
-
-        }
-
-        .footer-column-2
-        {
-
-            width: 50%;
-
-        }
-
-        .footer-column-3
-        {
-            width: 50%;
-            margin-top: 0px;
-        }
-
-        .footer-column-4{
-
-            margin-top: 30px;
-            width: 100%;
-            
-
-        }
-
-     
-
-    } 
+}

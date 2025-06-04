@@ -83,6 +83,7 @@ color: #103371;
     flex-direction: column;
     gap: 5px;
     padding: 20px;
+    cursor: pointer;
 }
 
 .card>.card-content>img
@@ -259,11 +260,14 @@ color: #103371;
   pointer-events: none;
 }
 
-.video-wrapper:hover .thumb {
+
+
+/* /hover effects on card  */
+.card:hover .thumb {
   opacity: 0.3;
 }
 
-.video-wrapper:hover .overlay-text {
+.card:hover .overlay-text {
   opacity: 1;
   background-color: rgba(0, 0, 0, 0.6);
 }
@@ -295,6 +299,15 @@ color: #103371;
         .card:hover {
           transform: none;
         }
+
+          .thumb {
+          opacity: 0.3;
+        }
+        
+        .overlay-text {
+          opacity: 1;
+          background-color: rgba(0, 0, 0, 0.6);
+        }
     } 
 
 	
@@ -315,7 +328,19 @@ color: #103371;
            .card:hover {
           transform: none;
         }
-    } 
+
+    
+        .thumb {
+          opacity: 0.3;
+        }
+        
+        .overlay-text {
+          opacity: 1;
+          background-color: rgba(0, 0, 0, 0.6);
+        }
+    
+    
+      } 
 
       
     
