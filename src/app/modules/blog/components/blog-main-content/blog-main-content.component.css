@@ -37,6 +37,69 @@
 
 }
 
+/* pure beifits section  */
+
+.pure-beifits-header
+{
+        font-size: 32px;
+        margin-bottom: 25px;
+
+}
+
+
+.benifits-card
+{
+
+   /* border: 1px solid black; */
+   padding: 30px;
+
+}
+
+.benifits-card-content{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+   
+    height: 100%;
+    padding: 20px;
+    gap: 20px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    border-radius: 5px;
+    transition: transform 0.3s;
+
+}
+
+.benifits-card-content:hover{
+
+ transform: scale(1.10);
+  box-shadow: 0 12px 24px rgba(0,0,0,0.2);
+
+}
+
+.benifits-card-content>img{
+
+    height: 70px;
+    width: 70px;
+    align-self:center;
+
+}
+
+
+
+.benifits-card-header
+{
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+
+
+
+
+
+
+
+
 .swiper-header{
     font-size: 32px;
 }
@@ -54,12 +117,7 @@
 
 }
 
-.horizontal-card-image-container
-{   
-    
-    
 
-}
 .horizontal-card-image-container>img{
 
     height: auto;
@@ -125,8 +183,19 @@
             width: 100%;
 
         }
-      
 
+            .benifits-card
+            {
+
+            width: 50%;
+
+            }
+      
+    .benifits-card-content:hover
+    {
+        transform: none;
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    }
     } 
 
 	
@@ -158,4 +227,16 @@
         }
 
 
+            .benifits-card
+            {            
+                width: 100%;
+                margin-top: 0px;
+
+            }
+      
+    .benifits-card-content:hover
+    {
+        transform: none;
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    }
     } 

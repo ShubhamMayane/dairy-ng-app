@@ -12,7 +12,23 @@ import { FormsModule } from '@angular/forms';
   styleUrl: './image-swiper.component.css',
   schemas:[CUSTOM_ELEMENTS_SCHEMA ]
 })
-export class ImageSwiperComponent  implements OnInit, OnDestroy{
+export class ImageSwiperComponent  implements OnInit
+{
+
+  selectedIndex: number | null = null;
+
+              images: string[] = 
+              [
+                'images/image-slider-images/image-1.jpg',
+                'images/image-slider-images/image-2.jpg',
+                'images/image-slider-images/image-3.jpg',
+                'images/image-slider-images/image-1.jpg',
+                'images/image-slider-images/image-2.jpg',
+                'images/image-slider-images/image-3.jpg',
+               ];
+
+
+
   constructor(private renderer: Renderer2, private el: ElementRef, @Inject(PLATFORM_ID) private platformId: any) { }
   ngOnInit(): void {
     // Check if we are in the browser environment before accessing window
@@ -22,10 +38,7 @@ export class ImageSwiperComponent  implements OnInit, OnDestroy{
   }
 
 
-  ngOnDestroy(): void {
-    // Clean up any dynamic changes (if needed)
-   
-  }
+
 
   @HostListener('window:resize', ['$event'])
   onResize(event: any) {
@@ -49,6 +62,38 @@ export class ImageSwiperComponent  implements OnInit, OnDestroy{
       this.renderer.setAttribute(element, 'slides-per-group', '1');
     }
   }
+
+
+   //1.to open image viewer
+            openViewer(index: number) 
+            {
+              console.log(index);
+              
+                this.selectedIndex = index;
+            }
+
+
+            //2.to close opened image viewer
+            closeViewer() 
+            {
+                this.selectedIndex = null;
+            }
+
+
+            //3.to go to prev image
+            prevImage() 
+            {
+                if (this.selectedIndex !== null) {
+                this.selectedIndex = (this.selectedIndex - 1 + this.images.length) % this.images.length;
+                }
+            }
+
+            //4.to go to next image
+            nextImage() {
+                if (this.selectedIndex !== null) {
+                this.selectedIndex = (this.selectedIndex + 1) % this.images.length;
+                }
+            }
 
 
 }

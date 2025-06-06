@@ -5,6 +5,8 @@ import { isPlatformBrowser } from '@angular/common';
 import { Inject, PLATFORM_ID } from '@angular/core';
  import{AfterViewInit, ElementRef, ViewChild } from '@angular/core';
 
+
+
 @Component({
   selector: 'app-footer',
   imports: [CommonModule ,ReactiveFormsModule],
@@ -59,6 +61,8 @@ export class FooterComponent  implements AfterViewInit  {
       behavior: 'smooth' // Smooth scroll
     });
   }
+
+
 
 
 
