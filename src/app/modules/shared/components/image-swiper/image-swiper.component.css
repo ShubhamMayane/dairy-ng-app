@@ -122,7 +122,15 @@ swiper-slide>img{
 
    /*for Tablet*/
 
-    @media screen and (max-width: 1024px) {} 
+    @media screen and (max-width: 1024px) {
+
+     .image-in-viewer{
+
+        width: 100%;
+
+       }
+
+    } 
 
 	
     /*for mobile screen */
@@ -131,5 +139,15 @@ swiper-slide>img{
         .companies-container{
 
             flex-direction: column;
-        }
+       }
+
+
+       .image-in-viewer{
+
+        width: 100%;
+
+       }
+
+ 
+
     } 

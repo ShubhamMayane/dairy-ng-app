@@ -13,27 +13,27 @@
            
           >
             <swiper-slide>
-                    <img class="company-img" src="images/image-slider-images/image-1.jpg" alt=""  (click)="openViewer(0)">
+                    <img class="slide-img" src="images/image-slider-images/image-1.jpg" alt=""  (click)="openViewer(0)">
         
             </swiper-slide>
             <swiper-slide> 
-                <img class="company-img" src="images/image-slider-images/image-2.jpg" alt=""  (click)="openViewer(1)">
+                <img class="slide-img" src="images/image-slider-images/image-2.jpg" alt=""  (click)="openViewer(1)">
             </swiper-slide>
             <swiper-slide>
         
-                <img class="company-img" src="images/image-slider-images/image-3.jpg" alt=""  (click)="openViewer(2)">
+                <img class="slide-img" src="images/image-slider-images/image-3.jpg" alt=""  (click)="openViewer(2)">
         
             </swiper-slide>
             <swiper-slide>
-                <img class="company-img" src="images/image-slider-images/image-1.jpg" alt=""  (click)="openViewer(3)">
+                <img class="slide-img" src="images/image-slider-images/image-1.jpg" alt=""  (click)="openViewer(3)">
         
             </swiper-slide>
             <swiper-slide>
-                <img class="company-img" src="images/image-slider-images/image-2.jpg" alt=""  (click)="openViewer(4)">
+                <img class="slide-img" src="images/image-slider-images/image-2.jpg" alt=""  (click)="openViewer(4)">
         
             </swiper-slide>
             <swiper-slide>
-                <img class="company-img" src="images/image-slider-images/image-3.jpg" alt=""  (click)="openViewer(5)">
+                <img class="slide-img" src="images/image-slider-images/image-3.jpg" alt=""  (click)="openViewer(5)">
             </swiper-slide>
           
         
@@ -54,7 +54,7 @@
         <div class="overlay" (click)="closeViewer()"></div>
         <div class="image-background-modal">
             <button class="nav prev" (click)="prevImage()">&#10094;</button>
-            <img [src]="images[selectedIndex!]" alt="Large view">
+            <img [src]="images[selectedIndex!]"  class="image-in-viewer" alt="Large view">
             <button class="nav next" (click)="nextImage()">&#10095;</button>
             <button class="close" (click)="closeViewer()">×</button>
         </div>
