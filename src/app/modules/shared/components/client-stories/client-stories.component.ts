@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component, ElementRef, Renderer2, OnInit, OnDestroy, HostListener, Inject, PLATFORM_ID } from '@angular/core';
+import { Component, ElementRef, Renderer2, OnInit, OnDestroy, HostListener, Inject, PLATFORM_ID, ViewChild } from '@angular/core';
 import { isPlatformBrowser } from '@angular/common';
 import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { RatingModule } from 'ngx-bootstrap/rating';
@@ -18,8 +18,11 @@ export class ClientStoriesComponent implements OnInit, OnDestroy {
     max = 5;
     rate = 5;
     isReadonly = true;
+     @ViewChild('mySwiper') swiperEl!: ElementRef;
+
   
     constructor(private renderer: Renderer2, private el: ElementRef, @Inject(PLATFORM_ID) private platformId: any) { }
+
     ngOnInit(): void {
       // Check if we are in the browser environment before accessing window
       if (isPlatformBrowser(this.platformId)) {
@@ -27,6 +30,23 @@ export class ClientStoriesComponent implements OnInit, OnDestroy {
       }
     }
   
+
+
+
+     ngAfterViewInit() {
+      //logic to stop sliding when i hover the swiper container
+      const swiperContainer = this.swiperEl.nativeElement;
+
+    swiperContainer.addEventListener('mouseenter', () => {
+      // console.log("mouse enetered");
+      
+      swiperContainer.swiper.autoplay.stop();
+    });
+
+    swiperContainer.addEventListener('mouseleave', () => {
+      swiperContainer.swiper.autoplay.start();
+    });
+  }
     
     ngOnDestroy(): void {
       // Clean up any dynamic changes (if needed)

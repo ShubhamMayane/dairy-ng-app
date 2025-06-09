@@ -70,11 +70,11 @@ width: 100%;
 
 /* custom fade up animation  */
 .fade-up-on-load {
-  opacity: 0;
-  transform: translateY(40px); /* start slightly lower */
-  animation: fadeUp 1s ease forwards;
-   animation-delay: 0.5s;
-   pointer-events: auto; /* <-- makes sure element is interactable */
+    opacity: 0;
+    transform: translateY(40px); /* start slightly lower */
+    animation: fadeUp 1s ease forwards;
+    animation-delay: 0.3s;
+    pointer-events: auto; /* <-- makes sure element is interactable */
 
 
 }

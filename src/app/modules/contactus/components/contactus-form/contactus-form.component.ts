@@ -39,6 +39,11 @@ export class ContactusFormComponent implements AfterViewInit {
     });
   }
 
+    get f() 
+    {
+      return this.form.controls;
+    }
+
     ngAfterViewInit() {
 
     if (isPlatformBrowser(this.platformId)) 
@@ -63,9 +68,7 @@ export class ContactusFormComponent implements AfterViewInit {
         }, 3000); // Auto-hide after 3 seconds
       }
 
-  get f() {
-    return this.form.controls;
-  }
+
 
   onSubmit() {
     if (this.form.valid) {

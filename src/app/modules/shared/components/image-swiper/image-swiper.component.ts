@@ -16,6 +16,7 @@ export class ImageSwiperComponent  implements OnInit
 {
 
   selectedIndex: number | null = null;
+  
 
               images: string[] = 
               [
