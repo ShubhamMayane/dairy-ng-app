@@ -18,7 +18,16 @@ export class HomeTestimonialsComponent  implements OnInit {
   max = 5;
   rate = 5;
   isReadonly = true;
+  companySlidesConfig = 
+  {
+  slidesPerView: 5,
+  slidesPerGroup: 5,
+  navigation: false
+  };
 
+  feedbackSlidesConfig = {
+    navigation: true
+  };
 
   @ViewChild('swiperRef', { static: false }) swiperElement!: ElementRef;
 
@@ -45,6 +54,9 @@ export class HomeTestimonialsComponent  implements OnInit {
     } else {
       this.setupHoverEvents(swiperContainer);
     }
+
+
+
   }
 
 
@@ -67,7 +79,8 @@ export class HomeTestimonialsComponent  implements OnInit {
 //to handle browser size reduce or increase event 
 
   @HostListener('window:resize', ['$event'])
-  onResize(event: any) {
+  onResize(event: any)
+   {
     this.updateAttributes(event.target.innerWidth);
   }
 
@@ -75,20 +88,22 @@ export class HomeTestimonialsComponent  implements OnInit {
               // slides-per-group="5"
 
   // Method to apply or remove attributes based on window size
-  private updateAttributes(width: number): void {
-    const companySlider = this.el.nativeElement.querySelector('.myCompaniesSwiper');
-    const feedbackSlider=this.el.nativeElement.querySelector('.mySwiper');
-    
-    if (width >= 1024) {
-      this.renderer.setAttribute(companySlider, 'slides-per-view', '5');  //to show 5 slides per view
-      this.renderer.setAttribute(companySlider, 'slides-per-group', '5');
-      this.renderer.setAttribute(feedbackSlider, 'navigation','true');   //to show prev and next button
-
+  private updateAttributes(width: number): void {    
+    // console.log("updateAttributes() is called");
+      if (width >= 1024) {
+      this.companySlidesConfig = {
+        slidesPerView: 5,
+        slidesPerGroup: 5,
+        navigation: false
+      };
+      this.feedbackSlidesConfig.navigation = true;
     } else {
-      this.renderer.setAttribute(companySlider, 'slides-per-view', '2');
-      this.renderer.setAttribute(companySlider, 'slides-per-group', '2');
-      this.renderer.setAttribute(feedbackSlider, 'navigation','false');//to hide prev and show button
-    
+      this.companySlidesConfig = {
+        slidesPerView: 2,
+        slidesPerGroup: 2,
+        navigation: false
+      };
+      this.feedbackSlidesConfig.navigation = false;
     }
   }
 

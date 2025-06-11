@@ -39,10 +39,10 @@
     border-radius: 80px 20px 20px 20px;
     width: 23%;
     overflow: hidden;
-     transition: transform 0.1s;
+     transition: transform 0.3s !important ;
 }
 .card:hover {
-  transform: scale(1.1);
+  transform: scale(1.1) !important;
 }
 
 
@@ -267,7 +267,7 @@ max-width: 25%;
 
 
         .card:hover {
-            transform: none;
+            transform: none !important;
             }
     } 
 
@@ -286,7 +286,7 @@ max-width: 25%;
         }
        
         .card:hover {
-            transform: none;
+            transform: none !important;
             }
     } 
 

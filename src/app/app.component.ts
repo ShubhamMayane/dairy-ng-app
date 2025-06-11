@@ -31,43 +31,73 @@ import { WhatsappButtonAppComponent } from "./modules/shared/components/whatsapp
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
-export class AppComponent implements OnInit {
+export class AppComponent implements OnInit,AfterViewInit {
   title = 'dairy-ng-app';
   isMobile: boolean = false;
   isBrowser: boolean;
+private shouldDisableAOS = false;
 
-  constructor(@Inject(PLATFORM_ID) private platformId: Object,private router: Router) {
+  constructor(@Inject(PLATFORM_ID) private platformId: Object,private router: Router) 
+  {
     this.isBrowser = isPlatformBrowser(this.platformId);
 
-
-    ///logic to scroll till top when we render another route in the applicaiton -start
-    //  this.router.events.subscribe(event => {
-    //   if (event instanceof NavigationEnd) {
-    //     window.scrollTo({ top: 0, behavior: 'auto' });
-    //   }
-    // });
-
-     ///logic to scroll till top when we render another route in the applicaiton -end
   }
 
   ngOnInit() {
 
-    if (this.isBrowser) {
+    if (this.isBrowser) 
+    {
       this.checkScreenSize();
+
+      //code to check browser scroll
+      this.shouldDisableAOS = window.scrollY > 100;
     }
+  }
 
-    if (isPlatformBrowser(this.platformId)) {
+
+
+  ngAfterViewInit() 
+  {
+
+
+    //  if (this.shouldDisableAOS) 
+    //     {
+    //         // Ensure AOS styles don’t leave elements stuck
+    //         // this.forceShowAosElements();
+    //     }
+
+
+     if (isPlatformBrowser(this.platformId)) 
+    {
       AOS.init({
-
-        //  once:true
-
+        
+        // disable: () => this.shouldDisableAOS,  // logic for  if scroll is >10 rhen disable all aos animation
+          once:true
         // duration: 1000,   // set aos-duration=1000 to all element jyanna aapan aos che animation lavala aahe
         // once: true           // yane kay hoil ki sarva elements he ekdach animate kele jatil
       });
 
-  }
+
+       
+
+    }
   }
 
+
+
+  // private forceShowAosElements(): void {
+
+  //   console.log("forceShowAosElements() is");
+    
+  //   const elements = document.querySelectorAll('[data-aos]');
+  //   elements.forEach(el => {
+  //     (el as HTMLElement).style.opacity = '1';
+  //     (el as HTMLElement).style.transform = 'none'
+     
+
+      
+  //   });
+  //}
 
 
 //event handler function which gets called when you resize the browser size

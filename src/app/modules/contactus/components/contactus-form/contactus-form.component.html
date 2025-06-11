@@ -65,13 +65,13 @@
 
             </div>
 
-            <div class="col-md-7 right-column">
+            <div class="col-md-7 right-column" data-aos="fade-in">
 
 
-                <h1 class="blue-big-font form-header" data-aos="fade-up"  data-aos-delay="0" data-aos-duration="1000" >Send Us A Message</h1>
-                <p class="gray-description-font form-sub-header"data-aos="fade-up"  data-aos-delay="0" data-aos-duration="1000"  >Please fill out the form below and our expert team will get back to you shortly.</p>
+                <h1 class="blue-big-font form-header"    >Send Us A Message</h1>
+                <p class="gray-description-font form-sub-header"   >Please fill out the form below and our expert team will get back to you shortly.</p>
 
-                <form class="needs-validation" data-aos="slide-up" data-aos-delay="0" data-aos-duration="1000" [formGroup]="form" (ngSubmit)="onSubmit()" novalidate >
+                <form class="needs-validation"  [formGroup]="form" (ngSubmit)="onSubmit()" novalidate >
                     <div class="row">
                       <div class="col-md-6 mb-3">
                         <label for="firstName">First name <span>*</span></label>
@@ -102,7 +102,7 @@
                     <div class="row">
                         <div class="col-md-6 mb-3">
                           <label for="firstName">Email Address <span>*</span></label>
-                          <input type="email" formControlName="email"  class="form-control" id="firstName" placeholder="Add email" value="" required="">
+                          <input type="email" formControlName="email"  class="form-control" id="email" placeholder="Add email" value="" required="">
 
                           <div class="error-message-container">
                             <div class="error" *ngIf="f['email'].touched && f['email'].invalid">

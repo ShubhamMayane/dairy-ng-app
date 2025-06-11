@@ -39,10 +39,10 @@
     border-radius:20px;
     width: 23%;
     overflow: hidden;
-     transition: transform 0.1s;
+     transition: transform 0.3s;
 }
 .card:hover {
-  transform: scale(1.1);
+  transform: scale(1.1) ;
 }
 
 

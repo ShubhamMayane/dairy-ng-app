@@ -191,11 +191,12 @@
             <swiper-container
             class="myCompaniesSwiper"
             autoplay="true"
-            slides-per-view="5"
-            slides-per-group="5"
+            [slidesPerView]="companySlidesConfig.slidesPerView"
+            [slidesPerGroup]="companySlidesConfig.slidesPerGroup"
+            [navigation]="companySlidesConfig.navigation"
+            loop="true" 
+           >
            
-           
-          >
             <swiper-slide class="companies-swiper-slide">
                     <img class="company-img" src="images/card-images/company-slide-1.png" alt="">
         
