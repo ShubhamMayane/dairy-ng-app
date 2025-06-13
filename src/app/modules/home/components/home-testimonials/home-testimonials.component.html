@@ -36,7 +36,7 @@
                       class="mySwiper" 
                       slides-per-view="1" 
                       css-mode="true" 
-                      navigation="true"
+                      [navigation]="navigationFlag"
                       autoplay='{"delay": 2000}'
                       loop="true"
                     
@@ -191,9 +191,6 @@
             <swiper-container
             class="myCompaniesSwiper"
             autoplay="true"
-            [slidesPerView]="companySlidesConfig.slidesPerView"
-            [slidesPerGroup]="companySlidesConfig.slidesPerGroup"
-            [navigation]="companySlidesConfig.navigation"
             loop="true" 
            >
            

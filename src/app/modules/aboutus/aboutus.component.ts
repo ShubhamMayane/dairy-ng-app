@@ -42,8 +42,13 @@ export class AboutusComponent {
 
 
       private checkAndRemoveAosAttributes(): void {
+    
+    
     const scrollTop = window.scrollY || document.documentElement.scrollTop;
-    if (scrollTop > 300) {
+
+    console.log(scrollTop);
+    
+    if (scrollTop > 200) {
       const aosElements = document.querySelectorAll('[data-aos]');
       aosElements.forEach(el => {
         el.removeAttribute('data-aos');

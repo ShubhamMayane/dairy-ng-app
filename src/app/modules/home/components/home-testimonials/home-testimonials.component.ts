@@ -18,35 +18,30 @@ export class HomeTestimonialsComponent  implements OnInit {
   max = 5;
   rate = 5;
   isReadonly = true;
-  companySlidesConfig = 
-  {
-  slidesPerView: 5,
-  slidesPerGroup: 5,
-  navigation: false
-  };
+  navigationFlag:boolean=true;
 
-  feedbackSlidesConfig = {
-    navigation: true
-  };
-
-  @ViewChild('swiperRef', { static: false }) swiperElement!: ElementRef;
+  @ViewChild('swiperRef', { static: false }) swiperElement!: ElementRef;     // client review swiper
 
 
   constructor(private renderer: Renderer2, private el: ElementRef, @Inject(PLATFORM_ID) private platformId: any) {}
   
   
   ngOnInit(): void {
+
+
     // Check if we are in the browser environment before accessing window
-    if (isPlatformBrowser(this.platformId)) {
-      this.updateAttributes(window.innerWidth);  // Set attributes initially based on the current width
-    }
+
+      if (isPlatformBrowser(this.platformId)) 
+      {
+        this.updateAttributes(window.innerWidth);  // Set attributes initially based on the current width
+      }
+
   }
 
   //logic to stop a swiper auto play when we hover the swiper element -start
 
  ngAfterViewInit() {
     const swiperContainer = this.swiperElement.nativeElement;
-
     if (!swiperContainer.swiper) {
       swiperContainer.addEventListener('swiperinit', () => {
         this.setupHoverEvents(swiperContainer);
@@ -88,24 +83,22 @@ export class HomeTestimonialsComponent  implements OnInit {
               // slides-per-group="5"
 
   // Method to apply or remove attributes based on window size
-  private updateAttributes(width: number): void {    
-    // console.log("updateAttributes() is called");
+   // Method to apply or remove attributes based on window size
+    private updateAttributes(width: number): void {
+      const element1 = this.el.nativeElement.querySelector('.myCompaniesSwiper');
+     
+
       if (width >= 1024) {
-      this.companySlidesConfig = {
-        slidesPerView: 5,
-        slidesPerGroup: 5,
-        navigation: false
-      };
-      this.feedbackSlidesConfig.navigation = true;
-    } else {
-      this.companySlidesConfig = {
-        slidesPerView: 2,
-        slidesPerGroup: 2,
-        navigation: false
-      };
-      this.feedbackSlidesConfig.navigation = false;
+        this.renderer.setAttribute(element1, 'slides-per-view', '5');
+        this.renderer.setAttribute(element1, 'slides-per-group', '5');
+      } else
+      {
+  
+        this.renderer.setAttribute(element1, 'slides-per-view', '2');
+        this.renderer.setAttribute(element1, 'slides-per-group', '2');
+        this.navigationFlag=false;
+      }
     }
-  }
 
 
 

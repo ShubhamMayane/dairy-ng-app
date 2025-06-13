@@ -25,7 +25,8 @@ export class ClientStoriesComponent implements OnInit, OnDestroy {
 
     ngOnInit(): void {
       // Check if we are in the browser environment before accessing window
-      if (isPlatformBrowser(this.platformId)) {
+      if (isPlatformBrowser(this.platformId)) 
+      {
         this.updateAttributes(window.innerWidth);  // Set attributes initially based on the current width
       }
     }

@@ -53,12 +53,21 @@
  
    }
 
+   .right-content-column
+   {
 
+    padding: 50px 30px 30px 50px;
+   }
+
+  .left-content-column
+  {
+
+    padding: 50px 50px 30px 30px;
+
+  }
    .column-2{
 
-    
-     
-     padding: 50px 30px 30px 50px;
+
      display: flex;
 }
 
