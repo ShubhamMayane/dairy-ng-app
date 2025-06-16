@@ -316,6 +316,15 @@ color: #103371;
     /*for mobile screen */
     @media screen and (max-width: 600px) {
 
+      .all-videos{
+
+
+          height: auto;
+          padding: 20px;
+          margin-top: 50px;
+      }    
+
+
         .card{
 
             width: 100%;

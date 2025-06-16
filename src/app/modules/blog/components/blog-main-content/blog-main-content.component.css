@@ -202,10 +202,27 @@
     /*for mobile screen */
     @media screen and (max-width: 600px) {
 
+       .blog-main-content
+       {
+
+           margin-top: 50px;
+          
+
+        }
+
+
         .blog-main-content-container{
 
             padding-left:20px;
             padding-right:20px;
+          
+
+        }
+
+        .blog-page-header
+        {
+             font-size: 30px !important;
+
 
         }
 
