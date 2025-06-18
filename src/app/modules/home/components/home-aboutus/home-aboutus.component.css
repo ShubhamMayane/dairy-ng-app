@@ -260,6 +260,13 @@ margin-bottom: 0px;
 
     @media screen and (max-width: 1024px) {
 
+
+        .our-goodwill-item
+        {
+                flex-direction: column;
+        }
+
+       
         .column-1{
 
             width: 50%;
@@ -283,10 +290,7 @@ margin-bottom: 0px;
 
         .aboutus-row
         {
-
             gap: 50px;
-
-
         }
         .column-1{
             
@@ -353,10 +357,19 @@ margin-bottom: 0px;
             }
 
             .our-goodwill-item
-                {
+            {
 
                     padding: 10px;
-                }
+                    flex-direction: column;
+            }
+
+
+                  .our-goodwill-item>svg{
+
+                    height: 60px;
+                    width: 60px;
+
+                  }
 
 
 }

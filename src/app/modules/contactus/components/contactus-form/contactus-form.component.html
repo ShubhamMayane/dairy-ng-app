@@ -27,7 +27,7 @@
                     <div class="contact-details-item mb-3">
                         <div class="contact-details-item-header mb-2">
                             <i class="fa-solid fa-envelope"></i>
-                            <span  >Email Support</span>
+                            <span >Email Support</span>
                         </div>
                         <p  class="card-content"> <a [href]="'mailto:' + emailId" class="contact-link gray-description-font">{{emailId}}</a></p>
                     </div>
@@ -65,7 +65,7 @@
 
             </div>
 
-            <div class="col-md-7 right-column" data-aos="fade-in">
+            <div class="col-md-7 right-column" data-aos="fade-in" data-aos-duration="1000">
 
 
                 <h1 class="blue-big-font form-header"    >Send Us A Message</h1>
@@ -118,7 +118,7 @@
                           <div class="error-message-container">
                             <div class="error" *ngIf="f['subject'].touched && f['subject'].invalid">
                                 <span>Subject is required.</span>
-                              </div>
+                            </div>
                             </div>
                         </div>
 

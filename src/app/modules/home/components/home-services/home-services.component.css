@@ -21,7 +21,7 @@
 
    .column-1>img{
 
-     height: auto;
+     height: 100%;
      max-width: 100%;
      border: none;
      box-shadow: none;
@@ -94,7 +94,8 @@
    .column3-count{
 
      display: flex;
-     gap: 15px;
+     gap: 50px;
+    
      }
 
      .column3-count-item>h1{
