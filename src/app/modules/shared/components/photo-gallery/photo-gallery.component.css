@@ -151,12 +151,19 @@
   border-radius: 10px;
   text-align: center;
   border-radius:80px 0px 80px 0px !important;
+
 }
 
-.modal img {
+
+
+
+.image-background-modal img {
   max-width: 80vw;
   max-height: 80vh;
 }
+
+
+
 
 .nav {
   position: absolute;

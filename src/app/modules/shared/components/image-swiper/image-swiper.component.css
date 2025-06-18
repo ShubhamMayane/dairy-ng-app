@@ -25,7 +25,7 @@ swiper-slide{
 }
 swiper-slide>img{
 
-    height: auto;
+    height: 200px;
     max-width: 100%;
     border: none;
     border-radius: 0;
@@ -71,9 +71,9 @@ swiper-slide>img{
   border-radius: 80px 0px 80px 0px;
 }
 
-.modal img {
-  max-width: 90vw;
-  max-height: 90vh;
+.image-background-modal img {
+  max-width: 80vw;
+  max-height: 80vh;
 }
 
 .nav {
@@ -147,6 +147,13 @@ swiper-slide>img{
 
         width: 100%;
 
+       }
+
+       swiper-slide>img
+       {
+
+          height: 200px;
+  
        }
 
  

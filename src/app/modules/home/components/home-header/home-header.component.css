@@ -262,9 +262,10 @@ opacity: 0.8;
 
     .card-right-section{
         
-        background-image: url("../../../../../../public/images/card-images/cows-on-a-diary-farm.jpg");
+        background-image: url("../../../../../../public/images/card-images/cows-on-a-diary-farm.webp");
         background-position: center;
         background-size: cover;
+        position: relative;
       
      }
 
@@ -277,9 +278,12 @@ opacity: 0.8;
             align-items: center;
             height: 100%;
             width: 100%;
-            
-            
+        
     }
+
+
+
+
 
 
     

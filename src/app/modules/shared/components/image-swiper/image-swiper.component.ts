@@ -20,12 +20,12 @@ export class ImageSwiperComponent  implements OnInit
 
               images: string[] = 
               [
-                'images/image-slider-images/image-1.jpg',
-                'images/image-slider-images/image-2.jpg',
-                'images/image-slider-images/image-3.jpg',
-                'images/image-slider-images/image-1.jpg',
-                'images/image-slider-images/image-2.jpg',
-                'images/image-slider-images/image-3.jpg',
+                'images/image-slider-images/image-1.webp',
+                'images/image-slider-images/image-2.webp',
+                'images/image-slider-images/image-3.webp',
+                'images/image-slider-images/image-1.webp',
+                'images/image-slider-images/image-2.webp',
+                'images/image-slider-images/image-3.webp',
                ];
 
 

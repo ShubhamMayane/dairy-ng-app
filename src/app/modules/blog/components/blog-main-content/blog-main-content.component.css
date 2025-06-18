@@ -118,9 +118,15 @@
 }
 
 
+.horizontal-card-image-container{
+
+    height: 100%;
+
+}
+
 .horizontal-card-image-container>img{
 
-    height: auto;
+    height: 100%;
     max-width: 100%;
     border: none;
     border-radius: 0;

@@ -12,12 +12,12 @@ export class PhotoGallaryComponent
     selectedIndex: number | null = null;
     images: string[] = 
               [
-                'images/gallery-images/gallery-img-left-1.jpg',
-                'images/gallery-images/gallery-img-left-2.jpg',
-                'images/gallery-images/gallery-img-left-3.jpg',
-                'images/gallery-images/gallery-img-right-1.jpg',
-                'images/gallery-images/gallery-img-right-2.jpg',
-                'images/gallery-images/gallery-img-right-3.jpg'
+                'images/gallery-images/gallery-img-left-1.webp',
+                'images/gallery-images/gallery-img-left-2.webp',
+                'images/gallery-images/gallery-img-left-3.webp',
+                'images/gallery-images/gallery-img-right-1.webp',
+                'images/gallery-images/gallery-img-right-2.webp',
+                'images/gallery-images/gallery-img-right-3.webp'
                
                ];
 
