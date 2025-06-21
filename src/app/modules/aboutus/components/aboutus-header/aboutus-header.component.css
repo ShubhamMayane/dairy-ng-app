@@ -49,7 +49,7 @@
 
     margin: -100px 150px 0px 30px;
     padding: 30px 30px 30px 30px;
-    background-color: #103371;
+    background-color: #310a06;
     border-radius: 0px 50px 0px 50px;
     position: relative;
     z-index: 1;
@@ -107,7 +107,7 @@ h3>span{
 
     position: absolute;
     font-size: 75px;
-    color: #0E71FE17;
+    color: #905e5e1c;
     z-index: -1;
     left: -40px;
     top: -25px;
@@ -117,7 +117,7 @@ h3>span{
 
 .right-column-sub-text>h4{
 
-    color: #103371;
+    color: #2f0c07;
     margin-bottom: 0px;
     font-family: "Commissioner", Sans-serif;
     font-size:20px;

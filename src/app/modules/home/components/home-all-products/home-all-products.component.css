@@ -54,14 +54,14 @@
 
 
 .card-blue{
-background-color: #103371;
+background-color: #370506;
 color: white;
 }
 
 .card-white{
 
 background-color: white;
-color: #103371;
+color: #370506;
 }
 .price{
 
@@ -128,7 +128,7 @@ color: #103371;
 
 
 .card-white>.card-content>h1{
-    color: #1c3270;
+    color: #370506;
     margin: 0px 0px 0px 0px;
     font-family: "Commissioner", Sans-serif;
     font-size: 32px;

@@ -97,10 +97,12 @@ swiper-slide>img{
 
 .prev {
   left: 10px;
+  color: #945C5D;
 }
 
 .next {
   right: 10px;
+  color: #945C5D;
 }
 
 .close {

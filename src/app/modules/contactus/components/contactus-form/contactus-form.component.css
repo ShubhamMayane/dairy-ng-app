@@ -43,7 +43,7 @@
 .contact-details-item-header>span{
 
     
-  color: #103371;
+  color: #310a06;
   font-family: "Commissioner", Sans-serif;
   font-size: 25px;
   font-weight: 700;
@@ -59,7 +59,7 @@
 
 
 .contact-us-description{
-    color: #103371;
+    color: #310a06;
     font-family: "Commissioner", Sans-serif;
     font-size: 20px;
     font-weight: 600;
@@ -81,7 +81,7 @@
 
 label{
 
-    color: #103371;
+    color: #905e5e;
     font-family: "Commissioner", Sans-serif;
     font-size: 16px;
     font-weight: 600;
@@ -142,7 +142,7 @@ label>span{
     font-size: 14px;
     font-weight: 600;
     line-height: var(--e-global-typography-accent-line-height);
-    background-color: #3c86cb;
+    background-color: #905e5e;
     border-style: none;
     border-radius: 8px 8px 8px 8px;
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0);

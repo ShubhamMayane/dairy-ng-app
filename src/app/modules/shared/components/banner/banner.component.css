@@ -12,10 +12,11 @@
        
         width: 100%;
         height: auto;
-        background-image: url("/images/background-images/banner.jpg");
-      position: relative;
+        /* background-image: url("/images/background-images/banner.jpg"); */
+        background-color: #370506;
+         position: relative;
         background-repeat: no-repeat;
-        background-color: #F0FCFF;
+        /* background-color: #F0FCFF; */
         background-position: bottom center;
         background-size: cover;
         border-radius: 80px 80px 30px 30px;
@@ -85,14 +86,13 @@
 
 .banner-kid-img{
 
-    height: auto;
-    width: 420px;
+    height: 100%;
     max-width: 100%;
     border: none;
     border-radius: 0;
     box-shadow: none;
     position:absolute;
-    top: -40px;
+    
 
 }
 
@@ -169,5 +169,14 @@
 
                 .banner-kid-img{
                     position: static;
+                    height: 250px;
+                }
+
+
+                .right-column{
+
+                
+                    padding-bottom: 50px;
+                
                 }
     } 

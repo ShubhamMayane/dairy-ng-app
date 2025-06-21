@@ -2,9 +2,9 @@
 
 .footer-main-div {
   height: auto;
-  background-image: url("../../../../../../public/images/background-images/footer-background.jpg");
+  background-image: url("../../../../../../public/images/background-images/footer-background.png");
   background-size: cover;
-  background-position: 0px -25px;
+  background-position: 0px -100px;
   background-repeat: no-repeat;
   padding: 100px 0px 20px 0px;
   position: relative;
@@ -61,7 +61,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #4d84c9;
+  background-color: #945C5D;
   border: none;
 }
 
@@ -168,7 +168,7 @@
   align-items: center;
   border-radius: 50%;
   position: absolute;
-color: #445eb8;
+color: #340707;
   right: 10px;
   top: 20px;
   border: 0px;
@@ -179,7 +179,7 @@ color: #445eb8;
 
 .up-arrow-container:hover{
 
-    background-color: #445eb8;
+    background-color: #945C5D;
     color: white;
 }
 

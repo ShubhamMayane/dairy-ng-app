@@ -45,7 +45,7 @@
   
   .accordion-header {
     background-color: #f7f9fb;
-    color: #103371;
+    color: #340707;
     font-family: "Commissioner", Sans-serif;
     font-size: 20px;
     font-weight: 600;
@@ -67,7 +67,7 @@
 
   background-color: white !important;
   
-   color: #3c86cb;
+   color: #905e5e;
 
 
   box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.06);
@@ -76,7 +76,7 @@
   .accordion-header-icon {
     font-size: 35px;
     font-weight: 150;
-    color: #103371;
+    color: #340707;
     transition: transform 0.3s ease, opacity 0.3s ease;
     display: inline-block;
   }

@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component, ElementRef, Renderer2, OnInit, OnDestroy, HostListener, Inject, PLATFORM_ID } from '@angular/core';
+import { Component, ElementRef, Renderer2, OnInit, OnDestroy, HostListener, Inject, PLATFORM_ID} from '@angular/core';
 import { isPlatformBrowser } from '@angular/common';
 import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { RatingModule } from 'ngx-bootstrap/rating';
@@ -13,6 +13,7 @@ import {AfterViewInit,ViewChild} from '@angular/core';
   templateUrl: './home-testimonials.component.html',
   styleUrl: './home-testimonials.component.css',
   schemas:[CUSTOM_ELEMENTS_SCHEMA ]
+  
 })
 export class HomeTestimonialsComponent  implements OnInit {
   max = 5;

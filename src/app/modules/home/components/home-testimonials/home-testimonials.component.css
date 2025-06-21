@@ -8,7 +8,7 @@
     height: auto;
     display: flex;
     align-items: center;
-  background-color: #F0FCFF;
+  background-color: #f2eded;
   padding: 120px 0px 200px 0px;
   position: relative;
   margin-bottom: 120px;
@@ -18,7 +18,7 @@
 .column-left{
   
     padding: 40px;
-    background-color: #F0FCFF;
+  
 }
 
 .left-column-content{
@@ -65,13 +65,15 @@
       swiper-slide {
         text-align: center;
         font-size: 18px;
-      background-color: #f1fcff;
+    
         display: flex;
         justify-content: center;
         align-items: center;
         padding: 10px;
        
       }
+
+
 
 
 
@@ -128,6 +130,11 @@
 
       } 
 
+      .swiper-button-next, .swiper-button-prev{
+
+        color: #945C5D !important;
+      }
+
 
 
       .my-swiper-container{
@@ -137,6 +144,10 @@
         height: 100%;
 
       }
+
+
+    
+
 
 
 
@@ -154,7 +165,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        background-color: #1c3270;  
+        background-color: #330805;  
     
     }
 

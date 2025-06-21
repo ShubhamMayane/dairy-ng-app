@@ -104,32 +104,32 @@ margin-top: 10px;
   
   /* Hover effect on dropdown items */
   .dropdown-item:hover {
-    background-color: #4d84cc;
+    background-color: #945C5D;
     color: white;
   }
   
 
   .active-link{
 
-    color: #4d84c9 !important;
+    color: #945C5D !important;
 }
 
 .dropdown-active-link{
-  background-color: #4d84cc;
+  background-color: #945C5D;
     color: white;
 
 }
 
 .active-drop-down>.nav-link{
 
-  color: #4d84c9 !important;
+  color: #945C5D !important;
 
 }
 
 
 .nav-link:hover{
 
-  color: #4d84c9 !important;
+  color: #945C5D !important;
 }
     
 

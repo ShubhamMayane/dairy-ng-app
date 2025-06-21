@@ -10,7 +10,7 @@
         <div class="row videos-card-row">
         
         <!-- card-1  -->
-            <div class="col-md-6 card card-blue" data-aos="slide-up"  data-aos-delay="0"  (click)="openViewer(0)">
+            <div class="col-md-3 card card-blue" data-aos="slide-up"  data-aos-delay="0"  (click)="openViewer(0)">
         
         
                 <div class="video-wrapper">
@@ -29,20 +29,20 @@
                 ></video> -->
 
 
-                 <div class="overlay-text"><i class="fa-solid fa-play" style="color: #3c86cb;"></i></div>
+                 <div class="overlay-text"><i class="fa-solid fa-play" style="color:  white;"></i></div>
 
                 </div>
 
                 <div class="card-content">
                     
-                    <!-- <div class="rating-section"><rating [(ngModel)]="rate" [max]="max" [readonly]="isReadonly"></rating><span class="rating-count">3.5</span></div> -->
+                  
                     <h1>Fresh A2 Butter</h1>
                     <p>Farm-fresh A2 butter with rich taste and natural goodness in every bite.</p>
                 </div>
             </div>
 
         <!-- card-2 -->
-            <div class="col-md-6 card card-white" data-aos="slide-up"  data-aos-delay="100" (click)="openViewer(1)">
+            <div class="col-md-3 card card-white" data-aos="slide-up"  data-aos-delay="100" (click)="openViewer(1)">
 
 
                    <div class="video-wrapper">
@@ -59,13 +59,13 @@
                         </video> -->
 
 
-                 <div class="overlay-text"><i class="fa-solid fa-play" style="color: #3c86cb;"></i></div>
+                 <div class="overlay-text"><i class="fa-solid fa-play" style="color: white;"></i></div>
 
                 </div>
 
                 <div class="card-content">
                     
-                    <!-- <div class="rating-section"><rating [(ngModel)]="rate" [max]="max" [readonly]="isReadonly"></rating><span class="rating-count">3.5</span></div> -->
+                 
                     <h1>A2 Bilona Ghee</h1>
                     <p>Traditionally churned, nutrient-rich ghee that boosts immunity and digestion.
 
@@ -75,7 +75,7 @@
 
 
          <!-- card-3  -->
-            <div class="col-md-6 card card-blue" data-aos="slide-up"  data-aos-delay="200"  (click)="openViewer(2)">
+            <div class="col-md-3 card card-blue" data-aos="slide-up"  data-aos-delay="200"  (click)="openViewer(2)">
         
         
                 <div class="video-wrapper">
@@ -83,23 +83,16 @@
 
                     <img src="/images/video-gallery-images/image-for-video-3.jpg"/>
 
-                    <!-- <video
-                        src="/videos/video-1.mp4"
-                        (click)="openViewer(0)"
-                        class="thumb"
-                        muted
-                        loop
-                        autoplay
-                        ></video> -->
+                 
 
 
-                 <div class="overlay-text"><i class="fa-solid fa-play" style="color: #3c86cb;"></i></div>
+                 <div class="overlay-text"><i class="fa-solid fa-play"  style="color: white;"></i></div>
 
                 </div>
 
                 <div class="card-content">
                     
-                    <!-- <div class="rating-section"><rating [(ngModel)]="rate" [max]="max" [readonly]="isReadonly"></rating><span class="rating-count">3.5</span></div> -->
+                 
                     <h1>Fresh A2 Butter</h1>
                     <p>Farm-fresh A2 butter with rich taste and natural goodness in every bite.</p>
                 </div>
@@ -107,30 +100,23 @@
 
 
          <!-- card-4 -->
-            <div class="col-md-6 card card-white" data-aos="slide-up"  data-aos-delay="300" (click)="openViewer(3)">
+            <div class="col-md-3 card card-white" data-aos="slide-up"  data-aos-delay="300" (click)="openViewer(3)">
 
 
                    <div class="video-wrapper">
                       
                     <img src="/images/video-gallery-images/image-for-video-4.jpg" />
                     
-                    <!-- <video
-                                src="/videos/video-2.mp4"
-                                (click)="openViewer(1)"
-                                class="thumb"
-                                muted
-                                loop
-                                autoplay>
-                        </video> -->
+                   
 
 
-                 <div class="overlay-text"><i class="fa-solid fa-play" style="color: #3c86cb;"></i></div>
+                 <div class="overlay-text"><i class="fa-solid fa-play"  style="color: white;"></i></div>
 
                 </div>
 
                 <div class="card-content">
                     
-                    <!-- <div class="rating-section"><rating [(ngModel)]="rate" [max]="max" [readonly]="isReadonly"></rating><span class="rating-count">3.5</span></div> -->
+                 
                     <h1>A2 Bilona Ghee</h1>
                     <p>Traditionally churned, nutrient-rich ghee that boosts immunity and digestion.
 
@@ -161,7 +147,7 @@
 <div class="viewer" *ngIf="selectedIndex !== null">
   <div class="overlay" (click)="closeViewer()"></div>
   <div class="video-background-modal " *ngIf="selectedIndex !== null">
-    <button class="nav prev" (click)="prevVideo()"><i class="fa-solid fa-arrow-left" style="color: #3c86cb;"></i></button>
+    <button class="nav prev" (click)="prevVideo()"><i class="fa-solid fa-arrow-left" style="color: #945C5D;"></i></button>
     
     <video [src]="videos[selectedIndex!]"
            autoplay
@@ -170,7 +156,7 @@
            class="player">
     </video>
     
-    <button class="nav next" (click)="nextVideo()"><i class="fa-solid fa-arrow-right" style="color: #3c86cb;"></i></button>
+    <button class="nav next" (click)="nextVideo()"><i class="fa-solid fa-arrow-right" style="color: #945C5D;"></i></button>
     <button class="close" (click)="closeViewer()">×</button>
   </div>
 </div>

@@ -9,7 +9,7 @@
     /* border: 1px solid black; */
     height: auto;
     position: relative;
-    background-color: #f1fcff;
+    background-color: #905e5e1c;
     
     padding: 100px 20px 180px 20px;
 
@@ -87,7 +87,7 @@ padding: 0px;
 
     margin: -20px -100px 0px 0px;
     padding: 20px 20px 20px 50px;
-    background-color: #103371;
+    background-color: #310a06;
     border-radius: 0px 50px 0px 50px;
     position: relative;
     z-index: 5;
@@ -175,10 +175,15 @@ color: #f8ab13;
     font-size: 20px;
     font-weight: 600;
     line-height: 1.6em;
-    color: #103371;
+    color: #330805;
 
 }
 
+
+.list-item>.gray-description-font{
+
+    font-size: 18px;
+}
 
 .column-3>button{
 
@@ -228,16 +233,16 @@ color: #f8ab13;
     flex-direction: column;
 }
 
-.our-goodwill-item>svg{
+.our-goodwill-item>img{
     height: 70px;
     width: 70px;
 }
 .our-goodwill-item-content>h3{
-font-family: "Commissioner";
-font-size: 20px;
-font-weight: 600;
-color: #103371;
-margin-bottom: 0px;
+    font-family: "Commissioner";
+    font-size: 20px;
+    font-weight: 600;
+    color: #330805;
+    margin-bottom: 0px;
 }
 
 .our-goodwill-item-content>p{
@@ -280,6 +285,17 @@ margin-bottom: 0px;
             margin-top: 30px;
 
         }
+
+         .our-goodwill-item-content>h3{
+
+                text-align: center;
+
+            }
+
+            .our-goodwill-item-content>p{
+
+                text-align: center;
+            }
 
 
     } 
@@ -372,4 +388,5 @@ margin-bottom: 0px;
                   }
 
 
+           
 }
