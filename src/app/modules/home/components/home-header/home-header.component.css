@@ -184,6 +184,7 @@ opacity: 0.8;
                     background-size: cover;
                     background-position: bottom center;
                     background-repeat: no-repeat;
+                    transition: transform 1.5s ease-in-out !important;/* Make slide smoother */
                    
     /* background-image: url("../../../../../../public/images/background-images/home-header-background-imag.jpg"); */
  
@@ -199,6 +200,7 @@ opacity: 0.8;
                     background-size: cover;
                     background-position: bottom center;
                     background-repeat: no-repeat;
+                    transition: transform 1.5s ease-in-out !important;/* Make slide smoother */
 
 }
 
@@ -211,6 +213,7 @@ opacity: 0.8;
                     background-size: cover;
                     background-position: bottom center;
                     background-repeat: no-repeat;
+                     transition: transform 1.5s ease-in-out !important;/* Make slide smoother */
 }
 
 
@@ -386,7 +389,6 @@ opacity: 0.8;
         height: 300px;
     }
 
-   
 
        
     
