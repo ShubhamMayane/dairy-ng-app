@@ -135,6 +135,9 @@
         color: #945C5D !important;
       }
 
+      
+    
+
 
 
       .my-swiper-container{
@@ -145,8 +148,8 @@
 
       }
 
-
-      
+        /* ::ng-deep   */
+ 
 
 
 
