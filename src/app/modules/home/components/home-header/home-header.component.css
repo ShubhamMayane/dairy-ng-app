@@ -181,11 +181,8 @@ opacity: 0.8;
                   
                     height: 100%;
                     width: 100%;
-                    background-size: cover;
-                    background-position: bottom center;
-                    background-repeat: no-repeat;
                     transition: transform 1.5s ease-in-out !important;/* Make slide smoother */
-                     position: relative;
+                    position: relative;
 
     /* background-image: url("../../../../../../public/images/background-images/home-header-background-imag.jpg"); */
  
@@ -200,9 +197,6 @@ opacity: 0.8;
                    
                     height: 100%;
                     width: 100%;
-                    background-size: cover;
-                    background-position: bottom center;
-                    background-repeat: no-repeat;
                     transition: transform 1.5s ease-in-out !important;/* Make slide smoother */
                     position: relative;
 
@@ -214,21 +208,18 @@ opacity: 0.8;
                 
                     height: 100%;
                     width: 100%;
-                    background-size: cover;
-                    background-position: bottom center;
-                    background-repeat: no-repeat;
-                     transition: transform 1.5s ease-in-out !important;/* Make slide smoother */
-                      position: relative;
+                    transition: transform 1.5s ease-in-out !important;/* Make slide smoother */
+                    position: relative;
  
-                    }
+}
 
 
 .carousel-item>img{
 
         height: 100%;
-         width: 100%;
-         object-fit: cover;
-     object-position: bottom;
+        width: 100%;
+        object-fit: cover;
+        object-position: bottom;
 
 
 

@@ -141,7 +141,7 @@ label>span{
     font-family: "Commissioner", Sans-serif;
     font-size: 14px;
     font-weight: 600;
-    line-height: var(--e-global-typography-accent-line-height);
+    
     background-color: #905e5e;
     border-style: none;
     border-radius: 8px 8px 8px 8px;
@@ -150,7 +150,13 @@ label>span{
 
 }
 
+button:hover {
+  background-color: #330805 !important; /* Or inherit, transparent, etc. */
+}
 
+button:active {
+  background-color: #330805 !important; /* Or inherit, transparent, etc. */
+}
 
 
 
