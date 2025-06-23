@@ -178,44 +178,61 @@ opacity: 0.8;
 .item-1
 {
 
-                    background-image: url("/images/background-images/header-background-img-1.webp");
+                  
                     height: 100%;
                     width: 100%;
                     background-size: cover;
                     background-position: bottom center;
                     background-repeat: no-repeat;
                     transition: transform 1.5s ease-in-out !important;/* Make slide smoother */
-                   
+                     position: relative;
+
     /* background-image: url("../../../../../../public/images/background-images/home-header-background-imag.jpg"); */
  
 
 }
 
+
+
 .item-2
 {
 
-                    background-image: url("/images/background-images/header-background-img-2.webp");
+                   
                     height: 100%;
                     width: 100%;
                     background-size: cover;
                     background-position: bottom center;
                     background-repeat: no-repeat;
                     transition: transform 1.5s ease-in-out !important;/* Make slide smoother */
+                    position: relative;
 
 }
 
 .item-3
 {
 
-                    background-image: url("/images/background-images/header-background-img-3.webp");
+                
                     height: 100%;
                     width: 100%;
                     background-size: cover;
                     background-position: bottom center;
                     background-repeat: no-repeat;
                      transition: transform 1.5s ease-in-out !important;/* Make slide smoother */
-}
+                      position: relative;
+ 
+                    }
 
+
+.carousel-item>img{
+
+        height: 100%;
+         width: 100%;
+         object-fit: cover;
+     object-position: bottom;
+
+
+
+}
 
 
 
