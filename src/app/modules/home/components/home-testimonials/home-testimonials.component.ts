@@ -15,11 +15,13 @@ import {AfterViewInit,ViewChild} from '@angular/core';
   schemas:[CUSTOM_ELEMENTS_SCHEMA ]
   
 })
-export class HomeTestimonialsComponent  implements OnInit {
+export class HomeTestimonialsComponent  implements OnInit,AfterViewInit {
   max = 5;
   rate = 5;
   isReadonly = true;
   navigationFlag:boolean=true;
+  private prevSwiperButton!: HTMLElement;
+  private nextSwiperButton!: HTMLElement;
 
   @ViewChild('swiperRef', { static: false }) swiperElement!: ElementRef;     // client review swiper
 
@@ -43,11 +45,33 @@ export class HomeTestimonialsComponent  implements OnInit {
 
  ngAfterViewInit() {
     const swiperContainer = this.swiperElement.nativeElement;
+    
+    // this.prevSwiperButton=this.el.nativeElement.querySelector('.custom-prev'); 
+    // this.nextSwiperButton=this.el.nativeElement.querySelector('.custom-next'); 
+    // console.log(this.prevSwiperButton);
+    // console.log(this.nextSwiperButton);
+    
+
+    //    if (swiperContainer &&  this.prevSwiperButton &&  this.nextSwiperButton) {
+    //   swiperContainer.params = {
+    //     ...swiperContainer.params,
+    //     navigation: {
+    //       prevEl: this.prevSwiperButton,
+    //       nextEl: this.nextSwiperButton
+    //     }
+    //   };
+    //  swiperContainer.initialize(); // re-initialize to apply the custom nav
+    // }
+
+
+
+
     if (!swiperContainer.swiper) {
       swiperContainer.addEventListener('swiperinit', () => {
         this.setupHoverEvents(swiperContainer);
       });
-    } else {
+    } else 
+    {
       this.setupHoverEvents(swiperContainer);
     }
 
@@ -89,14 +113,20 @@ export class HomeTestimonialsComponent  implements OnInit {
       const element1 = this.el.nativeElement.querySelector('.myCompaniesSwiper');
      
 
-      if (width >= 1024) {
+      if (width >= 1024) 
+      {
+         this.navigationFlag=true;
         this.renderer.setAttribute(element1, 'slides-per-view', '5');
         this.renderer.setAttribute(element1, 'slides-per-group', '5');
-      } else
+
+      } 
+      else
       {
   
         this.renderer.setAttribute(element1, 'slides-per-view', '2');
         this.renderer.setAttribute(element1, 'slides-per-group', '2');
+
+        //to disable the next and prev button from the slider i.e from feed back slider 
         this.navigationFlag=false;
       }
     }

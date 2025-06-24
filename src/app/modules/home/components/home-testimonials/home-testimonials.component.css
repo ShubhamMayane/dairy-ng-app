@@ -73,8 +73,27 @@
        
       }
 
+.custom-prev,
+.custom-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: transparent;
+  border: none;
+  font-size: 32px;
+  cursor: pointer;
+  z-index: 10;
+}
 
+.custom-prev {
+  left: 10px;
+  color: orange;
+}
 
+.custom-next {
+  right: 10px;
+  color: red;
+}
 
 
     .card-container{
@@ -190,7 +209,7 @@
       .company-names{
 
       
-        height: auto;
+        height: 15vh;
         width: 100%;
         position: absolute;
         bottom: -20px;
@@ -211,6 +230,7 @@
         max-width: 100%;
         border: none;
         box-shadow: none;
+        /* object-fit: cover; */
 
       }
 
@@ -337,6 +357,18 @@
       
           align-self: center;
       
+      }
+
+      .custom-prev{
+
+        display: none;
+
+      }
+
+      .custom-next{
+
+        display: none;
+
       }
 
      } 

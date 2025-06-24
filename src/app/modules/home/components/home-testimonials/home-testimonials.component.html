@@ -31,11 +31,12 @@
 
                 
                
-                      <swiper-container 
+                      <!-- [navigation]="navigationFlag"   -->
+                    <swiper-container 
                       #swiperRef
                       class="mySwiper" 
                       slides-per-view="1" 
-                       [navigation]="navigationFlag" 
+                     
                     
                       autoplay='{"delay": 2000}'
                       loop="true"
@@ -186,12 +187,13 @@
 
 
         <!-- company names slider  -->
-       <div class="container company-names" data-aos="fade-in">
+       <div class="container company-names" data-aos="fade-up">
 
             <swiper-container
             class="myCompaniesSwiper"
             autoplay="true"
             loop="true" 
+            slides-per-view="5"
            >
            
             <swiper-slide class="companies-swiper-slide">
