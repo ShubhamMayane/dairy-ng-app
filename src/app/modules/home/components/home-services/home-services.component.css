@@ -1,181 +1,124 @@
-@import url('../../../../../../public/css/components/fonts.style.css');
-@import url('../../../../../../public/css/components/button.style.css');
+@import url("../../../../../../public/css/components/fonts.style.css");
+@import url("../../../../../../public/css/components/button.style.css");
 
-.our-services{
-
-        height: auto;
-       margin-bottom: 120px;
-
-
-   }
-   
-   .column-1{
-
-  
-     padding-left: 0px;
-     padding-right: 0px;
-
-   }
-
-
-
-   .column-1>img{
-
-     height: 100%;
-     max-width: 100%;
-     border: none;
-     box-shadow: none;
-     border-radius: 0px 80px 0px 0px;
-   }
-
-
-   .column-2{
-
-    
-     
-     padding: 0px 0px 0px 50px;
-     display: flex;
+.our-services {
+  height: auto;
+  margin-bottom: 120px;
 }
 
-   .column-2-content{
+.column-1 {
+  padding-left: 0px;
+  padding-right: 0px;
+}
 
-     display: flex;
-     flex-direction: column;
-     gap: 5px;
-     justify-content: center;
+.column-1 > img {
+  height: 100%;
+  max-width: 100%;
+  border: none;
+  box-shadow: none;
+  border-radius: 0px 80px 0px 0px;
+}
 
+.column-2 {
+  padding: 0px 0px 0px 50px;
+  display: flex;
+}
 
-   }
+.column-2-content {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  justify-content: center;
+}
 
+.column-2-content > .list-item {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+}
+.column-2-content > button {
+  align-self: flex-start;
+}
 
-   .column-2-content>.list-item
-   { 
-     display: flex;
-     flex-direction: row;
-     gap: 10px;
-     align-items: center;
+.column-3 {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 20px;
+  padding: 0px 120px 0px 60px;
+}
 
-   }
-   .column-2-content>button{
+.column-3 > img {
+  height: auto;
+  max-width: 100%;
+  border: none;
+  box-shadow: none;
+  border-radius: 50px 0px 50px 0px;
+}
 
-     align-self: flex-start;
-   }
+.column-3 > h3 {
+  color: #370506;
+  font-family: "Commissioner", Sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+}
+.column3-count {
+  display: flex;
+  gap: 50px;
+}
 
+.column3-count-item > h1 {
+  color: #f8ab13;
+  margin: 0px 0px 0px 0px;
+  font-family: "Commissioner", Sans-serif;
+  font-size: 45px;
+  font-weight: 700;
+}
 
+.column3-count-item > p {
+  margin: 0px 0px 0px 0px;
+  font-size: 15px;
+}
 
+/*for desktop and laptop and all other big screen*/
 
-   .column-3{
-   
-     display: flex;
-     justify-content: center;
-     flex-direction: column;
-     padding: 20px;
-     padding: 0px 120px 0px 60px
+@media screen and (min-width: 1024px) {
+}
 
-   }
+/*for Tablet*/
 
-   .column-3>img{
+@media screen and (max-width: 1024px) {
+  .column-1 {
+    width: 100%;
+  }
 
-     height: auto;
-     max-width: 100%;
-     border: none;
-     box-shadow: none;
-     border-radius: 50px 0px 50px 0px;
-   }
+  .column-2 {
+    width: 50%;
+    padding: 50px 0px 20px 20px;
+  }
+  .column-3 {
+    width: 50%;
+    padding: 20px;
+  }
+}
 
-   .column-3>h3{
+/*for mobile screen */
+@media screen and (max-width: 600px) {
+  .our-services-row {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 
-     color: #370506;
-     font-family: "Commissioner", Sans-serif;
-     font-size: 32px;
-     font-weight: 700;
-
-   }
-   .column3-count{
-
-     display: flex;
-     gap: 50px;
-    
-     }
-
-     .column3-count-item>h1{
-
-          color: #f8ab13;
-          margin: 0px 0px 0px 0px;
-          font-family: "Commissioner", Sans-serif;
-          font-size:45px;
-          font-weight:700;
-     }
-
-     .column3-count-item>p{
-
-          margin: 0px 0px 0px 0px;
-          font-size: 15px;
-     }
-   
-   
-   
-   /*for desktop and laptop and all other big screen*/
-
-    @media screen and (min-width: 1024px)  {}      
-
-
-   /*for Tablet*/
-
-    @media screen and (max-width: 1024px) {
-
-     .column-1{
-
-          width: 100%;
-
-     }
-
-     .column-2{
-
-          width: 50%;
-          padding: 50px 0px 20px 20px;
-
-     }
-     .column-3{
-
-          width: 50%;
-          padding: 20px
-     }
-    } 
-
-	
-    /*for mobile screen */
-    @media screen and (max-width: 600px) {
-
-     .our-services-row{
-
-               padding-left:20px;
-               padding-right: 20px;
-
-
-     }
-
-
-     .column-1{
-
-          padding-right: 0px;
-     }
-     .column-2{
-
-          width: 100%;
-          padding: 20px;
-          margin: 50px 0px 0px 0px;
-
-     }
-     .column-3{
-
-          width: 100%;
-
-     }
-
-
-
-    } 
-
-      
-    
+  .column-1 {
+    padding-right: 0px;
+  }
+  .column-2 {
+    width: 100%;
+    padding: 20px;
+    margin: 50px 0px 0px 0px;
+  }
+  .column-3 {
+    width: 100%;
+  }
+}

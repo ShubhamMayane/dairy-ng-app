@@ -1,196 +1,123 @@
+@import url("../../../../../../../../public/css/components/button.style.css");
+@import url("../../../../../../../../public/css/components/fonts.style.css");
 
-
-@import url('../../../../../../../../public/css/components/button.style.css');
-@import url('../../../../../../../../public/css/components/fonts.style.css');
-
-
-
-.our-products{
-
-        height: auto;
-       margin-top: 120px;
-        overflow: hidden;
-
-   }
-
-
-.our-all-products-header-container{
-
-    text-align: center;
-    padding-top: 5px;
-
-
-   }
-   
-   .column-1{
-
-  
-     padding-left: 0px;
-     padding-right: 0px;
-
-   }
-
-
-
-   .left-img{
-
-     height: 100%;
-     max-width: 100%;
-     border: none;
-     box-shadow: none;
-     border-radius: 0px 80px 0px 80px;
-
-   }
-
-
-    .right-img{
-
-     height: 100%;
-     max-width: 100%;
-     border: none;
-     box-shadow: none;
-     border-radius: 80px 0px 80px 0px;
- 
-   }
-
-   .right-content-column
-   {
-
-    padding: 50px 30px 30px 50px;
-   }
-
-  .left-content-column
-  {
-
-    padding: 50px 50px 30px 30px;
-
-  }
-   .column-2{
-
-
-     display: flex;
+.our-products {
+  height: auto;
+  margin-top: 120px;
+  overflow: hidden;
 }
 
-   .column-2-content{
+.our-all-products-header-container {
+  text-align: center;
+  padding-top: 5px;
+}
 
-     display: flex;
-     flex-direction: column;
-     gap: 5px;
-     justify-content: center;
-    
+.column-1 {
+  padding-left: 0px;
+  padding-right: 0px;
+}
 
+.left-img {
+  height: 100%;
+  max-width: 100%;
+  border: none;
+  box-shadow: none;
+  border-radius: 0px 80px 0px 80px;
+}
 
-   }
-       
-    .list-header{
+.right-img {
+  height: 100%;
+  max-width: 100%;
+  border: none;
+  box-shadow: none;
+  border-radius: 80px 0px 80px 0px;
+}
 
-            color: #310a06;
-            margin-bottom: 0px;
-            font-family: "Commissioner", Sans-serif;
-            font-size: 20px;
-            font-weight: 600;
-            margin-bottom: 10px;
-     }
-   
-          
+.right-content-column {
+  padding: 50px 30px 30px 50px;
+}
 
-   .list-item
-   { 
-     display: flex;
-     flex-direction: row;
-     gap: 10px;
-     align-items: center;
+.left-content-column {
+  padding: 50px 50px 30px 30px;
+}
+.column-2 {
+  display: flex;
+}
 
-   }
+.column-2-content {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  justify-content: center;
+}
 
-    .list-item>i{
+.list-header {
+  color: #310a06;
+  margin-bottom: 0px;
+  font-family: "Commissioner", Sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
 
-        
-        font-size: 15px;
-    }
+.list-item {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+}
 
-   
-   .column-2-content>button{
+.list-item > i {
+  font-size: 15px;
+}
 
-     align-self: flex-start;
-   }
+.column-2-content > button {
+  align-self: flex-start;
+}
 
+/*for desktop and laptop and all other big screen*/
 
+@media screen and (min-width: 1024px) {
+}
 
+/*for Tablet*/
 
-   
-   
-   /*for desktop and laptop and all other big screen*/
+@media screen and (max-width: 1024px) {
+  .column-1 {
+    width: 100%;
+  }
 
-    @media screen and (min-width: 1024px)  {}      
+  .right-image-row {
+    flex-direction: column-reverse;
+  }
 
+  .column-2 {
+    padding: 30px 30px 30px 30px;
+    width: 100%;
+  }
+}
 
-   /*for Tablet*/
+/*for mobile screen */
+@media screen and (max-width: 600px) {
+  .our-products {
+    margin-top: 50px;
+  }
 
-    @media screen and (max-width: 1024px) {
+  .our-products-row {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 
-     .column-1{
+  .right-image-row {
+    flex-direction: column-reverse;
+  }
 
-          width: 100%;
-
-     }
-
-      .right-image-row{
-
-        flex-direction: column-reverse;
-     }
-
-
-     .column-2{
-
-         
-          padding: 30px 30px 30px 30px;
-        width: 100%;
-     }
-   
-    } 
-
-	
-    /*for mobile screen */
-    @media screen and (max-width: 600px) {
-
-    .our-products{
-
-      
-       margin-top: 50px;
-       
-
-   }
-
-     .our-products-row{
-
-               padding-left:20px;
-               padding-right: 20px;
-
-
-     }
-
-     .right-image-row{
-
-        flex-direction: column-reverse;
-     }
-
-     .column-1{
-
-          padding-right: 0px;
-     }
-     .column-2{
-
-          width: 100%;
-          padding: 20px;
-          margin: 30px 0px 0px 0px;
-
-     }
-   
-
-
-
-    } 
-
-      
-    
+  .column-1 {
+    padding-right: 0px;
+  }
+  .column-2 {
+    width: 100%;
+    padding: 20px;
+    margin: 30px 0px 0px 0px;
+  }
+}

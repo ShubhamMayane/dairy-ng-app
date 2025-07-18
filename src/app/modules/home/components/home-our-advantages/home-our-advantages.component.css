@@ -1,134 +1,93 @@
+@import url("../../../../../../public/css/components/fonts.style.css");
+@import url("../../../../../../public/css/components/button.style.css");
 
-@import url('../../../../../../public/css/components/fonts.style.css');
-@import url('../../../../../../public/css/components/button.style.css');
+.our-advantages {
+  height: auto;
 
-
-.our-advantages{
-
-
-   
-    height: auto;
-
-   
-    padding-left: 0px;
-   
+  padding-left: 0px;
 }
 
-.column-1{
-
-   
-    width: 65%;
-    position: relative;
+.column-1 {
+  width: 65%;
+  position: relative;
 }
 
-.column-1>img{
+.column-1 > img {
+  height: auto;
+  width: 100%;
+  max-width: 100%;
+  border: none;
+  box-shadow: none;
+}
 
-    height: auto;
+.our-advantages-content {
+  position: absolute;
+  height: auto;
+  background-color: #f2eded;
+  right: -45%;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 70px 45px 55px 60px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 80px 0px 80px 0px;
+  width: 60%;
+  gap: 15px;
+}
+
+.our-advantages-content > p {
+  font-size: 15px;
+  text-align: justify;
+}
+
+.our-advatages-btn {
+  align-self: flex-start;
+}
+
+.our-advatages-btn:hover {
+  animation: updown 2.5s linear infinite;
+}
+
+/*for desktop and laptop and all other big screen*/
+
+@media screen and (min-width: 1024px) {
+}
+
+/*for Tablet*/
+
+@media screen and (max-width: 1024px) {
+  .column-1 {
     width: 100%;
-    max-width: 100%;
-    border: none;
-    box-shadow: none;
-   
+    padding: 0px;
+  }
+
+  .our-advantages-content {
+    position: absolute;
+    right: auto;
+    bottom: -30%;
+    top: auto;
+    height: auto;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 60px 40px 40px 40px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 80px 0px 80px 0px;
+    width: 80%;
+  }
 }
 
-.our-advantages-content
-{
-    position: absolute;
+/*for mobile screen */
+@media screen and (max-width: 600px) {
+  .our-advantages-content {
+    position: static;
+    width: 100%;
     height: auto;
-    background-color: #f2eded;
-    right: -45%;
-    top: 50%;
-    transform: translateY(-50%);
+    transform: translateX(0%);
     padding: 70px 45px 55px 60px;
     display: flex;
     flex-direction: column;
     border-radius: 80px 0px 80px 0px;
-    width: 60%;
-    gap: 15px;
+    width: 100%;
+  }
 }
-
-
-.our-advantages-content>p{
-
-    font-size: 15px;
-    text-align: justify;
-}
-
-.our-advatages-btn{
-
-    align-self: flex-start;
-
-}
-
-.our-advatages-btn:hover{
-
-    animation: updown 2.5s linear infinite;
-
-}
-
-
-
-    /*for desktop and laptop and all other big screen*/
-
-    @media screen and (min-width: 1024px)  {}      
-
-
-   /*for Tablet*/
-
-    @media screen and (max-width: 1024px) {
-        .column-1{
-
-          
-            width: 100%;
-            padding: 0px;
-        }
-
-
-        .our-advantages-content
-    {
-          
-            position: absolute;
-            right: auto;
-            bottom: -30%;
-            top: auto;
-            height: auto;
-            left: 50%;
-            transform: translateX(-50%);
-            padding: 60px 40px 40px 40px;
-            display: flex;
-            flex-direction: column;
-            border-radius: 80px 0px 80px 0px;
-            width: 80%;
-
-        
-        }
-
-
-    } 
-
-	
-    /*for mobile screen */
-    @media screen and (max-width: 600px) {
-
-
-
-        .our-advantages-content
-        {
-            position: static;
-            width: 100%;
-            height: auto;
-            transform: translateX(0%);
-            padding: 70px 45px 55px 60px;
-            display: flex;
-            flex-direction: column;
-            border-radius: 80px 0px 80px 0px;
-            width: 100%;
-        
-    
-        
-    }
-    
-    } 
-
-      
-    

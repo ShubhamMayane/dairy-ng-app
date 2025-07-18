@@ -1,23 +1,15 @@
+@import url("../../../../../../../../public/css/components/button.style.css");
+@import url("../../../../../../../../public/css/components/fonts.style.css");
 
-@import url('../../../../../../../../public/css/components/button.style.css');
-@import url('../../../../../../../../public/css/components/fonts.style.css');
-
-.pages-faq{
-
-    margin-top: 120px;
-
-
+.pages-faq {
+  margin-top: 120px;
 }
-.left-column{
-
-   padding: 0px 50px 0px 150px;
+.left-column {
+  padding: 0px 50px 0px 150px;
 }
 
-.right-column > img{
-
-   
-   
-    /* background-image: url("../../../../../../../../public/images/background-images/looking-after-cows-resize.webp");
+.right-column > img {
+  /* background-image: url("../../../../../../../../public/images/background-images/looking-after-cows-resize.webp");
     background-size: cover;
     background-position:center;
     background-repeat: no-repeat;  */
@@ -25,186 +17,136 @@
   height: 100%;
   width: 100%;
 
-    object-fit: cover;
-
-
-     
-
-
+  object-fit: cover;
 }
-.custom-accordion{
-
-    margin-bottom: 25px;
-
+.custom-accordion {
+  margin-bottom: 25px;
 }
 
+.accordion-item {
+  border-radius: 4px;
+  margin-bottom: 20px;
+}
 
+.accordion-header {
+  background-color: #f7f9fb;
+  color: #340707;
+  font-family: "Commissioner", Sans-serif;
+  font-size: 20px;
+  font-weight: 600;
 
+  padding: 0px 100px 0px 5px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: rgba(27, 31, 35, 0.04) 0px 1px 0px,
+    rgba(255, 255, 255, 0.25) 0px 1px 0px inset;
+  user-select: none;
+  transition: color 0.4s ease;
+}
 
-
-
-  .accordion-item {
-  
-    border-radius: 4px;
-    margin-bottom: 20px;
-    
-  }
-  
-  .accordion-header {
-    background-color: #f7f9fb;
-    color: #340707;
-    font-family: "Commissioner", Sans-serif;
-    font-size: 20px;
-    font-weight: 600;
-    
-      
-    padding: 0px 100px 0px 5px;
-    cursor: pointer;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-   box-shadow: rgba(27, 31, 35, 0.04) 0px 1px 0px, rgba(255, 255, 255, 0.25) 0px 1px 0px inset;
-    user-select: none;
-     transition: color 0.4s ease;
-    
-  }
-
-
-  .active-accordion-header{
-
+.active-accordion-header {
   background-color: white !important;
-  
-   color: #905e5e;
 
+  color: #905e5e;
 
   box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.06);
-
 }
-  .accordion-header-icon {
-    font-size: 35px;
-    font-weight: 150;
-    color: #340707;
-    transition: transform 0.3s ease, opacity 0.3s ease;
-    display: inline-block;
+.accordion-header-icon {
+  font-size: 35px;
+  font-weight: 150;
+  color: #340707;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  display: inline-block;
+}
+
+/* Rotate the icon on open (you could instead change character if preferred) */
+.accordion-header.open .icon {
+  transform: rotate(180deg);
+}
+
+/* Accordion body slide effect */
+.accordion-body {
+  max-height: 0;
+  overflow: hidden;
+  padding-left: 5px;
+  padding-right: 100px;
+  text-align: justify;
+  transition: max-height 0.4s ease, padding 0.3s ease;
+}
+
+.accordion-body.show {
+  /* padding: 15px 20px; */
+  padding: 15px 100px 15px 5px;
+  max-height: 200px; /* adjust based on expected content height */
+  text-align: justify;
+}
+
+/*for desktop and laptop and all other big screen*/
+
+@media screen and (min-width: 1024px) {
+}
+
+/*for Tablet*/
+
+@media screen and (max-width: 1024px) {
+  .left-column {
+    width: 100%;
+    padding: 0px 20px 0px 20px;
+    margin-bottom: 50px;
   }
-  
-  /* Rotate the icon on open (you could instead change character if preferred) */
-  .accordion-header.open .icon {
-    transform: rotate(180deg);
+
+  .right-column {
+    height: 400px;
+    width: 100%;
+
+    background-position: center center;
+    background-size: cover;
   }
-  
-  /* Accordion body slide effect */
+
+  .accordion-header {
+    padding: 0px 10px 0px 5px;
+  }
+
   .accordion-body {
-    max-height: 0;
-    overflow: hidden;
-    padding-left:5px;
-    padding-right: 100px;
-     text-align: justify;
-    transition: max-height 0.4s ease, padding 0.3s ease;
-    
+    padding-left: 5px;
+    padding-right: 5px;
   }
-  
   .accordion-body.show {
     /* padding: 15px 20px; */
-    padding:15px 100px 15px 5px;
-    max-height: 200px; /* adjust based on expected content height */
+    padding: 15px 5px 15px 5px;
+
     text-align: justify;
-   
   }
-  
-    /*for desktop and laptop and all other big screen*/
+}
 
-    @media screen and (min-width: 1024px)  {}      
+/*for mobile screen */
+@media screen and (max-width: 600px) {
+  .pages-faq {
+    margin-top: 100px;
+  }
 
+  .accordion-container-heading {
+    text-align: center;
+  }
 
-   /*for Tablet*/
+  .accordion-container-sub-heading {
+    text-align: center;
+  }
 
-    @media screen and (max-width: 1024px) {
+  .accordion-header {
+    padding: 0px 10px 0px 5px;
+  }
 
-        .left-column{
+  .accordion-body {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+  .accordion-body.show {
+    /* padding: 15px 20px; */
+    padding: 15px 5px 15px 5px;
 
-            width: 100%;
-            padding: 0px 20px 0px 20px;
-            margin-bottom: 50px;
-        }
-
-        
-
-        .right-column{
-
-            height: 400px;
-            width: 100%;
-           
-            background-position: center center;
-            background-size: cover;
-
-            
-        }
-
-
-        
-      .accordion-header{
-        padding: 0px 10px 0px 5px;
-      }
-
-        .accordion-body {
-    
-        padding-left:5px;
-        padding-right: 5px;
-   
-        
-      }
-      .accordion-body.show {
-          /* padding: 15px 20px; */
-          padding:15px 5px 15px 5px;
-        
-          text-align: justify;
-        
-        }
-
-    } 
-
-	
-    /*for mobile screen */
-    @media screen and (max-width: 600px) {
-
-      .pages-faq {
-        margin-top: 100px;
-    }
-    
-  
-      .accordion-container-heading{
-
-        text-align: center;
-
-      }
-      
-      .accordion-container-sub-heading{
-        
-        text-align: center;
-      
-      }
-
-      .accordion-header{
-        padding: 0px 10px 0px 5px;
-      }
-
-        .accordion-body {
-    
-        padding-left:5px;
-        padding-right: 5px;
-   
-        
-      }
-      .accordion-body.show {
-          /* padding: 15px 20px; */
-          padding:15px 5px 15px 5px;
-        
-          text-align: justify;
-        
-        }
-        
-     
-    } 
-
-      
+    text-align: justify;
+  }
+}

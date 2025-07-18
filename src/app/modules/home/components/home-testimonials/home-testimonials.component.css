@@ -1,77 +1,54 @@
+@import url("../../../../../../public/css/components/fonts.style.css");
+@import url("../../../../../../public/css/components/button.style.css");
 
-@import url('../../../../../../public/css/components/fonts.style.css');
-@import url('../../../../../../public/css/components/button.style.css');
-
-
-.testimonials{
-
-    height: auto;
-    display: flex;
-    align-items: center;
+.testimonials {
+  height: auto;
+  display: flex;
+  align-items: center;
   background-color: #f2eded;
   padding: 120px 0px 200px 0px;
   position: relative;
   margin-bottom: 120px;
-  }
-
-
-.column-left{
-  
-    padding: 40px;
-  
 }
 
-.left-column-content{
-
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-
+.column-left {
+  padding: 40px;
 }
 
+.left-column-content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
 
-.left-column-content>p{
-
+.left-column-content > p {
   text-align: justify;
-
-
 }
 
-.left-column-content>button{
-
-    align-self: flex-start;
-
+.left-column-content > button {
+  align-self: flex-start;
 }
 
-
-.column-right{
-
-   
-    padding: 0px !important;
+.column-right {
+  padding: 0px !important;
 }
-
-
-
-
 
 /* right side card carousal */
 
+swiper-container {
+  width: 100%;
+  height: 100%;
+}
 
-     swiper-container {
-        width: 100%;
-        height: 100%;
-      }
-  
-      swiper-slide {
-        text-align: center;
-        font-size: 18px;
-    
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 10px;
-       
-      }
+swiper-slide {
+  text-align: center;
+  font-size: 18px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
 
 .custom-prev,
 .custom-next {
@@ -95,160 +72,120 @@
   color: red;
 }
 
+.card-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  position: relative;
+  background-color: white;
+  height: 100%;
+  overflow: hidden;
+  min-width: 100%;
+}
 
-    .card-container{
+.circle-container {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  margin-top: 10px;
+}
 
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        gap: 15px;
-        position: relative;
-        background-color: white;
-        height: 100%;
-        overflow: hidden;
-        min-width: 100%
-      
-        
-       
-    }
+.circle-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
 
+.card-container > h3 {
+  font-size: 30px;
+}
 
+.card-container > p {
+  text-align: center;
+  padding: 25px;
+  font-size: 18px;
+}
 
+.swiper-button-next,
+.swiper-button-prev {
+  color: #945c5d !important;
+}
 
-    .circle-container {
-        width: 70px;
-        height: 70px;
-        border-radius: 50%;
-        overflow: hidden;
-        border: 0px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-        margin-top: 10px;
-      }
-  
-      .circle-container img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        display: block;
-      }
+.my-swiper-container {
+  position: relative;
+  height: 100%;
+}
 
-      .card-container>h3{
-        
-        font-size: 30px;
+/* ::ng-deep   */
 
-      }
-      
-      .card-container>p{
-        text-align: center;
-        padding: 25px;
-        font-size: 18px;
+.top-right-icon-container {
+  position: absolute;
+  height: 160px;
+  width: 160px;
 
-      } 
+  top: -75px;
+  right: -70px;
+  z-index: 2;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #330805;
+}
 
-      .swiper-button-next, .swiper-button-prev{
+#right-top-icon {
+  position: absolute;
+  right: 15px;
+  top: 15px;
 
-        color: #945C5D !important;
-      }
-
-      
-    
-
-
-
-      .my-swiper-container{
-
-    
-        position: relative;
-        height: 100%;
-
-      }
-
-        /* ::ng-deep   */
- 
-
-
-
-      .top-right-icon-container{
-
-        position: absolute;
-        height: 160px;
-        width: 160px;
-        
-        
-        top: -75px;
-        right:-70px;
-        z-index: 2;
-        border-radius: 50%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background-color: #330805;  
-    
-    }
-
-    #right-top-icon{
-
-      position: absolute;
-      right: 15px;
-      top: 15px;
-      
-      color: white;
-      font-size: 40px;
-      z-index: 3;
-    }
-
-    
-
- 
+  color: white;
+  font-size: 40px;
+  z-index: 3;
+}
 
 /*---------------------------------------------------------*/
-      .company-names{
+.company-names {
+  height: 15vh;
+  width: 100%;
+  position: absolute;
+  bottom: -20px;
+  left: 50%;
+  transform: translateX(-50%) !important;
+  z-index: 2;
 
-      
-        height: 15vh;
-        width: 100%;
-        position: absolute;
-        bottom: -20px;
-        left: 50%;
-        transform: translateX(-50%) !important;
-        z-index: 2;
-      
-        box-shadow: 5px 10px 25px 0px rgba(0, 0, 0, 0.1);
-        border-radius: 30px 30px 30px 30px;
-        overflow: hidden;
-        background-color: white;
-        
-      }
+  box-shadow: 5px 10px 25px 0px rgba(0, 0, 0, 0.1);
+  border-radius: 30px 30px 30px 30px;
+  overflow: hidden;
+  background-color: white;
+}
 
-      .company-img{
-        height: auto;
-        width: 100%;
-        max-width: 100%;
-        border: none;
-        box-shadow: none;
-        /* object-fit: cover; */
+.company-img {
+  height: auto;
+  width: 100%;
+  max-width: 100%;
+  border: none;
+  box-shadow: none;
+  /* object-fit: cover; */
+}
 
-      }
+.companies-swiper-slide {
+  background-color: white;
+}
 
-      .companies-swiper-slide{
-
-        background-color: white;
-
-
-      }
-
-
-      /*
+/*
       
       -------------------------------------------------*/
 
-
-.top-shape{
-
+.top-shape {
   overflow: hidden;
   position: absolute;
   left: 0;
@@ -257,121 +194,80 @@
   direction: ltr;
   top: -1px;
   z-index: 1;
-
 }
 
-.top-shape>svg{
-
+.top-shape > svg {
   height: 50px;
   width: 100%;
-
 }
 
 /*---------------------------------------------------------*/
 
-    
-      .bottom-shape{
+.bottom-shape {
+  overflow: hidden;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  line-height: 0;
+  direction: ltr;
+  bottom: -1px;
+  transform: rotate(180deg);
+  z-index: 1;
+}
 
-        overflow: hidden;
-        position: absolute;
-        left: 0;
-        width: 100%;
-        line-height: 0;
-        direction: ltr;
-        bottom: -1px;
-        transform: rotate(180deg);
-        z-index: 1;
+.bottom-shape > svg {
+  height: 50px;
+  width: 100%;
+}
 
-      }
-      
-      .bottom-shape>svg{
+/*for desktop and laptop and all other big screen*/
 
-        height: 50px;
-        width: 100%;
+@media screen and (min-width: 1024px) {
+}
 
-      }
+/*for Tablet*/
 
+@media screen and (max-width: 1024px) {
+  .column-left {
+    width: 100%;
+  }
 
+  .left-column-content {
+    text-align: center;
+  }
 
-     
+  .left-column-content > p {
+    text-align: center;
+  }
 
-          /*for desktop and laptop and all other big screen*/
+  .left-column-content > button {
+    align-self: center;
+  }
 
-    @media screen and (min-width: 1024px)  {}      
+  .column-right {
+    width: 100%;
+  }
+}
 
+/*for mobile screen */
+@media screen and (max-width: 600px) {
+  .swiper-button-next {
+    right: 10px;
+  }
 
-    /*for Tablet*/
- 
-     @media screen and (max-width: 1024px) {
-        .column-left{
-          width: 100%;
-        }
+  .testimonials {
+    padding: 150px 20px 120px 20px;
+  }
 
+  .left-column-content > button {
+    align-self: center;
+  }
 
-            .left-column-content{
+  .custom-prev {
+    display: none;
+  }
 
-              text-align: center;
-            
-            }
-
-              .left-column-content>p{
-
-                text-align: center;
-            
-            }
-
-              .left-column-content>button{
-              
-                  align-self: center;
-              
-              }
-      
-
-        .column-right{
-          width: 100%;
-        }
-
-     } 
- 
-   
-     /*for mobile screen */
-     @media screen and (max-width: 600px) {
-
-
-      .swiper-button-next{
-
-          right: 10px;
-
-      }
-
-      .testimonials{
-
-
-        padding: 150px 20px 120px 20px;
-      }
-      
-
-    
-      
-      .left-column-content>button{
-      
-          align-self: center;
-      
-      }
-
-      .custom-prev{
-
-        display: none;
-
-      }
-
-      .custom-next{
-
-        display: none;
-
-      }
-
-     } 
- 
-       
-     
+  .custom-next {
+    display: none;
+  }
+}

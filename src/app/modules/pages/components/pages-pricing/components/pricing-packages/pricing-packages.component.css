@@ -1,182 +1,127 @@
+@import url("../../../../../../../../public/css/components/button.style.css");
+@import url("../../../../../../../../public/css/components/fonts.style.css");
 
-@import url('../../../../../../../../public/css/components/button.style.css');
-@import url('../../../../../../../../public/css/components/fonts.style.css');
-
-.pricing-packages{
-
-    margin-top: 120px;
-
+.pricing-packages {
+  margin-top: 120px;
 }
-.column-1{
-
-   
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding-right: 20px;
-    gap: 10px;
-   
-
-
+.column-1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-right: 20px;
+  gap: 10px;
 }
 
-.card{
-
-    display: flex;
-    flex-direction: row;
-    gap: 15px;
-    border: none;
+.card {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  border: none;
 }
 /* #e9ac33 */
 
-.card-image-container>i{
-
-    color:#e9ac33 ;
-    font-size: 50px;
-
+.card-image-container > i {
+  color: #e9ac33;
+  font-size: 50px;
 }
-.card-title{
-font-size: 20px;
-font-weight: 600;
-
+.card-title {
+  font-size: 20px;
+  font-weight: 600;
 }
 
 /***************************css for column 2 and 3 */
-.package-card{
+.package-card {
+  border: 1px green solid;
 
-    border: 1px green solid;
-
-    border-style: solid;
-    border-width: 6px 6px 6px 6px;
-    border-color: #103371;
-    margin: 20px 20px 20px 20px;
-    padding: 40px 40px 40px 40px;
-    border-radius: 0px 70px 0px 70px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  border-style: solid;
+  border-width: 6px 6px 6px 6px;
+  border-color: #103371;
+  margin: 20px 20px 20px 20px;
+  padding: 40px 40px 40px 40px;
+  border-radius: 0px 70px 0px 70px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.pakage-name{
-
-    font-size: 32px;
-    text-align: center;
-
+.pakage-name {
+  font-size: 32px;
+  text-align: center;
 }
-.separator{
-
-    height: 3px;
-    background-color: #103371;
-    opacity: 1;
-    width:100%;
+.separator {
+  height: 3px;
+  background-color: #103371;
+  opacity: 1;
+  width: 100%;
 }
 
-.package-price{
-
-    color: #103371;
-    font-family: "Commissioner", Sans-serif;
-    font-size: 20px;
-    font-weight: 600;
-    text-align: center;
+.package-price {
+  color: #103371;
+  font-family: "Commissioner", Sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  text-align: center;
 }
 
-
-
-.orange-icon{
-
-    color: #f8ab13;
-    font-size: 15px;
+.orange-icon {
+  color: #f8ab13;
+  font-size: 15px;
 }
 
-.package-features-item>p{
-
-    margin: 0px;
+.package-features-item > p {
+  margin: 0px;
 }
-.package-features-item{
-
-    display: flex;
-    align-items: center;
-    gap: 5px;
-    
-
+.package-features-item {
+  display: flex;
+  align-items: center;
+  gap: 5px;
 }
 
-.feature-list-separator{
-
-   
-    margin-top: 10px;
-    margin-bottom: 10px;
-
-
+.feature-list-separator {
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
-  /*for desktop and laptop and all other big screen*/
+/*for desktop and laptop and all other big screen*/
 
-  @media screen and (min-width: 1024px)  {}      
+@media screen and (min-width: 1024px) {
+}
 
+/*for Tablet*/
 
-  /*for Tablet*/
+@media screen and (max-width: 1024px) {
+  .column-1 {
+    width: 100%;
+    margin-left: 10px;
+  }
 
-   @media screen and (max-width: 1024px) {
+  .column {
+    width: 50%;
+  }
 
-    .column-1{
-        width: 100%;
-        margin-left: 10px;
-    }
-    
+  .package-card {
+    margin: 10px 10px 10px 10px;
+    padding: 40px 20px 40px 20px;
+  }
+}
 
+/*for mobile screen */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
 
-    .column{
-        width: 50%;
+/*for desktop and laptop and all other big screen*/
 
-    }
+@media screen and (min-width: 1024px) {
+}
 
-    .package-card{
-        margin: 10px 10px 10px 10px;
-        padding: 40px 20px 40px 20px;
-    }
+/*for Tablet*/
 
-   } 
+@media screen and (max-width: 1024px) {
+}
 
-   
-   /*for mobile screen */
-   @media screen and (max-width: 600px) {
-
-    
-    .column{
-        width: 100%;
-
-    }
-
-   } 
-
-     
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    /*for desktop and laptop and all other big screen*/
-
-    @media screen and (min-width: 1024px)  {}      
-
-
-   /*for Tablet*/
-
-    @media screen and (max-width: 1024px) {} 
-
-	
-    /*for mobile screen */
-    @media screen and (max-width: 600px) {} 
+/*for mobile screen */
+@media screen and (max-width: 600px) {
+}

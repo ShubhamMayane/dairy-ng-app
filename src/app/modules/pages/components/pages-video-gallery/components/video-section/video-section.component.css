@@ -1,140 +1,103 @@
+@import url("../../../../../../../../public/css/components/fonts.style.css");
+@import url("../../../../../../../../public/css/components/button.style.css");
 
-@import url('../../../../../../../../public/css/components/fonts.style.css');
-@import url('../../../../../../../../public/css/components/button.style.css');
-
-.all-videos{
-
-
-    height: auto;
-    padding: 20px;
-    margin-top: 120px;
-}    
-
-.videos-card-container{
-
-    margin-bottom: 80px;
-
+.all-videos {
+  height: auto;
+  padding: 20px;
+  margin-top: 120px;
 }
 
-
-.videos-card-container>h3{
-
-    text-align: center;
-    margin-bottom: 20px;  
-
+.videos-card-container {
+  margin-bottom: 80px;
 }
 
-.videos-card-container>h1{
-
-    text-align: center;
-    margin-bottom: 100px;   
+.videos-card-container > h3 {
+  text-align: center;
+  margin-bottom: 20px;
 }
 
+.videos-card-container > h1 {
+  text-align: center;
+  margin-bottom: 100px;
+}
 
-.card{
-
-    /* box-shadow: 0px 15px 20px 0px rgba(0, 0, 0, 0.1); */
-    /* padding: 30px 30px 30px 30px; */
-    padding: 0px;
-    border-radius:20px;
-    width: 23%;
-    overflow: hidden;
-     /* transition: transform 0.3s; */
+.card {
+  /* box-shadow: 0px 15px 20px 0px rgba(0, 0, 0, 0.1); */
+  /* padding: 30px 30px 30px 30px; */
+  padding: 0px;
+  border-radius: 20px;
+  width: 23%;
+  overflow: hidden;
+  /* transition: transform 0.3s; */
 }
 .card:hover {
-  transform: scale(1.1) ;
+  transform: scale(1.1);
 }
 
-
-.videos-card-row{
-
-    justify-content: center;
-    gap: 25px;
-
-
+.videos-card-row {
+  justify-content: center;
+  gap: 25px;
 }
 
-
-.card-blue{
-background-color: #340707;
-color: white;
+.card-blue {
+  background-color: #340707;
+  color: white;
 }
 
-.card-white{
-
-background-color: white;
-
+.card-white {
+  background-color: white;
 }
 
-
-
-.card>.card-content{
-
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-    padding: 20px;
-    cursor: pointer;
+.card > .card-content {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding: 20px;
+  cursor: pointer;
 }
 
-.card>.card-content>img
-{
-    height: auto;
-    max-width: 100%;
-    border: none;
-    box-shadow: none;
-
+.card > .card-content > img {
+  height: auto;
+  max-width: 100%;
+  border: none;
+  box-shadow: none;
 }
-
-
 
 /* css for blue card  */
 
+.card-blue > .card-content > h1 {
+  color: white;
+  margin: 0px 0px 0px 0px;
+  font-family: "Commissioner", Sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+}
 
-
-.card-blue>.card-content>h1{
-    color: white;
-    margin: 0px 0px 0px 0px;
-    font-family: "Commissioner", Sans-serif;
-    font-size: 32px;
-    font-weight: 700;
-
-} 
-
-.card-blue>.card-content>p{
-
-    color: white;
-    font-family: "Commissioner", Sans-serif;
-    font-size: 15px;
-    font-weight: 400;
-    
+.card-blue > .card-content > p {
+  color: white;
+  font-family: "Commissioner", Sans-serif;
+  font-size: 15px;
+  font-weight: 400;
 }
 
 /* css for white  card  */
 
+.card-white > .card-content > h1 {
+  color: #340707;
+  margin: 0px 0px 0px 0px;
+  font-family: "Commissioner", Sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+}
+.card-white > .card-content > p {
+  color: #7a7a7a;
 
-.card-white>.card-content>h1{
-    color: #340707;
-    margin: 0px 0px 0px 0px;
-    font-family: "Commissioner", Sans-serif;
-    font-size: 32px;
-    font-weight: 700;
-
-} 
-.card-white>.card-content>p{
-
-    color: #7a7a7a;
-
-    font-family: "Commissioner", Sans-serif;
-    font-size: 15px;
-    font-weight: 400;
+  font-family: "Commissioner", Sans-serif;
+  font-size: 15px;
+  font-weight: 400;
 }
 
 /*Css for video viewer */
-
-
-
-
 
 .viewer {
   position: fixed;
@@ -163,14 +126,12 @@ background-color: white;
   padding: 50px;
   border-radius: 10px;
   text-align: center;
-  border-radius:80px 0px 80px 0px !important;
+  border-radius: 80px 0px 80px 0px !important;
 }
 
 .player {
-
   max-width: 80vw;
   max-height: 80vh;
- 
 }
 
 .nav {
@@ -184,12 +145,11 @@ background-color: white;
   color: #333;
 }
 
-.prev{
+.prev {
   left: 10px;
 }
 
-.next 
-{
+.next {
   right: 10px;
 }
 
@@ -197,15 +157,13 @@ background-color: white;
   position: absolute;
   top: 5px;
   right: 10px;
-  
+
   font-size: 2rem;
   background: none;
   border: none;
   cursor: pointer;
   color: red;
 }
-
-
 
 .video-wrapper {
   position: relative;
@@ -216,12 +174,10 @@ background-color: white;
   cursor: pointer;
 }
 
-.video-wrapper>img{
-
+.video-wrapper > img {
   height: 100%;
   width: 100%;
 }
-
 
 .overlay-text {
   position: absolute;
@@ -241,92 +197,74 @@ background-color: white;
   pointer-events: none;
 }
 
-
-
 /* /hover effects on card  */
 /* .card:hover .thumb {
   opacity: 0.3;
 } */
 
-.card:hover .overlay-text 
-{
+.card:hover .overlay-text {
   opacity: 1;
   background-color: rgba(0, 0, 0, 0.6);
 }
 
 /*for desktop and laptop and all other big screen*/
 
-    @media screen and (min-width: 1024px)  {}      
+@media screen and (min-width: 1024px) {
+}
 
+/*for Tablet*/
 
-   /*for Tablet*/
+@media screen and (max-width: 1024px) {
+  .card {
+    width: 48%;
+    height: 100%;
+  }
 
-    @media screen and (max-width: 1024px) {
+  .videos-card-row {
+    gap: 20px;
+  }
 
-        .card
-        {
-            width: 48%;
-            height: 100%;
-        }
+  .card:hover {
+    transform: none;
+  }
 
-        
-        .videos-card-row{
+  .thumb {
+    opacity: 0.3;
+  }
 
-            gap: 20px;
-        }
+  .overlay-text {
+    opacity: 1;
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+}
 
-        .card:hover {
-          transform: none;
-        }
+/*for mobile screen */
+@media screen and (max-width: 600px) {
+  .all-videos {
+    height: auto;
+    padding: 20px;
+    margin-top: 50px;
+  }
 
-          .thumb {
-          opacity: 0.3;
-        }
-        
-        .overlay-text {
-          opacity: 1;
-          background-color: rgba(0, 0, 0, 0.6);
-        }
-    } 
+  .card {
+    width: 100%;
+    height: 100%;
+  }
 
-	
-    /*for mobile screen */
-    @media screen and (max-width: 600px) {
+  .videos-card-row {
+    gap: 30px;
+  }
 
-      .all-videos{
-         height: auto;
-          padding: 20px;
-          margin-top: 50px;
-      }    
+  .card:hover {
+    transform: none;
+  }
 
+  .thumb {
+    opacity: 0.3;
+  }
 
-        .card{
-
-            width: 100%;
-            height: 100%;
-        }
-
-        .videos-card-row{
-
-            gap: 30px;
-        }
-       
-           .card:hover {
-          transform: none;
-        }
-
-    
-        .thumb {
-          opacity: 0.3;
-        }
-        
-        .overlay-text {
-          opacity: 1;
-          background-color: rgba(0, 0, 0, 0.6);
-        }
-    
-    
-      } 
-
-      
-    
+  .overlay-text {
+    opacity: 1;
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+}

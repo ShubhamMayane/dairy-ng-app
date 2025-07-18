@@ -1,266 +1,181 @@
+@import url("../../../../../../public/css/components/button.style.css");
+@import url("../../../../../../public/css/components/fonts.style.css");
 
-@import url('../../../../../../public/css/components/button.style.css');
-@import url('../../../../../../public/css/components/fonts.style.css');
-
-.blog-main-content{
-
-    margin-top: 120px;
-
-
+.blog-main-content {
+  margin-top: 120px;
 }
 
-.blog-main-content-container{
-
-  
-
-    padding-left:50px ;
-    padding-right:50px;
+.blog-main-content-container {
+  padding-left: 50px;
+  padding-right: 50px;
 }
 
-
-.image-container>img{
-
-    width: 100%;
-    border-radius: 80px 0px 0px 0px;
+.image-container > img {
+  width: 100%;
+  border-radius: 80px 0px 0px 0px;
 }
 
-
-.image-text-container{
-    background-color: #340707;
-    padding: 30px;
-    border-radius: 0px 0px 80px 0px;
+.image-text-container {
+  background-color: #340707;
+  padding: 30px;
+  border-radius: 0px 0px 80px 0px;
 }
 
-.description>p{
-
-    text-align: justify;
-
+.description > p {
+  text-align: justify;
 }
 
 /* pure beifits section  */
 
-.pure-beifits-header
-{
-        font-size: 32px;
-        margin-bottom: 25px;
-
+.pure-beifits-header {
+  font-size: 32px;
+  margin-bottom: 25px;
 }
 
-
-.benifits-card
-{
-
-   /* border: 1px solid black; */
-   padding: 30px;
-
+.benifits-card {
+  /* border: 1px solid black; */
+  padding: 30px;
 }
 
-.benifits-card-content{
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-   
-    height: 100%;
-    padding: 20px;
-    gap: 20px;
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
-    border-radius: 5px;
-    transition: transform 0.3s;
+.benifits-card-content {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
 
+  height: 100%;
+  padding: 20px;
+  gap: 20px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  border-radius: 5px;
+  transition: transform 0.3s;
 }
 
-.benifits-card-content:hover{
-
- transform: scale(1.10);
-  box-shadow: 0 12px 24px rgba(0,0,0,0.2);
-
+.benifits-card-content:hover {
+  transform: scale(1.1);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
 }
 
-.benifits-card-content>img{
-
-    height: 70px;
-    width: 70px;
-    align-self:center;
-
+.benifits-card-content > img {
+  height: 70px;
+  width: 70px;
+  align-self: center;
 }
 
-
-
-.benifits-card-header
-{
-    font-size: 25px;
-    margin-bottom: 20px;
+.benifits-card-header {
+  font-size: 25px;
+  margin-bottom: 20px;
 }
 
-
-
-
-
-
-
-
-
-.swiper-header{
-    font-size: 32px;
+.swiper-header {
+  font-size: 32px;
 }
 
-.text-content-with-img{
-
-    display: flex;
-    gap: 20px;
-    align-items: center;
-
+.text-content-with-img {
+  display: flex;
+  gap: 20px;
+  align-items: center;
 }
 
-.text-content-with-img>i{
-    color:#905e5e;
-    font-size: 70px;
-
+.text-content-with-img > i {
+  color: #905e5e;
+  font-size: 70px;
 }
 
-
-.horizontal-card-image-container{
-
-    height: 100%;
-
+.horizontal-card-image-container {
+  height: 100%;
 }
 
-.horizontal-card-image-container>img{
-
-    height: 100%;
-    max-width: 100%;
-    border: none;
-    border-radius: 0;
-    box-shadow: none;
-    border-radius: 50px 0px 50px 0px;
-
+.horizontal-card-image-container > img {
+  height: 100%;
+  max-width: 100%;
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+  border-radius: 50px 0px 50px 0px;
 }
 
-
-.horizontal-card-text-container
-{
-  
-    display: flex;
-    flex-direction: column;
-    gap:20px
+.horizontal-card-text-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
-
-.item{
-
-    display: flex;
-    gap: 15px;
-
+.item {
+  display: flex;
+  gap: 15px;
 }
-.checkbox-icon{
-    color: #f8ab13;
-    font-size: 25px;
+.checkbox-icon {
+  color: #f8ab13;
+  font-size: 25px;
 }
 
-.separation{
-
+.separation {
   margin-top: 50px;
   margin-bottom: 50px;
 }
 
+/*for desktop and laptop and all other big screen*/
 
+@media screen and (min-width: 1024px) {
+}
 
+/*for Tablet*/
 
+@media screen and (max-width: 1024px) {
+  .blog-main-content-container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 
-    
-    /*for desktop and laptop and all other big screen*/
+  .column {
+    width: 100%;
+  }
 
-    @media screen and (min-width: 1024px)  {}      
+  .benifits-card {
+    width: 50%;
+  }
 
+  .benifits-card-content:hover {
+    transform: none;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  }
+}
 
-   /*for Tablet*/
+/*for mobile screen */
+@media screen and (max-width: 600px) {
+  .blog-main-content {
+    margin-top: 50px;
+  }
 
-    @media screen and (max-width: 1024px) {
-        .blog-main-content-container{
+  .blog-main-content-container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 
-           
-        
-            padding-left:20px ;
-            padding-right:20px;
-        }
+  .blog-page-header {
+    font-size: 30px !important;
+  }
 
-        .column
-        {
+  .text-content-with-img {
+    flex-direction: column;
+    gap: 20px;
+  }
 
-            width: 100%;
+  .text-content-with-img > i {
+    align-self: center;
+  }
 
-        }
+  .horizontal-card-text-container > h1 {
+    text-align: center;
+  }
 
-            .benifits-card
-            {
+  .benifits-card {
+    width: 100%;
+    margin-top: 0px;
+  }
 
-            width: 50%;
-
-            }
-      
-    .benifits-card-content:hover
-    {
-        transform: none;
-        box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
-    }
-    } 
-
-	
-    /*for mobile screen */
-    @media screen and (max-width: 600px) {
-
-       .blog-main-content
-       {
-
-           margin-top: 50px;
-          
-
-        }
-
-
-        .blog-main-content-container{
-
-            padding-left:20px;
-            padding-right:20px;
-          
-
-        }
-
-        .blog-page-header
-        {
-             font-size: 30px !important;
-
-
-        }
-
-        .text-content-with-img{
-
-            flex-direction: column;
-            gap: 20px;
-        
-        }
-
-        .text-content-with-img>i{
-            align-self: center;
-        }
-
-        .horizontal-card-text-container>h1{
-
-            text-align: center;
-
-        }
-
-
-            .benifits-card
-            {            
-                width: 100%;
-                margin-top: 0px;
-
-            }
-      
-    .benifits-card-content:hover
-    {
-        transform: none;
-        box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
-    }
-    } 
+  .benifits-card-content:hover {
+    transform: none;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  }
+}

@@ -1,160 +1,123 @@
+@import url("../../../../../../public/css/components/fonts.style.css");
+@import url("../../../../../../public/css/components/button.style.css");
 
-@import url('../../../../../../public/css/components/fonts.style.css');
-@import url('../../../../../../public/css/components/button.style.css');
+.home-header-main-container {
+  /* border: 1px solid green; */
 
-.home-header-main-container{
-
-    /* border: 1px solid green; */
-   
-    /* border: 1px solid black; */
-    width: 100%;
-    height: auto;
-    /* background-image: url("../../../../../../public/images/background-images/home-header-background-imag.jpg"); */
-    background-size: cover;
-    background-position:bottom center;
-    background-repeat: no-repeat;
-    position: relative;
-    padding: 0px;
-    padding: 200px 0px 400px 0px;
-
-
-  
+  /* border: 1px solid black; */
+  width: 100%;
+  height: auto;
+  /* background-image: url("../../../../../../public/images/background-images/home-header-background-imag.jpg"); */
+  background-size: cover;
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  position: relative;
+  padding: 0px;
+  padding: 200px 0px 400px 0px;
 }
 
-
-.overlay-div{
-height: 100%;
-width: 100%;
-position: absolute;
-top: 0;
-left: 0;
-/* border: 1px solid red; */
-z-index: 1;
-background-color: transparent;
-background-image: linear-gradient(180deg, #001741 10%, #00000000 80%);
-opacity: 0.8;
-
-
-
-
+.overlay-div {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  /* border: 1px solid red; */
+  z-index: 1;
+  background-color: transparent;
+  background-image: linear-gradient(180deg, #001741 10%, #00000000 80%);
+  opacity: 0.8;
 }
 
-.img-top-shape{
-
-    overflow: hidden;
-    position: absolute;
-    left: 0;
-    width: 100%;
-    line-height: 0;
-    direction: ltr;
-    top: -1px;
-    z-index: 2;
-
+.img-top-shape {
+  overflow: hidden;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  line-height: 0;
+  direction: ltr;
+  top: -1px;
+  z-index: 2;
 }
 
-.img-top-shape>svg{
-
-    display: block;
-    position: relative;
-    left: 50%;
-    transform: translateX(-50%);
-    width: calc(100% + 1.3px);
-    height: 50px;
+.img-top-shape > svg {
+  display: block;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  width: calc(100% + 1.3px);
+  height: 50px;
 }
 
-.bottom-shape{
-
-    overflow: hidden;
-    position: absolute;
-    left: 0;
-    width: 100%;
-    line-height: 0;
-    direction: ltr;
-    bottom: -1px;
-    transform: rotate(180deg);
-    
+.bottom-shape {
+  overflow: hidden;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  line-height: 0;
+  direction: ltr;
+  bottom: -1px;
+  transform: rotate(180deg);
 }
-.bottom-shape>svg{
-
-    height: 50px;
-    width: 100%;
+.bottom-shape > svg {
+  height: 50px;
+  width: 100%;
 }
 
+.header-content-container {
+  /* border: 1px solid white; */
 
-
-
-.header-content-container
-{
-
-    /* border: 1px solid white; */
-
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    z-index: 999;
-    max-width: 1000px;
-    align-items: center;
-
-
-
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  z-index: 999;
+  max-width: 1000px;
+  align-items: center;
 }
 
-.youtube-channel-link-div{
-
-    text-decoration: none;
-    cursor: pointer;
-
+.youtube-channel-link-div {
+  text-decoration: none;
+  cursor: pointer;
 }
 
-.header-content-container>h3{
-
-   
-    text-align: center;
-    z-index: 3;
-
+.header-content-container > h3 {
+  text-align: center;
+  z-index: 3;
 }
-.header-content-container>h1{
-    text-align: center;
-    z-index: 3;
-    color: white;
-    margin: 0px 0px 0px 0px;
-    font-family: "Commissioner", Sans-serif;
-    font-size: 66px;
-    font-weight: 800;
-    line-height: 1.2 em;
-
+.header-content-container > h1 {
+  text-align: center;
+  z-index: 3;
+  color: white;
+  margin: 0px 0px 0px 0px;
+  font-family: "Commissioner", Sans-serif;
+  font-size: 66px;
+  font-weight: 800;
+  line-height: 1.2 em;
 }
-.header-content-container>p{
+.header-content-container > p {
+  text-align: center;
+  z-index: 3;
+  color: white;
 
-    text-align: center;
-    z-index: 3;
-    color: white;
-   
-    font-family: "Commissioner", Sans-serif;
-    font-size: 15px;
-    font-weight: 400;
-    line-height: 1.2 em;
-
+  font-family: "Commissioner", Sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.2 em;
 }
-.header-content-container>button{
-
-    text-align: center;
-    z-index: 3;
-
+.header-content-container > button {
+  text-align: center;
+  z-index: 3;
 }
 
+.header-content-container > button:hover {
+  animation: updown 2.5s linear infinite;
+}
 
-.header-content-container>button:hover {
-    animation: updown 2.5s linear infinite;
-  }
+/* code for carousal  */
 
-
-  /* code for carousal  */
-
-  .carousel-inner,
+.carousel-inner,
 .carousel-item {
   height: 100%;
-  
 }
 
 .carousel-item {
@@ -162,243 +125,144 @@ opacity: 0.8;
   background-position: center;
 }
 
-.carousel{
-
- 
-    height: 100%;
-    position: absolute;
-    top: 0;
-    width: 100%;
-    
-
-    
+.carousel {
+  height: 100%;
+  position: absolute;
+  top: 0;
+  width: 100%;
 }
 
+.item-1 {
+  height: 100%;
+  width: 100%;
+  transition: transform 1.5s ease-in-out !important; /* Make slide smoother */
+  position: relative;
 
-.item-1
-{
-
-                  
-                    height: 100%;
-                    width: 100%;
-                    transition: transform 1.5s ease-in-out !important;/* Make slide smoother */
-                    position: relative;
-
-    /* background-image: url("../../../../../../public/images/background-images/home-header-background-imag.jpg"); */
- 
-
+  /* background-image: url("../../../../../../public/images/background-images/home-header-background-imag.jpg"); */
 }
 
-
-
-.item-2
-{
-
-                   
-                    height: 100%;
-                    width: 100%;
-                    transition: transform 1.5s ease-in-out !important;/* Make slide smoother */
-                    position: relative;
-
+.item-2 {
+  height: 100%;
+  width: 100%;
+  transition: transform 1.5s ease-in-out !important; /* Make slide smoother */
+  position: relative;
 }
 
-.item-3
-{
-
-                
-                    height: 100%;
-                    width: 100%;
-                    transition: transform 1.5s ease-in-out !important;/* Make slide smoother */
-                    position: relative;
- 
+.item-3 {
+  height: 100%;
+  width: 100%;
+  transition: transform 1.5s ease-in-out !important; /* Make slide smoother */
+  position: relative;
 }
 
-
-.carousel-item>img{
-
-        height: 100%;
-        width: 100%;
-        object-fit: cover;
-        object-position: bottom;
-
-
-
+.carousel-item > img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: bottom;
 }
 
+/*------------------------------------------------------------------------------------*/
+/* code for header card  */
 
+.header-card-main-container {
+  height: auto;
+  background-color: white;
+  box-shadow: 0px 15px 20px 0px rgba(0, 0, 0, 0.1);
+  border-radius: 80px 20px 80px 20px;
+  overflow: hidden;
+  margin-top: -200px;
+  position: relative;
+  margin-bottom: 150px;
+}
 
-  /*------------------------------------------------------------------------------------*/
-    /* code for header card  */
+.card-left-section {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 60px 60px 60px 70px;
+}
 
+.farm-description-text {
+  text-align: justify;
+}
 
-    .header-card-main-container{
+.card-right-section {
+  background-image: url("../../../../../../public/images/card-images/cows-on-a-diary-farm.webp");
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
 
-          
-            height: auto;
-            background-color:white;
-            box-shadow: 0px 15px 20px 0px rgba(0, 0, 0, 0.1);
-            border-radius: 80px 20px 80px 20px;
-            overflow: hidden;
-            margin-top: -200px;
-            position: relative;
-            margin-bottom: 150px;
+.play-button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
 
+.play-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
 
-    }
+.play-button > a > svg {
+  height: 100px;
+  width: 100px;
+}
 
-
-    .card-left-section{
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
-        padding: 60px 60px 60px 70px;
-       
-    }
-
-   
-    .farm-description-text{
-
-        text-align: justify;
-    }
-   
-    
- 
-
-   
-
-
-    .card-right-section{
-        
-        background-image: url("../../../../../../public/images/card-images/cows-on-a-diary-farm.webp");
-        background-position: center;
-        background-size: cover;
-        position: relative;
-      
-     }
-
-    .play-button-container{
-
-           
-          
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100%;
-            width: 100%;
-        
-    }
-
-
-
-
-
-
-    
-    .play-button{
-
-      
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        cursor: pointer;
-
-    }
-
-    .play-button>a>svg{
-
-        height: 100px;
-        width: 100px;
-    }
-
-    .play-button>i{
-
-        color: #3c86cb;
-        font-size: 50px;
-
-    }
-
-    
-
-
-
-
-
-
-
-
-
+.play-button > i {
+  color: #3c86cb;
+  font-size: 50px;
+}
 
 /*for desktop and laptop and all other big screen*/
 
-@media screen and (min-width: 1024px)  {}      
-
+@media screen and (min-width: 1024px) {
+}
 
 /*for Tablet*/
 
- @media screen and (max-width: 1024px) {
+@media screen and (max-width: 1024px) {
+  .img-top-shape > svg {
+    height: 20px;
+  }
 
-    .img-top-shape>svg{
-        
-        height: 20px;
-    }
+  .header-card-main-container {
+    margin-bottom: 50px;
+  }
+}
 
-    .header-card-main-container{
-        margin-bottom: 50px;
+/*for mobile screen */
+@media screen and (max-width: 600px) {
+  .home-header-main-container {
+    padding: 150px 15px 300px 15px;
+  }
 
-    }
- } 
+  .carousel {
+    left: 0;
+  }
 
- 
- /*for mobile screen */
- @media screen and (max-width: 600px) {
+  .img-top-shape > svg {
+    height: 20px;
+  }
 
+  .header-content-container > h1 {
+    font-size: 55px;
+  }
 
+  .header-card-main-container {
+    margin-bottom: 100px;
+  }
 
-    .home-header-main-container {
-        padding: 150px 15px 300px 15px;
-    }
+  .card-left-section {
+    padding: 60px 20px 50px 40px;
+  }
 
-
-
-    .carousel
-    {
-           left: 0;
-    }
-   
-
-    .img-top-shape>svg{
-        
-        height: 20px;
-    }
-
-
-    .header-content-container>h1{
-
-        font-size: 55px;
-    }
-
-   
-
-
-
-    .header-card-main-container{
-        margin-bottom: 100px;
-
-    }
-
-    .card-left-section{
-
-        padding: 60px 20px 50px 40px;
-
-    }
-
-    .card-right-section{
-    
-        height: 300px;
-    }
-
-
-       
-    
-} 
- 
+  .card-right-section {
+    height: 300px;
+  }
+}
