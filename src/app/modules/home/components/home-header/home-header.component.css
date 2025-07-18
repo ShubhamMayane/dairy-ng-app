@@ -158,7 +158,7 @@
 .carousel-item > img {
   height: 100%;
   width: 100%;
-  object-fit: cover;
+  object-fit: fill;
   object-position: bottom;
 }
 
@@ -234,6 +234,11 @@
   .header-card-main-container {
     margin-bottom: 50px;
   }
+
+.carousel-item > img 
+{
+  object-fit: cover;
+}
 }
 
 /*for mobile screen */
@@ -257,6 +262,23 @@
   .header-card-main-container {
     margin-bottom: 100px;
   }
+
+.carousel-item > img 
+{
+  object-fit: cover;
+  /* object-position: bottom; */
+}
+.item-1>img{
+   object-position: 40% center;
+}
+
+.item-2>img{
+   object-position:20% center;
+}
+
+.item-3>img{
+   object-position: 60% center;
+}
 
   .card-left-section {
     padding: 60px 20px 50px 40px;
