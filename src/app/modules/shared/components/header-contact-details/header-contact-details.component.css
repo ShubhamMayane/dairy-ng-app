@@ -253,11 +253,11 @@ display: flex;
     }
 
 
-    .contact-section-2-main-cotainer{
+    /* .contact-section-2-main-cotainer{
 
         display: none;
 
-    }
+    } */
 
 
     
@@ -299,7 +299,25 @@ display: flex;
 
 }
 
+.header-card.column-1{
 
+margin-bottom: 0px;
+
+}
+
+.header-card.column-2{
+
+    display: none !important ;
+
+}
+.header-card.column-3{
+
+    display: none !important;
+}
+.header-card.column-4{
+
+    display: none !important;
+}
 
 
 }  
