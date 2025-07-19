@@ -169,7 +169,11 @@ margin-top: 10px;
   /* //for mobile screen  */
   @media screen and (max-width: 600px) {
 
- 
+ .big-screen-nav-bar{
+
+  display: none;
+
+ }
 
 
   } 

@@ -252,13 +252,13 @@
   
   .home-header-main-container {
     padding: 150px 15px 300px 15px;
-    background-image: url("../../../../../../public/images/background-images/header-background-img-1.webp");
-     background-position: 60% center; 
+    /* background-image: url("../../../../../../public/images/background-images/header-background-img-1.webp"); */
+    /* background-position: 60% center;  */
   
   }
-  #carouselExample{
+  /* #carouselExample{
     display: none;
-  }
+  } */
 
   .carousel {
     left: 0;
@@ -282,7 +282,7 @@
   /* object-position: bottom; */
 }
 .item-1>img{
-   object-position: 40% center;
+ object-position: 60% center;
 }
 
 .item-2>img{
@@ -290,7 +290,7 @@
 }
 
 .item-3>img{
-   object-position: 60% center;
+   object-position: 40% center;
 }
 
   .card-left-section {
