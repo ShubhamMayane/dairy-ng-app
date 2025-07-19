@@ -235,6 +235,11 @@
     margin-bottom: 50px;
   }
 
+  .item-2>img{
+   object-position:30% center;
+}
+
+
 .carousel-item > img 
 {
   object-fit: cover;
@@ -243,8 +248,16 @@
 
 /*for mobile screen */
 @media screen and (max-width: 600px) {
+
+  
   .home-header-main-container {
     padding: 150px 15px 300px 15px;
+    background-image: url("../../../../../../public/images/background-images/header-background-img-3.webp");
+     background-position: 60% center; 
+  
+  }
+  #carouselExample{
+    display: none;
   }
 
   .carousel {
