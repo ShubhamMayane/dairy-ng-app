@@ -7,7 +7,7 @@ import { CommonModule } from '@angular/common';
   styleUrl: './whatsapp-button-app.component.css'
 })
 export class WhatsappButtonAppComponent {
- phoneNumber = '9637983156'; // Use international format, e.g., '15551234567'
+ phoneNumber = '8793760700'; // Use international format, e.g., '15551234567'
   message = 'Hello, I would like to get in touch!';
 
   showFadeIn = false;
