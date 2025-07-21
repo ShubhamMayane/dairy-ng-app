@@ -93,10 +93,10 @@ export class ContactusFormComponent implements AfterViewInit {
 
       emailjs
         .send(
-          'service_aefi1of',
-          'template_bqocxpl',
+          'service_kbxj6j9',
+          'template_6c3u46l',
           templateParams,
-          '9t7czFOwyJdsrKnoa'
+          'CbhWx0vf1Dec-PUnL'
         )
         .then(
           () => {
