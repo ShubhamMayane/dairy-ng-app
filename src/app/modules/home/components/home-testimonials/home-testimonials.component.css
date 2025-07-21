@@ -259,6 +259,12 @@ swiper-slide {
     padding: 150px 20px 120px 20px;
   }
 
+  .testimonials-heading{
+
+    font-size: 35px !important;
+
+  }
+
   .left-column-content > button {
     align-self: center;
   }
